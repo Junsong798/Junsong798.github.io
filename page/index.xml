@@ -6,7 +6,18 @@
     <description>Recent content in Pages on LU Junsong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://Junsong798.github.io/about-me/</link>
+      <pubDate>Wed, 03 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Junsong798.github.io/about-me/</guid>
+      <description>Education and Work Experience Research Assistant: The Chinese University of Hong Kong, Shenzhen (2020.7 - )
+ My interests include dual-inheritance theory, evolutionary biology/psychology/anthropology, decision-making, psychometrics, motivation, scientometrics, causal inference, social network analysis, and meta-analysis. Beyond my academic interests, I also like reading statistics, philosophy, complexity.  Master of Science in Applied Psychology, The Chinese University of Hong Kong, Shenzhen (2018.9 - 2020.7)
+ Outstanding Graduate 2020 Academic Excellence Award (Graduation Awards and Honor 2020) Academic Scholarship Gold Award 2019 Visiting Graduate of Shenzhen Research Institute of Big Data (SRIBD)  Bachelor of Science in Metallurgy, Northeastern University (2014.</description>
+    </item>
+    
     <item>
       <title>Archives</title>
       <link>https://Junsong798.github.io/archives/</link>
@@ -14,17 +25,6 @@
       
       <guid>https://Junsong798.github.io/archives/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://Junsong798.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://Junsong798.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
     </item>
     
     <item>
