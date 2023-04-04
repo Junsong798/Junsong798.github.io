@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='效应量的量纲之别'>
+<title>重复测量设计中的效应量</title>
+
+<link rel='canonical' href='https://Junsong798.github.io/p/effect-size-metric/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='重复测量设计中的效应量'>
+<meta property='og:description' content='效应量的量纲之别'>
+<meta property='og:url' content='https://Junsong798.github.io/p/effect-size-metric/'>
+<meta property='og:site_name' content='Junsong Lu'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-05-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-05-09T00:00:00&#43;00:00'/><meta property='og:image' content='https://Junsong798.github.io/p/effect-size-metric/fig1.jpeg' />
+<meta name="twitter:title" content="重复测量设计中的效应量">
+<meta name="twitter:description" content="效应量的量纲之别"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Junsong798.github.io/p/effect-size-metric/fig1.jpeg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/phoenix_hu67947661166d7644bf5b9b67d9d88b58_99065_300x0_resize_box_3.png" width="300"
+                            height="287" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Junsong Lu</a></h1>
+            <h2 class="site-description">世界正直夜半，日月隐退，星光凋零，我们在废墟上寻找花束</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='mailto:jul140@ucsd.edu'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-gmail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
+  <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
+  <path d="M16 4l-4 4l-4 -4" />
+  <path d="M4 6.5l8 7.5l8 -7.5" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/Junsong798'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/junsong-lu-813663236/'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.researchgate.net/profile/Junsong_Lu'
+                        target="_blank"
+                        title="ResearchGate"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ghost" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7" />
+  <line x1="10" y1="10" x2="10.01" y2="10" />
+  <line x1="14" y1="10" x2="14.01" y2="10" />
+  <path d="M10 14a3.5 3.5 0 0 0 4 0" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About Me</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://Junsong798.github.io/" selected>English</option>
+                        
+                            <option value="https://Junsong798.github.io/zh-cn/" >中文</option>
+                        
+                            <option value="https://Junsong798.github.io/ar/" >عربي</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#两种效应量量纲">两种效应量量纲</a></li>
+    <li><a href="#效应量的计算">效应量的计算</a></li>
+    <li><a href="#效应量的抽样误差">效应量的抽样误差</a></li>
+    <li><a href="#效应量标度的选择">效应量标度的选择</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/effect-size-metric/">
+                <img src="/p/effect-size-metric/fig1_hu99602af189e4d6181e0524af70cc67c2_707094_800x0_resize_q75_box.jpeg"
+                        srcset="/p/effect-size-metric/fig1_hu99602af189e4d6181e0524af70cc67c2_707094_800x0_resize_q75_box.jpeg 800w, /p/effect-size-metric/fig1_hu99602af189e4d6181e0524af70cc67c2_707094_1600x0_resize_q75_box.jpeg 1600w"
+                        width="800" 
+                        height="471" 
+                        loading="lazy"
+                        alt="Featured image of post 重复测量设计中的效应量" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" >
+                统计学
+            </a>
+        
+            <a href="/categories/%E5%85%83%E7%A7%91%E5%AD%A6/" >
+                元科学
+            </a>
+        
+            <a href="/categories/%E5%85%83%E5%88%86%E6%9E%90/" >
+                元分析
+            </a>
+        
+            <a href="/categories/%E5%BF%83%E7%90%86%E5%AD%A6/" >
+                心理学
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/effect-size-metric/">重复测量设计中的效应量</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            效应量的量纲之别
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 09, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="两种效应量量纲">两种效应量量纲</h2>
+<p>在新的元分析中，发现不少实验是within-subject design，时隔一年多，不少计算细节已经记得不清楚，比如如何统一不同scaling下效应量的量纲，如何选择量纲，以及不同量纲之间sampling variance如何计算。回忆2021年4月15号的小组会议。</p>
+<blockquote>
+<p>21点多开完会，想起老师下午给了我一袋零食，准备吃一口，一看生产日期&hellip;.2019.10，保质期365天。原来老师是想毒死我。</p>
+<p>晚上的会议一上来我就让小姚讲一讲d效应量的两种scaling，以及不同学者在面对paired t test时公式的等价性和假定。当然，简单看了看几篇统计论文后，我大概搞清楚了一件事情，几种效应量，重复测量与独立测量的方法，必须满足复合对称性（compound symmetry）才能在标度上等价。以及，我还清楚，Borenstein的重复测量效应量，基于方差齐性假定。另外，Morris和Borenstein的公式似乎是等价的，只不过差一个转换。</p>
+<p>小姚同学上来就纠正我，两者定义似乎分母差了一个根式，于是我当场短路。小匡同学直接挪过黑板做了公式的推导，速度过快以至于我差点没看懂，全组8个同学只有我们三个在讨论，其他同学逐渐淡出背景。最后的结论是，Morris和Borenstein都假定了方差齐性，但是其相关系数的近似其实是严格从t效应量中推导得出，因此并不是近似，而是要求重复测量下要么知道前后测，要么知道相关和差值的标准差才能计算。后者不需要假定方差齐性，假定齐性时两者等价。</p>
+<p>&hellip;&hellip;</p>
+<p>另外两个问题极为有趣，即partial eta square如何转换为Fisher&rsquo;s Z, 我和小姚表示一脸懵逼。小匡说，直接对partial eta square开根号得到Pearson&rsquo;s r，再转z。我反驳说，此时的eta square严格等价为partial correlation，开根后不严格等价，小姚学弟表示赞同。然后小匡推了一个partial correlation的公式，说现有论文信息不足，基本只能近似，许多在线网站的运算逻辑都是如此。我表示大家统计学得太好，不如开发个R包，吊打世界算了。</p>
+<p>最后的问题是beta coefficient向z的转换，Peterson和Brown的模拟研究表明，r = β + 0.05λ。其中λ取决于β正负号。我提出，在一篇人类学期刊中，我用β近似的相关极大，而且β本身大于1很多，虽然在强烈的multicollinearity的情况下这是可能的。小匡立即给出了用β近似X和Y之间covariance的严格推导，并指出其不可行性。我则指出这就是为什么很多回归会有suppression effect，因为第一个β的效应被其他变量的系数所抵消。极端情况下，这种近似方法会有偏差。</p>
+</blockquote>
+<p>首要明确的一点，现有心理学大部分元分析在method部分并没有强调效应量的scaling。实际上，大家都心照不宣地采用了Jacob Cohen定义的效应量，即Cohen&rsquo;s d的scaling。这个scaling被定义为independent-groups effect size，即常见的被试间设计得到的效应量。这个scaling也同理拓展到r family效应量上，比如point-biserial correlation。</p>
+<p>计算Cohen&rsquo;s d的方法是，由给定的t统计量剥离样本量得到。一个简单的例子，假定homogeneity of variance以及balanced design，公式为：</p>
+<p>$t = d * \sqrt[]{\frac{n}{2}}$</p>
+<p>此时，效应量$d$的公式为：</p>
+<p>$\frac{\bar{X_1}-\bar{X_2}}{s_p}$</p>
+<p>但如果是前后侧的被试内设计，HOV假定下得到的t统计量（paired t）实际上分解为：</p>
+<p>$t=\frac{\bar{X_1}-\bar{X_2}}{s}*\sqrt{n} *\sqrt{\frac{1}{2(1-r)}}$</p>
+<p>剥离样本量后，得到的$d$为：</p>
+<p>$d=\frac{\bar{X_1}-\bar{X_2}}{s} *\sqrt{\frac{1}{2(1-r)}}$</p>
+<p>注意这里为什么是去除$\sqrt{n}$而不是$\sqrt{n/2}$，因为paired t test和independent t test是两种不同的检验，前者本质上是单样本检验，而后者是双样本检验。对单样本检验，中心统计量$\delta$和效应量的关系为：</p>
+<p>$\delta = d * \sqrt{n}$</p>
+<p>这里依然满足导出$d$时，效应量的含义是“两个总体均值相差的标准差的个数”。虽然看起来两种t统计量还原出的$d$都是均值之间差了几个标准差，但是由于单双侧检验在标准差的scaling上不同，导致了两个效应量scaling的不同。对independent t来说，其标准差是raw score的标准差，比如实验组因变量观测值的标准差。而paired t的标准差是分数差值的标准差：</p>
+<p>$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}$</p>
+<p>因此，对paired t得出的$d$，应该解释为：相对于0点，平均改变了$d$个标准差，即：</p>
+<p>$d=\frac{\bar{X_1}-\bar{X_2}}{s} *\sqrt{\frac{1}{2(1-r)}}=\frac{\bar{X_1}-\bar{X_2}}{S_{D}}$</p>
+<p>如果上述式子不明显，参考以下步骤，即可得知差值的标准差和raw score的标准差的关系：</p>
+<p>$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2<em>r</em>s_1*s_2}{n}}}$</p>
+<p>如果HOV满足，则：</p>
+<p>$t_{RM}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2<em>r</em>s_1*s_2}{n}}}=\frac{\bar{D}}{\sqrt{\frac{2s^2(1-r)}{n}}}$</p>
+<p>从而得到两种标准差的转换公式：</p>
+<p>$S_{D}=S\sqrt{2(1-r)}$</p>
+<p>同理，得到效应量两种量纲的转换公式：</p>
+<p>$d_{RM}=d_{IG}/\sqrt{2(1-r)}$</p>
+<h2 id="效应量的计算">效应量的计算</h2>
+<p>最常见的情况，由t统计量导出。</p>
+<p>对independent t test，更一般的情况，如不平衡设计，那么可以得到：</p>
+<p>$d = t * \sqrt[]{\frac{n_1+n_2}{n_1n_2}}$</p>
+<p>对paired t test，如上部分所述，有：</p>
+<p>$d = \frac{t} {\sqrt{n}}$</p>
+<p>另一种情况，已知两组的mean和sd，估计效应量。对independent t，可以假定HOV计算出t，再计算$d$，但对paired t而言，需要额外知道两次观测的相关系数。</p>
+<p>根据paired t的公式，在已知前后侧标准差，差值的标准差时，可以严格计算相关系数：</p>
+<p>$r = \frac{SD_{pre}^2+SD_{post}^2-SD_{D}^2}{2SD_{pre}SD_{post}}$</p>
+<p>若前后侧不知道，那么假定前后侧方差齐性，用联合总体标准差估计即可，得到：</p>
+<p>$r = 1-\frac{SD_{D}^2}{2SD_{pooled}^2}$</p>
+<p>然而，研究往往不会报告差值的标准差，所以需要进行计算：</p>
+<p>$SD_{D}^2=\frac{n(M_{post}-M_{pre}^2)}{t^2}$</p>
+<p>得到差值的标准差后，再代入上述的两个公式，即可得到r。但更常见的，如果前后侧标准差也没报告，往往需要元分析的作者假定一个相关系数，比如0.5，才能继续计算效应量。</p>
+<h2 id="效应量的抽样误差">效应量的抽样误差</h2>
+<p>效应量的sampling variance用于计算单个研究的权重，以此进行元分析的加权。对被试间设计，效应量的抽样误差取决于样本量和效应量本身，其近似公式为：</p>
+<p>$V_d=\frac{n_1+n_2}{n_1n_2}+\frac{d^2}{2(n_1+n_2)}$</p>
+<p>推导过程见<a class="link" href="https://stats.stackexchange.com/questions/144084/variance-of-cohens-d-statistic"  target="_blank" rel="noopener"
+    >cross validated</a>.</p>
+<p>而对配对样本，除了样本量，抽样误差还取决于匹配情况，如相关系数的大小。采用raw score作为效应量scaling时，可以用Morris和Deshon提出的通用转化公式：</p>
+<p>$\sigma_{e_i}^2=\frac{A^2}{\tilde{n}}\frac{df}{df-2}(1+\frac{\tilde{n}}{A^2}\sigma_{<em>}^2)-\frac{\delta_{</em>}^2}{c^2}$</p>
+<p>其中df为对应设计的自由度，A代表两种效应量之间的转换公式，如果用raw score scaling，则A为：</p>
+<p>$A=\sqrt{2(1-p)}$</p>
+<p>而$\tilde{n}$为一个与样本量有关的系数，类似有效样本量。如果是被试间设计，则：</p>
+<p>$\tilde{n}=\frac{n_1n_2}{n_1+n_2}$</p>
+<p>如果是匹配设计，则等于样本数：</p>
+<p>$\tilde{n}=n$</p>
+<p>此外，c为一个与自由度有关的函数，也是用来矫正$d$的大小的函数：</p>
+<p>$c(df) = 1 - \frac{3}{4df-1}$</p>
+<p>因此，假如一个研究是被试内设计，而元分析的scaling是raw score，那么首先计算出$d_{RM}$并转换为raw score下的$d_{IG}$，然后用以下公式计算抽样误差：</p>
+<p>$\sigma_{e_i}^2=\frac{2(1-r)}{n}\frac{n-1}{n-3}(1+\frac{n}{2(1-r)}d_{IG}^2)-\frac{d_{IG}^2}{c^2}$</p>
+<h2 id="效应量标度的选择">效应量标度的选择</h2>
+<p>效应量的scaling取决于研究者希望回答的问题。如果一个元分析希望知道一种实验处理的组间差异——处理效应的差异是否存在，用raw score metric更好。如果研究者关心的是在一系列successive trials间被试自身的变化，那么change score metric更好。</p>
+<p>@MorrisImpulsivitymediatingfactor2020</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/robust-statistics/">
+        
+        
+            <div class="article-image">
+                <img src="/p/robust-statistics/fig_caption.2e4329f0490f4b7203f6884c701d728b_hu0a5afe8a6a9ae95a1ede619491d58485_197891_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 囫囵吞枣之现代稳健估计方法"
+                        data-key="robust statistics" 
+                        data-hash="md5-LkMp8EkPS3ID9ohMcB1yiw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">囫囵吞枣之现代稳健估计方法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/causal1.47a89b7113afa8bbd2fe4950ea61b8a0_hu9c86b09dc8ebb9b70ebef615e849bb3f_190254_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 真实世界的心理模型"
+                        
+                        data-hash="md5-R6ibcROvqLvS/klQ6mG4oA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">真实世界的心理模型</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 Junsong Lu
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

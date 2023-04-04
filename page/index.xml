@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Junsong Lu</title>
+        <link>https://Junsong798.github.io/page/</link>
+        <description>Recent content in Pages on Junsong Lu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 04 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About Me</title>
+        <link>https://Junsong798.github.io/about-me/</link>
+        <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/about-me/</guid>
+        <description>&lt;figure&gt;&lt;img src=&#34;./bg.jpg&#34; width=&#34;100%&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;University of California San Diego, U.S. (2023.9 - )&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ph.D. in Experimental Psychology&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=jOyTedwAAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=ao&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Lin Chujun&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Chinese University of Hong Kong, Shenzhen, China (2018.9 - 2020.7)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;M.S. in Applied Psychology, GPA: 3.864 (rank: 1/27)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?hl=zh-CN&amp;amp;user=oO3kAtQAAAAJ&amp;amp;view_op=list_works&amp;amp;sortby=pubdate&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WANG Xiaotian&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Highlights&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Outstanding Graduate 2020&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Academic Excellence Award 2020&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Academic Scholarship Gold Award 2019&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Northeastern University, China (2014.10 - 2018.6)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;B.S. in Metallurgy, GPA: 3.511 (rank: 36/255)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. MENG Xiangning, Prof. CAO Zhuokun&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Highlights&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Postgraduate Recommendation&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Published two mathematical modeling patents; one was sold at a price of 150,000RMB&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Academic Scholarship Award (Class C) 2015, 2016, 2017&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;work-experience-2019-2023&#34;&gt;Work Experience (2019-2023)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Project Associate: Department of Applied Social Sciences, The Hong Kong Polytechnic University (2022.8-)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=SLEM6QMAAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=sra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WU Yin&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generate an experimental program that could provide feedback to participants and repeat trials with no responses. Blended chemical reagents to prepare the olfactory stimuli consisted of androstadienone and propylene glycol. Administered hormones to participants and fitted Bayesian drift-diffusion models using choice and response time data&lt;/li&gt;
+&lt;li&gt;Modeled the generative process of self-esteem using reinforcement-learning model, kernel regression, and Gaussian process model under the hierarchical Bayesian framework&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Visiting Student: Affiliated Mental Health Center, Zhejiang University School of Medicine (2021.7-2021.9)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. LI Tao&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Predicted suicidal behavior in adolescents using interpretable machine learning (e.g., XGBoost)&lt;/li&gt;
+&lt;li&gt;Calculated Shapley values of suicide-associated factors and revealed the impact of risk factors on individual predictions&lt;/li&gt;
+&lt;li&gt;Estimated a mixed graphical model to examine the developmental trajectory of suicidal behavior&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Research Assistant: The Chinese University of Hong Kong, Shenzhen (2020.7 - 2021.8)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. WANG Xiaotian&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build a team workflow using a set of tools like zotero, slack, trello, and git/Github&lt;/li&gt;
+&lt;li&gt;Prepare manuscripts, analyze data, and conduct behavioral experiments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Visiting Graduate of &lt;a class=&#34;link&#34; href=&#34;http://www.sribd.cn/index.php/en/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Shenzhen Research Institute of Big Data (SRIBD)&lt;/a&gt;, (2019.3 - 2020.5, 2020.7)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Dr. ZHOU Jianjun, Prof. WANG Xiaotian, Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=RGoypN4AAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=sra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ZHANG Kun (CMU)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed and conducted computer-based experiments&lt;/li&gt;
+&lt;li&gt;Analyzed scores on the Internet Gaming Disorder Scale through Item Response Theory to obtain the typical disorder symptoms of CUHK(SZ) students&lt;/li&gt;
+&lt;li&gt;Using machine learning and causal inference algorithms (e.g., PC, FCI, and LiNGAM) to recover the antecedents and ramifications of gaming disorder and self-control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;research-projects&#34;&gt;Research Projects&lt;/h3&gt;
+&lt;h4 id=&#34;publications&#34;&gt;Publications&lt;/h4&gt;
+&lt;p&gt;Wang, X.T.*, Wang, P.*, Lu, J., Zhou, J., Li, G., &amp;amp; Garelik, S. &lt;a class=&#34;link&#34; href=&#34;https://iaap-journals.onlinelibrary.wiley.com/doi/full/10.1111/aphw.12350?casa_token=AmkO-1cBxv4AAAAA%3AFJHHEGgnEIuTNnL_lp7QmqACmcjHY9w-sToH8XB06-EgTAX_87kpwcF0R24AGwtcI-6GxI3kYuNpLz75&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Episodic Future Thinking and Anticipatory Emotions: Effects on Delay Discounting and Preventive Behaviors During COVID-19.&lt;/a&gt; &lt;em&gt;Applied Psychology: Health and Well-Being, 14&lt;/em&gt;(3), 842-861.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We examined the effects of anticipatory emotions induced by episodic future-thinking on the basic decision-process of delay discounting and preventive behaviors during the most stringent COVID-19 ‘lockdown’ period in China. We define anticipatory emotions as any discrete emotions induced from anticipating decision outcomes and felt during decision-making. In an online study conducted with healthy volunteers, anticipatory emotions were induced and appraised by asking participants to rate various emotions they feel when thinking they may be infected by COVID-19 (N = 246). The participants in the control group reported their present emotions during the COVID-19 pandemic (N = 245). Compared with the control group, the participants in the anticipatory-emotion group had a higher future-oriented preference for monetary rewards, with a significantly lower delay-discounting rate. These participants also had a higher intention to engage in proactive, preventive behaviors. The likelihood estimate of being infected by COVID-19 mediated these effects. Moreover, anticipatory disgust increased the preference for lager-and-later rewards. Anticipatory emotions induced by future-thinking guide fast and rational decision-making in a health crisis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lu, J.*, Lu, Q.*, &amp;amp; Lu, L. &lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-328X/12/3/63&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Differential Effects of Fundamental and Longitudinal Life-History Trade-Offs on Delay Discounting: An Evolutionary Framework.&lt;/a&gt; &lt;em&gt;Behavioral Sciences, 12&lt;/em&gt;(3), 63.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We synthesized life history theory and the antagonistic pleiotropy hypothesis to form an integrative framework for understanding delay discounting (DD). We distinguished between fundamental and longitudinal life history trade-offs to explain individual and age differences of DD. Fundamental life history trade-offs are characterized by life history strategies (LHS), describing how individuals adjust reproductive timing according to childhood environments, while longitudinal life history trade-offs characterize how individuals make trade-offs between early vs. late life reproduction as a function of age. Results of a life-span sample (242 Chinese participants) supported several theoretical predictions: (a) slower LHS predicted lower DD; (b) the relationship between chronological age and DD was U-shaped; (c) the effects of age and LHS were differential. Mechanisms underlying fundamental and longitudinal trade-offs were explored. Regarding fundamental trade-offs, LHS mediated the effect of childhood environment on DD. Regarding longitudinal trade-offs, the U-shaped relationship was more evident between physical age and DD: older adults who were in poorer physical health felt being older and exhibited higher DD. Neither time perspective nor anticipatory time perception mediated the effect of life history trade-offs. We concluded that DD was a product of two distinct life history trade-offs, reflecting both the trait-like quality and age-related development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Samore, T. *, Fessler, D. M., Sparks, A. M., Holbrook, C., Aaroe, L., Baeza, C. G., &amp;hellip; &amp;amp; Wang, X. T. (accepted) &lt;a class=&#34;link&#34; href=&#34;https://psyarxiv.com/mduw8/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Greater Traditionalism Predicts COVID-19 Precautionary Behaviors Across 27 Societies&lt;/a&gt; &lt;em&gt;Scientific Reports&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;People vary in the extent to which they embrace their society’s traditions, impacting a range of social and political phenomena. People also vary in the degree to which they perceive disparate dangers as salient and necessitating a response. Over evolutionary time, traditions likely regularly offered direct and indirect avenues for addressing hazards; consequently, via multiple possible pathways, orientations toward tradition and toward danger may have become associated. Emerging research documents connections between individual differences in traditionalism and variation in threat responsivity in general, and pathogen-avoidance motivations in particular. Importantly, because threat-mitigating behaviors can conflict with competing priorities, the precise associations between traditionalism and pathogen avoidance likely depend on contextually contingent costs and benefits. The COVID-19 pandemic requires individuals to make decisions about consequential and costly pathogen-avoidance behaviors that can clash with other priorities. The pandemic therefore provides a real-world setting in which to test the posited relationship between traditionalism and pathogen avoidance across socio-political contexts. Across 27 societies (N = 7,844), we find that costly COVID-19-avoidance behaviors positively correlate with greater endorsement of traditional norms and values in a majority of countries. Accounting for the conflict that arises in some societies between public health precautions and competing priorities, such as the exercise of personal liberties, reveals a consistent relationship between traditionalism and COVID-19 precautions across an even wider range of social and cultural contexts. These findings support the thesis that traditionalism is associated with an enhanced tendency to attend to hazards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;manuscript-under-review&#34;&gt;Manuscript Under Review&lt;/h4&gt;
+&lt;p&gt;Lu, J., Yao, J., Zhou, Z., &amp;amp; Wang, X.T.* Psychological Bulletin&lt;/p&gt;
+&lt;h4 id=&#34;manuscript-under-preparation&#34;&gt;Manuscript Under Preparation&lt;/h4&gt;
+&lt;p&gt;Lu, J.* The Signaling Effects of Blood Glucose and Appetitive Stimuli on Delay Discounting: A Meta-Analysis&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Studies have shown that people are sensitive to resource cues which signal body-energy budgets or resource availability. These signals shift their preferences adaptively when making intertemporal choices between a smaller but immediate reward and a larger but delayed alternative. Although the results of recent studies are heterogeneous, there has been no article to date summarizing the effect of different types of resource cues on preference in intertemporal choice. Through a meta-analytic approach, we examined the putative signaling effects of two types of resource cues, blood glucose and appetitive stimuli, on delay discounting which gauges the preference for intertemporal decision-making. Forty-four effect sizes extracted from 26 articles indicated that high levels of blood glucose (e.g., feeling satiated or less hungry) decrease delay discounting (&lt;em&gt;d&lt;/em&gt; = 0.26, 95% CI [0.06, 0.46]) while exposure to appetitive stimuli increases delay discounting (&lt;em&gt;d&lt;/em&gt; = -0.28, 95% CI [-0.51, -0.05]). In addition, the effect of blood glucose was moderated by the type of reward, showing that the signaling effect on delay discounting was stronger for food in contrast to nonfood rewards like money. Overall, the results suggest that both internal signals and external cues about resource situations serve as forecasting signals for regulating resource budgets. Furthermore, the signaling effect is domain-specific, with its magnitude dependent on the relevance of rewards to individuals’ goals of resource acquisition and conservation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wang, X.T.*, Lu, J., &amp;amp; Garelik, S. Implicit and Explicit Leadership Perception Through the Lens of the 2016 Presidential Election&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Previous studies suggest that intuitive perception from a glance of candidates’ faces can accurately predict mock electoral outcomes. Would these findings hold in real world decision-making? Before and after the 2016 American presidential election, we examined implicit and explicit perceptions about candidates in an experiment and the actual election. The 2016 election marked the first time in American history that a woman ran for President of the United States as a major political party candidate. Thus, Gender stereotyping and sexism became inevitable issues that directly confronted all voters. We compared the facial image-based ratings of leadership and likability in the explicit and implicit conditions pre-election (Study 1) and post-election (Study 2). In the explicit condition, participants correctly identified the target candidate in a morphed composite but failed to identify the candidate in the implicit rating condition. The results showed that explicit instead of implicit leadership ratings accurately predicted the electoral choice of participants, indicating significant biases from mere face-based preferences due to additional effects of top-down expectations. The implicit-to-explicit rating reduction was more evident for the Clinton composites than the Trump composites among participants holding a neutral political stance. In contrast, there were no overall differences in leadership and likability ratings between male and female composites of ordinary people. Together, these results suggest a possible gender stereotyping against female politicians among American voters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lu, J., Jin, Y., Liang, S., &amp;amp; Li, T.* Screening and Explaining Suicide-Associated Factors in Adolescents Using Interpretable Machine Learning and Network Analysis: a Cross-Sectional Study&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Background:&lt;/strong&gt; Suicide-associated factors in adolescents were typically examined in an isolated manner and less is known about how numerous factors interplay and contribute to suicidal behaviors. From both a local and global perspective, we sought to identify and explain important suicidal factors using machine learning and network analysis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Methods:&lt;/strong&gt; A total of 68071 university students were recruited from Sep 2016 to Sep 2020 in China. Participants reported lifetime nonfatal suicidal thoughts and behaviors on three categories: suicide ideation, plan, and attempt.Thirty-six suicide-associated factors of psychopathology, family environment, life event, and stigma were assessed. We first used Shapley additive explanations to provide local interpretations for individual factors; then, factors are organized in a mixed graphical model to form a global understanding of their interplay.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Findings:&lt;/strong&gt; Local explanations indicated psychoticism and depression severity were the most important factors for suicide ideation. In contrast, paranoid ideation has the strongest association with suicide plan and attempt, and neglect was particularly important for predicting suicide attempts. For a global understanding, a hierarchical structure emerged: family environment and life events acted as antecedents of more proximal psychopathology factors, with family environment factors retain their unique effects. Centrality indices highlighted the importance of subjective socioeconomic status and education.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interpretation:&lt;/strong&gt; The results highlighted the proximity of psychopathology factors in causing suicidal behaviors. The global network structures suggested that suicidal behavior is influenced by co-occurring factors in a hierarchical structure. A proper prevention strategy should take account the hierarchical structure and unique trajectories of factors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;skills--hobbies&#34;&gt;Skills &amp;amp; Hobbies&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Software Operation&lt;/strong&gt; : R (base &amp;amp; tidyverse), Stan (Bayesian modeling), Python, NetLogo (agent-based modeling), PsychoPy, Mplus, MATLAB, Citespace (scientometrics)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Language&lt;/strong&gt;: Chinese (native), English (TOEFL: 107)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hobbies&lt;/strong&gt;: Reading &amp;amp; Writing, Chinese Martial Art (under the supervision of the 4th inheritor of Xingyiquan 形意拳), Painting (National Second Prize), Table Tennis&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://Junsong798.github.io/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://Junsong798.github.io/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/links/</guid>
+        <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
+&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ts-logo-128.jpg&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://Junsong798.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

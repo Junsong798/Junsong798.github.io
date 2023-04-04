@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>统计学 on Junsong Lu</title>
+        <link>https://Junsong798.github.io/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/</link>
+        <description>Recent content in 统计学 on Junsong Lu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>重复测量设计中的效应量</title>
+        <link>https://Junsong798.github.io/p/effect-size-metric/</link>
+        <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/p/effect-size-metric/</guid>
+        <description>&lt;img src="https://Junsong798.github.io/p/effect-size-metric/fig1.jpeg" alt="Featured image of post 重复测量设计中的效应量" /&gt;&lt;h2 id=&#34;两种效应量量纲&#34;&gt;两种效应量量纲&lt;/h2&gt;
+&lt;p&gt;在新的元分析中，发现不少实验是within-subject design，时隔一年多，不少计算细节已经记得不清楚，比如如何统一不同scaling下效应量的量纲，如何选择量纲，以及不同量纲之间sampling variance如何计算。回忆2021年4月15号的小组会议。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;21点多开完会，想起老师下午给了我一袋零食，准备吃一口，一看生产日期&amp;hellip;.2019.10，保质期365天。原来老师是想毒死我。&lt;/p&gt;
+&lt;p&gt;晚上的会议一上来我就让小姚讲一讲d效应量的两种scaling，以及不同学者在面对paired t test时公式的等价性和假定。当然，简单看了看几篇统计论文后，我大概搞清楚了一件事情，几种效应量，重复测量与独立测量的方法，必须满足复合对称性（compound symmetry）才能在标度上等价。以及，我还清楚，Borenstein的重复测量效应量，基于方差齐性假定。另外，Morris和Borenstein的公式似乎是等价的，只不过差一个转换。&lt;/p&gt;
+&lt;p&gt;小姚同学上来就纠正我，两者定义似乎分母差了一个根式，于是我当场短路。小匡同学直接挪过黑板做了公式的推导，速度过快以至于我差点没看懂，全组8个同学只有我们三个在讨论，其他同学逐渐淡出背景。最后的结论是，Morris和Borenstein都假定了方差齐性，但是其相关系数的近似其实是严格从t效应量中推导得出，因此并不是近似，而是要求重复测量下要么知道前后测，要么知道相关和差值的标准差才能计算。后者不需要假定方差齐性，假定齐性时两者等价。&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;另外两个问题极为有趣，即partial eta square如何转换为Fisher&amp;rsquo;s Z, 我和小姚表示一脸懵逼。小匡说，直接对partial eta square开根号得到Pearson&amp;rsquo;s r，再转z。我反驳说，此时的eta square严格等价为partial correlation，开根后不严格等价，小姚学弟表示赞同。然后小匡推了一个partial correlation的公式，说现有论文信息不足，基本只能近似，许多在线网站的运算逻辑都是如此。我表示大家统计学得太好，不如开发个R包，吊打世界算了。&lt;/p&gt;
+&lt;p&gt;最后的问题是beta coefficient向z的转换，Peterson和Brown的模拟研究表明，r = β + 0.05λ。其中λ取决于β正负号。我提出，在一篇人类学期刊中，我用β近似的相关极大，而且β本身大于1很多，虽然在强烈的multicollinearity的情况下这是可能的。小匡立即给出了用β近似X和Y之间covariance的严格推导，并指出其不可行性。我则指出这就是为什么很多回归会有suppression effect，因为第一个β的效应被其他变量的系数所抵消。极端情况下，这种近似方法会有偏差。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首要明确的一点，现有心理学大部分元分析在method部分并没有强调效应量的scaling。实际上，大家都心照不宣地采用了Jacob Cohen定义的效应量，即Cohen&amp;rsquo;s d的scaling。这个scaling被定义为independent-groups effect size，即常见的被试间设计得到的效应量。这个scaling也同理拓展到r family效应量上，比如point-biserial correlation。&lt;/p&gt;
+&lt;p&gt;计算Cohen&amp;rsquo;s d的方法是，由给定的t统计量剥离样本量得到。一个简单的例子，假定homogeneity of variance以及balanced design，公式为：&lt;/p&gt;
+&lt;p&gt;$t = d * \sqrt[]{\frac{n}{2}}$&lt;/p&gt;
+&lt;p&gt;此时，效应量$d$的公式为：&lt;/p&gt;
+&lt;p&gt;$\frac{\bar{X_1}-\bar{X_2}}{s_p}$&lt;/p&gt;
+&lt;p&gt;但如果是前后侧的被试内设计，HOV假定下得到的t统计量（paired t）实际上分解为：&lt;/p&gt;
+&lt;p&gt;$t=\frac{\bar{X_1}-\bar{X_2}}{s}*\sqrt{n} *\sqrt{\frac{1}{2(1-r)}}$&lt;/p&gt;
+&lt;p&gt;剥离样本量后，得到的$d$为：&lt;/p&gt;
+&lt;p&gt;$d=\frac{\bar{X_1}-\bar{X_2}}{s} *\sqrt{\frac{1}{2(1-r)}}$&lt;/p&gt;
+&lt;p&gt;注意这里为什么是去除$\sqrt{n}$而不是$\sqrt{n/2}$，因为paired t test和independent t test是两种不同的检验，前者本质上是单样本检验，而后者是双样本检验。对单样本检验，中心统计量$\delta$和效应量的关系为：&lt;/p&gt;
+&lt;p&gt;$\delta = d * \sqrt{n}$&lt;/p&gt;
+&lt;p&gt;这里依然满足导出$d$时，效应量的含义是“两个总体均值相差的标准差的个数”。虽然看起来两种t统计量还原出的$d$都是均值之间差了几个标准差，但是由于单双侧检验在标准差的scaling上不同，导致了两个效应量scaling的不同。对independent t来说，其标准差是raw score的标准差，比如实验组因变量观测值的标准差。而paired t的标准差是分数差值的标准差：&lt;/p&gt;
+&lt;p&gt;$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}$&lt;/p&gt;
+&lt;p&gt;因此，对paired t得出的$d$，应该解释为：相对于0点，平均改变了$d$个标准差，即：&lt;/p&gt;
+&lt;p&gt;$d=\frac{\bar{X_1}-\bar{X_2}}{s} *\sqrt{\frac{1}{2(1-r)}}=\frac{\bar{X_1}-\bar{X_2}}{S_{D}}$&lt;/p&gt;
+&lt;p&gt;如果上述式子不明显，参考以下步骤，即可得知差值的标准差和raw score的标准差的关系：&lt;/p&gt;
+&lt;p&gt;$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2&lt;em&gt;r&lt;/em&gt;s_1*s_2}{n}}}$&lt;/p&gt;
+&lt;p&gt;如果HOV满足，则：&lt;/p&gt;
+&lt;p&gt;$t_{RM}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2&lt;em&gt;r&lt;/em&gt;s_1*s_2}{n}}}=\frac{\bar{D}}{\sqrt{\frac{2s^2(1-r)}{n}}}$&lt;/p&gt;
+&lt;p&gt;从而得到两种标准差的转换公式：&lt;/p&gt;
+&lt;p&gt;$S_{D}=S\sqrt{2(1-r)}$&lt;/p&gt;
+&lt;p&gt;同理，得到效应量两种量纲的转换公式：&lt;/p&gt;
+&lt;p&gt;$d_{RM}=d_{IG}/\sqrt{2(1-r)}$&lt;/p&gt;
+&lt;h2 id=&#34;效应量的计算&#34;&gt;效应量的计算&lt;/h2&gt;
+&lt;p&gt;最常见的情况，由t统计量导出。&lt;/p&gt;
+&lt;p&gt;对independent t test，更一般的情况，如不平衡设计，那么可以得到：&lt;/p&gt;
+&lt;p&gt;$d = t * \sqrt[]{\frac{n_1+n_2}{n_1n_2}}$&lt;/p&gt;
+&lt;p&gt;对paired t test，如上部分所述，有：&lt;/p&gt;
+&lt;p&gt;$d = \frac{t} {\sqrt{n}}$&lt;/p&gt;
+&lt;p&gt;另一种情况，已知两组的mean和sd，估计效应量。对independent t，可以假定HOV计算出t，再计算$d$，但对paired t而言，需要额外知道两次观测的相关系数。&lt;/p&gt;
+&lt;p&gt;根据paired t的公式，在已知前后侧标准差，差值的标准差时，可以严格计算相关系数：&lt;/p&gt;
+&lt;p&gt;$r = \frac{SD_{pre}^2+SD_{post}^2-SD_{D}^2}{2SD_{pre}SD_{post}}$&lt;/p&gt;
+&lt;p&gt;若前后侧不知道，那么假定前后侧方差齐性，用联合总体标准差估计即可，得到：&lt;/p&gt;
+&lt;p&gt;$r = 1-\frac{SD_{D}^2}{2SD_{pooled}^2}$&lt;/p&gt;
+&lt;p&gt;然而，研究往往不会报告差值的标准差，所以需要进行计算：&lt;/p&gt;
+&lt;p&gt;$SD_{D}^2=\frac{n(M_{post}-M_{pre}^2)}{t^2}$&lt;/p&gt;
+&lt;p&gt;得到差值的标准差后，再代入上述的两个公式，即可得到r。但更常见的，如果前后侧标准差也没报告，往往需要元分析的作者假定一个相关系数，比如0.5，才能继续计算效应量。&lt;/p&gt;
+&lt;h2 id=&#34;效应量的抽样误差&#34;&gt;效应量的抽样误差&lt;/h2&gt;
+&lt;p&gt;效应量的sampling variance用于计算单个研究的权重，以此进行元分析的加权。对被试间设计，效应量的抽样误差取决于样本量和效应量本身，其近似公式为：&lt;/p&gt;
+&lt;p&gt;$V_d=\frac{n_1+n_2}{n_1n_2}+\frac{d^2}{2(n_1+n_2)}$&lt;/p&gt;
+&lt;p&gt;推导过程见&lt;a class=&#34;link&#34; href=&#34;https://stats.stackexchange.com/questions/144084/variance-of-cohens-d-statistic&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cross validated&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;而对配对样本，除了样本量，抽样误差还取决于匹配情况，如相关系数的大小。采用raw score作为效应量scaling时，可以用Morris和Deshon提出的通用转化公式：&lt;/p&gt;
+&lt;p&gt;$\sigma_{e_i}^2=\frac{A^2}{\tilde{n}}\frac{df}{df-2}(1+\frac{\tilde{n}}{A^2}\sigma_{&lt;em&gt;}^2)-\frac{\delta_{&lt;/em&gt;}^2}{c^2}$&lt;/p&gt;
+&lt;p&gt;其中df为对应设计的自由度，A代表两种效应量之间的转换公式，如果用raw score scaling，则A为：&lt;/p&gt;
+&lt;p&gt;$A=\sqrt{2(1-p)}$&lt;/p&gt;
+&lt;p&gt;而$\tilde{n}$为一个与样本量有关的系数，类似有效样本量。如果是被试间设计，则：&lt;/p&gt;
+&lt;p&gt;$\tilde{n}=\frac{n_1n_2}{n_1+n_2}$&lt;/p&gt;
+&lt;p&gt;如果是匹配设计，则等于样本数：&lt;/p&gt;
+&lt;p&gt;$\tilde{n}=n$&lt;/p&gt;
+&lt;p&gt;此外，c为一个与自由度有关的函数，也是用来矫正$d$的大小的函数：&lt;/p&gt;
+&lt;p&gt;$c(df) = 1 - \frac{3}{4df-1}$&lt;/p&gt;
+&lt;p&gt;因此，假如一个研究是被试内设计，而元分析的scaling是raw score，那么首先计算出$d_{RM}$并转换为raw score下的$d_{IG}$，然后用以下公式计算抽样误差：&lt;/p&gt;
+&lt;p&gt;$\sigma_{e_i}^2=\frac{2(1-r)}{n}\frac{n-1}{n-3}(1+\frac{n}{2(1-r)}d_{IG}^2)-\frac{d_{IG}^2}{c^2}$&lt;/p&gt;
+&lt;h2 id=&#34;效应量标度的选择&#34;&gt;效应量标度的选择&lt;/h2&gt;
+&lt;p&gt;效应量的scaling取决于研究者希望回答的问题。如果一个元分析希望知道一种实验处理的组间差异——处理效应的差异是否存在，用raw score metric更好。如果研究者关心的是在一系列successive trials间被试自身的变化，那么change score metric更好。&lt;/p&gt;
+&lt;p&gt;@MorrisImpulsivitymediatingfactor2020&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>囫囵吞枣之现代稳健估计方法</title>
+        <link>https://Junsong798.github.io/p/robust-statistics/</link>
+        <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/p/robust-statistics/</guid>
+        <description>&lt;img src="https://Junsong798.github.io/p/robust-statistics/fig_caption.jpg" alt="Featured image of post 囫囵吞枣之现代稳健估计方法" /&gt;&lt;p&gt;历经60多个小时，我设计的非线性元分析方法模拟终于结束，在这半个月中，快速扫读了不少现代统计的教材和论文，收获颇丰，简单谈谈感想。&lt;/p&gt;
+&lt;p&gt;在心理学人中间，流传着这样一句话：F检验，或者ANOVA，是稳健的。比如，我向无数学弟学妹强推的纽大心理学教授写的《Explaining psychological statistics》中就强调了这一点。稳健，或者鲁棒性，数学定义繁多，心理学人常常理解为对正态假定的偏离不影响假设检验，姑且这么理解。&lt;/p&gt;
+&lt;p&gt;现实情况又如何呢？问题可以追溯到1960年，Tukey发表的一篇现代统计里程碑之作。在论文中，Tukey定义了mixed normal distribution，或者更带感情色彩的术语，contaminated distribution。他指出，目前基于均值的统计方法，即使仅仅small departure from normal，都会对假设检验造成灾难。Tukey的论文并没有很快对应用统计产生影响，因为时代背景下，缺乏特定的统计理论和工具。但这篇论文成为了后来研究的催化剂，使得Huber和Hampel两位后来的领域奠基人开始着手于稳健理论的开发。实际上，这并不是对正态假定的第一次挑战。早在1954年，Box就指出，当两个抽样群体来自异方差的两个正态分布，会对Type I error的概率产生极大影响。但因其论文数学繁杂，并没有让太多统计学家认识到基于正态假设统计方法的弊端。接着，1972年，心理学人再熟悉不过的统计学家Glass，也就是meta-analysis的创始人，与其同事发表论文，阐述了经典统计方法，t test和ANOVA，在异方差下的不稳健性，并建议将其“废除”（abandon）。半个世纪后，稳健统计得到长足发展，并使得现代方法与基于正态假定的统计检验在诸多表现上差距巨大。然而，他们并没有在社会科学研究中占据高地，原因有三：&lt;/p&gt;
+&lt;p&gt;第一个原因来自统计领域，当时缺乏稳健性理论和对稳健性的系统定义，进而是对随机抽样下，对总体统计量的有效性更好的推断方法尚为萌芽阶段。这使得整个领域发展周期更长，如果把一个科研领域分解为范式批判，范式转移，范式建立，再到应用，目前的稳健统计发展还没有到达最后的阶段。&lt;/p&gt;
+&lt;p&gt;其二，20世纪后半叶，更快运算速度的计算机开始普及，为重复抽样和建模提供了便利，极大重塑了统计学领域。统计学家们这才发现，19世纪的统计学在时代洪流中只能作为前人的历史游戏而存在。&lt;/p&gt;
+&lt;p&gt;最后的问题在于统计领域和社会科学之间的沟通桥梁。现代统计的数学极为繁琐，并非接受常规研究方法训练的心理学研究者能轻松理解，加上一些社会科学，以心理学特为尤甚，常常不为学生设计专门的统计学课程，在教学过程中不讲授matrix calculus和数理统计基础，使得统计退化为一种不存在思考的固有程序。&lt;/p&gt;
+&lt;p&gt;如果能在课堂上普及传统方法的弊端（不仅仅是非正态性的影响），那么对新方法的探究和应用就会变得刻不容缓。以下先探讨两个最简单，也是最容易在心理学研究中遇到的问题，第一个讲混合正态分布对假设检验的影响，第二个讲用不同稳健性定义来看OLS estimator，会有哪些弊端。&lt;/p&gt;
+&lt;p&gt;混合正态分布，可以理解为一种边缘分布。假设随机变量X服从参数分布F，而F具有参数θ，服从某一种分布G（潜变量分布，未观测到的分布）。所以，可以直观地把X的分布理解为X和θ联合分布的积分，即一种边缘分布。注意，这个概念等价于不同正态分布的叠加，此时结果往往不是正态分布。切勿将其理解为正态随机变量的叠加，其结果为正态分布。&lt;/p&gt;
+&lt;p&gt;混合分布对假设检验的直接影响是可能大幅度提高样本均值标准误，并大幅度削弱power。考虑这样的情况，一个心理学家测量心理变量X，但其抽样的总体是被污染的。他假定所有样本都没有精神分裂症，且总体服从N(0,1^2), 但该总体中存在10%的患者，在X上服从N(0, 10^2). 此时的混合分布具有长尾且不服从正态，同时将方差扩大到原先的10.9倍。这使得凡是基于标准差的统计量，比如标准误，受到大幅影响，进而巨幅降低power。更糟糕的是，即使用于检验的两个独立样本都来自钟形曲线，且均值方差相等，其概率密度函数依然可以极大偏离正态分布。这使得基于总体正态分布的检验方法，如小样本时的t分布，在假设检验时面临灾难。&lt;/p&gt;
+&lt;p&gt;回到心理学，这个问题有多大可能出现？心理学家argue道，CLT中心极限定理告诉我们，大量独立随机变量均值适当标化后依分布收敛于正态（作为一种illustration，也见高尔顿的钉板和图灵奖得主Judea Pearl的教材）。而且只要样本够大，CLT保证了我们的样本的抽样分布，比如均值分布，渐进正态。&lt;/p&gt;
+&lt;p&gt;然而现实中的人类心理并非如此，三个方面。第一，CLT强调的是效应相加，而非相乘。现实世界中更常见的是代表相乘效应的幂律分布，比如马太效应，这可以体现在GPA的分布上（当然指数和对数变换是心理学研究者常常误用的统计方法，详情见各种feature engineering教材）。第二，心理学无法做到随机抽样，都是通过招募，或者是由实验设计决定了目标群体，比如肥胖症患者，各种心理疾病人群，发展心理学研究中的不同年龄组，不同经济地位组，使得正偏态更为常见。第三，我们很大程度上无法确定我们获得的分布是不是混合正态。&lt;/p&gt;
+&lt;p&gt;因此，在做最简单的统计检验，比如均值差异时，心理学研究者需要保证其统计方法具有至少两个优势：其一，因变量的集中趋势不应该对概率曲线敏感，比如median敏感性比mean差很多（这里的说法类似传统的qualitative robustness的定义，描述总体统计量的函数，在分布改变时等度连续。请参考Huber2009年和Wilcox2017年的教材）；其二，非正态和混合正态下，统计检验力和标准误不会比正态下有明显变化。&lt;/p&gt;
+&lt;p&gt;第二个例子是OLS回归，其后果可以引申到一切类似方法，比如积差相关，逐步、分层回归，路径分析。OLS的问题可以从quantitative robustness的定义看出。Quantitative robustness，一般用有限样本屈服点来界定（finite sample breakdown point）。假设存在混合分布，其中代表异常点的分布在抽样中的比重是c，则异常分布的均值趋于无穷时，让混合分布均值趋于无穷的最小c值，则为屈服点。更简单，更一般的表述是，一种统计量，可以容忍多少个异常值。以此视角，样本均值的屈服点是1，OLS回归的屈服点也是1. 因为任何一个无限大的异常值都可以影响参数估计。OLS的问题是，无论这个异常点来自于因变量（异常值），还是自变量（高杠杆点），都会有巨大影响。&lt;/p&gt;
+&lt;p&gt;从一种高屋建瓴的模型角度来理解，则更为清晰。我在给心理学本科生做家教的课件时，曾经写了一般线性模型之间等价关系的证明，即独立t，ANOVA，积差相关，回归，ANCOVA的检验在数学上等价，可惜并没有时间讲。如果从模型的角度，求解样本中心趋势，和求解回归，目标函数是一样的。对求解均值，最小化目标函数是样本的二阶中心矩，然后对其求一节条件，便是均值。而对OLS回归，形式完全不变。所以二者屈服点必为一致。 对二者来说，初始的目标函数都是一个二次函数，这使得异常值以指数对目标函数产生影响。&lt;/p&gt;
+&lt;p&gt;回头反思心理学领域的统计应用，为什么基于最小二乘的方法依然大行其道？因为大家从来不做模拟，不知道基于least squares的方法在估计SE和回归系数时有多么不准确。更多的，是因为社科领域重视解释而非预测，所以对总体参数的估计不太在意，只关注关系是否显著。但显著性恰恰是建立在准确的标准误之上的。&lt;/p&gt;
+&lt;p&gt;如上所述，对于OLS estimator的改进可能已经暗示得很明显了。如果目标函数是一个二次函数，那么只需要限制异常值对这个目标函数的影响速率，是不是就可以了？这就是最早M-estimator的由来。M估计量首先定义了一个可微函数，描述了集中趋势到其他点的距离，接着，对这个函数微分，令其期望等于0则可求解出该目标函数下的集中趋势。这也暗示着，均值和OLS是M估计量的一种特例。如果采用Huber&amp;rsquo;s \Psi，可以将目标函数改为一个中间是二次函数，两端是一次函数的曲线，这使得样本两端的点被适当降权，减弱了对目标函数的影响。&lt;/p&gt;
+&lt;p&gt;当然，如果这么来看，Huber提出的函数并没有提高屈服点，因为即使是线性增加，依然在该异常点趋于无穷时，有无穷大影响。这种早期函数也被后来的新方法取代，比如MM-estimator。&lt;/p&gt;
+&lt;p&gt;总结，现代稳健方法的发展似乎呈现如下趋势：首先是基于模拟找出传统方法的弊端，比如估计量的低power，低efficiency，进而寻找概念去描述这种不稳健特性。三个经典的概念是qualitative，quantitative，and infinitesimal robustness。基于这些概念，统计学家开始建立稳健统计理论并寻找稳健估计方法。因为当一种传统方法被稳健概念描述后，可以清晰地知道其问题缘由。比如，发现OLS的低屈服点，那么就去构造高屈服点的estimator；再比如，根据qualitative robustness，要求找到估计量在分布改变时等度连续，或者导数有界。概念之所以重要，是因为他是后续研究的思路，决定了方法如何建立。再之后，就是用计算机进行模拟实验，测试性能。得到稳定的结果后，封装程序，开枝散叶，把统计方法传播到其他应用领域。&lt;/p&gt;
+&lt;p&gt;所以，如果一名统计学门外汉（指没有上过专门的统计课，比如笔者这样的人）想要掌握一些基础的现代统计方法，建议按照上述领域发展的进程去学习概念，再用心理学或者其他领域的数据去实践。推荐的作者是Wilcox, Huber, Hampel, Hox等人的教材，tutorial和论文。尤其是Wilcox引用最高的书，可以花1-2天快速扫读一遍。先知道稳健性的数学定义，然后去看集中趋势和散度的估计方法，再到两样本检验，进而到更一般的回归。由于某些统计方法，如M-estimator回归的标准误是渐进方法，因此标准误并非所有情况下都会准确，所以也要搭配区间估计的稳健方法。最后，统计软件推荐R而非python，因为py相关的库还是太少了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/robust-statistics/robust2.png&#34;
+	width=&#34;950&#34;
+	height=&#34;546&#34;
+	srcset=&#34;https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;HC3标准误模拟结果&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;417px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>真实世界的心理模型</title>
+        <link>https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/</link>
+        <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/</guid>
+        <description>&lt;img src="https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/causal1.png" alt="Featured image of post 真实世界的心理模型" /&gt;&lt;p&gt;2020年12月21日，《自然》撤稿了一篇一作为女性科学家的论文——The association between early career informal mentorship in academic collaborations and junior author performance，原因是违反科学实验协议以及错误地解读数据。该论文声称学界逐渐增长的女性导师会破坏女性科学家职业生涯初期的影响力。论文一经发布便引来口诛笔伐，替代计量引用迅速飙升。抛开文章结论，我们不禁要问：是什么阻碍了研究者从数据中得到真相？以及何种情况下，数据才能为假设提供证据？&lt;/p&gt;
+&lt;p&gt;时间来到1973年，加州大学副院长Hammel发现，申请伯克利研究生的男生中，有44%被录取了，而女生录取率只有35%。然而，当Hammel对每个院系进一步分析时，却发现所有院系的录取都是女生更高。为了明辨事实，避免遭受性别歧视的控诉，Hammel找来了Bickel分析数据，后者在1984年拿到麦克阿瑟天才奖，但彼时不过是一名初出茅庐的统计研究者。Bickel一眼就认出了数据中的辛普森悖论——在总体和亚组层面，数据呈现出截然相反的结论。&lt;/p&gt;
+&lt;p&gt;1975年，Bickel和Hammel等人在《科学》发表论文“sex bias in graduate admissions: data from Berkeley”，用因果层面的解释给出了辛普森悖论的解法：在总体层面，女性申请者被拒绝的比率更高，是因为她们更倾向于申请更难录取的人文与社科学科。这一解法有其合理性，因为辛普森悖论中正确的结论取决于特定的研究问题和研究假设。在伯克利招生悖论中，性别以学院为中介，作用于录取结果（当时路径分析体系还未被统计界认可）。因此性别歧视的合理定义应为性别对录取结果的直接，而非总效应。我们知道，计算直接效应，需要控制中介，意味着对性别分层，在亚组内考虑结论。因此伯克利是清白的。&lt;/p&gt;
+&lt;p&gt;但是故事到这里远未结束。当时大名鼎鼎的统计学家，如今广泛应用的非参数ANOVA的提出者，Kruskal，给Bickel等人发了一封质疑信。在通信中，Kruskal用假象数据限制了Bickel的结论：如果一个大学有两个存在性别歧视的院系，他们都接受所有本州男性和外州女性的申请，但拒绝所有外州男性和本州女性，仍然可以得到与Bickel手头一样的数据。此时，真实存在的性别歧视不再为中介模型所求出，何解？套用因果推断的术语，变量“院系”和“录取结果”中再次打开了一条后门路径，经由院系到居住州，再到录取结果，而居住州是二者的共同因。当数据集中不包含“居住州”时，控制院系而不控制居住州，得到的性别效应依然不是直接效应，而是直接效应和后门路径的效应。&lt;/p&gt;
+&lt;p&gt;因为时代背景下，缺乏特定的数学工具，Bickel在回复中无力解释质疑。Kruskal的评论在今天看来依然一针见血，对心理学以及其他社科研究依然由重要意义：在协方差分析中，一个研究者应该控制哪些变量；在路径分析中，必须放入哪些变量？这个问题的答案，对结论的正确性有着决定性的意见。&lt;/p&gt;
+&lt;p&gt;实际上，每一个受过良好统计学训练的心理学研究生，都已经在课上学到了这些问题的回答：基于理论得出图结构假设，再用数据支持；同时，必须在路径分析中放入混淆变量以免极大程度影响路径系数等。问题在于，人们往往忽视了一点，即结论的可靠性，首要取决于先验的因果理论，其次才是数据——数据很蠢，不会自己告诉我们结论。而现实中，人们倾向于把理论研究的问题，归咎于统计问题。&lt;/p&gt;
+&lt;p&gt;1920年，赖特在PNAS上发表了一篇进化生物学上里程碑式的论文，论文中，他第一次采用了一种被称为路径图的结构，用于探究遗传因子对小鼠毛色变异的影响强度。其方法的依据是，通过理论勾勒出现实世界的因果关系，再求解变量之间相关性，从而得到因果性的结论。一年后，赖特系统地总结了他的方法，发表了一篇名为correlation and causation的论文。要知道，当时的统计学界，将因果视为伊甸园的苹果，唯恐避之不及。&lt;/p&gt;
+&lt;p&gt;纵观历史，科学的发展中充斥着霸权主义以及以温文尔雅为表象的野蛮行径。皮尔逊的徒孙Pearl立即对赖特的方法论回应，并在论文中指出：the basis of the method of path coefficients is faulty. 与此同时，当时学界的领袖Fisher也将赖特视为自己的敌人，崇尚简约的统计学——统计学是一种收集数据并按照固定程序分析的科学。时间悄然而逝，63年之后的1983年，93岁高龄的赖特再次被学术界推上风口浪尖，不得不再次提笔，在遗传学期刊上回应数学家们对路径分析的批评——在这之间，他的理论本应是发展壮大。&lt;/p&gt;
+&lt;p&gt;赖特的理论在今天看来为什么是合理的？因为路径分析要求研究者不能服从一种固定的程式，而是对特定的研究以图形的方式提出特定的因果关系——概念，再辅以真实世界的数据进行验证——经验，从而从不同的信息源对客观真理进行验证。而这种思想并未被大众所理解，这使得路径分析在20实际后半叶走向了分水岭，一方面是心理学家和社会学家们结合验证性因素分析将其发展为结构方程模型（SEM）。伴随着LISREL的诞生，数据分析由不同信息源的交叉验证沦为软件使用，人们不再过问数据背后的真相；一方面，经济学家们发展了联立方程模型，彻底舍弃了路径图，不再考虑先验的理论意义。&lt;/p&gt;
+&lt;p&gt;时至今日，因果已经不再是统计界的禁忌，因果已经完成了从哲学含义到数学定义的转变，并有了专门的研究方向。显赫的成果，有贝叶斯网之父Pearl的因果识别研究，有卡内基梅龙团队的因果搜寻，也有Rubin的潜在结果模型。在因果搜寻算法层面，总体呈现出三个方向：一种是90年代兴起，由CMU团队发展的条件独立算法，经典的是PC，以及有潜在共同因时的FCI算法；一种是基于数据全局结构发掘因果关系的GES算法；最后一类是基于特定残差假定的函数式因果模型，典型的方法有LiNGAM，并搭载了基于ICA，或者是回归的独立性判定方法。&lt;/p&gt;
+&lt;p&gt;我们不禁要问，既然因果已经完成数学化，那么为什么学界依然面临因果关系的困境？或者说，如果把一个形而上学问题数学化并用公式表述，且发现数据符合该数学形式，为什么依然说认识论无法回答本体论问题? 结论是，因为数据符不符合数学表达是根据假设检验决定的，中间的决策是基于统计学不是数学，而统计是对客观真理的推测，总有出错可能，所以不能给出形而上学问题的回答。抛开少数因果方向不可识别的几种情况，抛开时序变化因果关系，我们知道的是，不同的算法会有其固有缺陷。比如PC算法由于其按数据集顺序抓取变量计算条件独立，极端情况下受到数据集变量顺序影响；此外，PC还受潜在共同因影响、在小样本时不满足因果充要条件。另外，在统计决策的层面，我们会面临一二三类错误。至少，我们还会面临测量变量有噪声的情况，测量变量呈现出难以处理的偏态分布或者因为抽样不当导致的混合高斯分布。更根本的问题是，我们无法先验地判断数据更符合哪种模型的假设，从而无法解释方法之间输出的因果图的差异。一方面，这促进了因果学习领域百花齐放的局面，一方面，又将人们固有的“拿到数据，放下汲桶，真相俯拾可得”的白日梦推向覆灭。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
