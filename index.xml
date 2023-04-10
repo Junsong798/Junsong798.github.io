@@ -6,15 +6,25 @@
         <description>Recent content on Junsong Lu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 04 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>About</title>
         <link>https://Junsong798.github.io/about/</link>
-        <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
         
         <guid>https://Junsong798.github.io/about/</guid>
         <description>&lt;figure&gt;&lt;img src=&#34;./bg.jpg&#34; width=&#34;100%&#34;/&gt;
 &lt;/figure&gt;
 
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;research-statement&#34;&gt;Research Statement&lt;/h3&gt;
+&lt;p&gt;During my undergraduate studies, I developed an interest in psychology by reading books on cognitive science. As a result, my research interests were heavily influenced by some cognitive scientists, such as Keith Stanovich, Daniel Kahneman, and particularly Gerd Gigerenzer and Herbert A. Simon, whose research I found particularly impressive. Later, I became deeply interested in middle-level evolutionary biology theories, such as parental investment theory, life history theory, and the antagonistic pleiotropy hypothesis. I believe that evolutionary biology provides the most direct answers to questions about human nature. However, given the uniqueness of humans (e.g., the evolution of the cognitive niche), these theories sometimes require modifications to better explain human behavior.&lt;/p&gt;
+&lt;p&gt;My first research interest is in judgment and decision-making, social cognition, and computational modeling.&lt;/p&gt;
+&lt;p&gt;The second thread is in evolutionary biology, behavioral genetics, epigenetics, and genoeconomics.&lt;/p&gt;
+&lt;p&gt;The third line of inquiry is in cultural evolution, geographical ambiance, and agent-based modeling. As Herbert Simon noted in his book &lt;em&gt;The Sciences of the Artificial&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Human beings, viewed as behaving systems, are quite simple. The apparent complexity of our behavior over time is largely a reflection of the complexity of the environment in which we find ourselves.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;University of California San Diego, U.S. (2023.9 - )&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Ph.D. in Experimental Psychology&lt;/em&gt;&lt;/p&gt;
@@ -113,10 +123,21 @@
 &lt;/ul&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h3 id=&#34;skills--hobbies&#34;&gt;Skills &amp;amp; Hobbies&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Software Operation&lt;/strong&gt; : R (base &amp;amp; tidyverse), Stan (Bayesian modeling), Python, NetLogo (agent-based modeling), PsychoPy, Mplus, MATLAB, Citespace (scientometrics)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Language&lt;/strong&gt;: Chinese (native), English (TOEFL: 107)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Software Operation&lt;/strong&gt; : R (base &amp;amp; tidyverse), Stan (Bayesian modeling), Python, NetLogo (agent-based modeling), PsychoPy, Mplus, Citespace (scientometrics)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Language&lt;/strong&gt;: Chinese, English&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Hobbies&lt;/strong&gt;: Reading &amp;amp; Writing, Chinese Martial Art (under the supervision of the 4th inheritor of Xingyiquan 形意拳), Painting (National Second Prize), Table Tennis&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;my-story&#34;&gt;My Story&lt;/h3&gt;
+&lt;p&gt;As an engineering undergraduate, I stumbled upon the talent show &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/The_Brain_%28game_show%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;The Brain&lt;/em&gt;&lt;/a&gt;, which allowed people to display their exceptional brain power, including the ability to memorize a shuffled pack of 52 cards in 20 seconds. Dr. Kunlin Wei, a psychology professor at Peking University, served as a scientific judge on the show and introduced fundamental concepts underlying these prodigious feats, such as working memory and mental representation. This experience made a lasting impression on me about what psychology is and how interesting it can be.&lt;/p&gt;
+&lt;p&gt;Although I gleaned lessons from &lt;em&gt;The Brain&lt;/em&gt;, my curiosity about these mental skills did not lead to a passion for delving deeper into psychology. As a pragmatic engineering student striving for academic excellence, I was more captivated by the practical insights psychology offers into improving reading and memory performance. Hoping to utilize psychology to guide my daily work, I regarded myself as sitting at the top of the chain of command over my behavior. However, I was later surprised to find that humans are not entirely in control of their behavior. The metaphor proposed by Richard Dawkins haunted me—humans are vehicles of their genes, and human behavior reflects psychological predispositions that benefit their replication. This raised a crisis of autonomy for me because I could not find any rational justification for life if we were puppets of replicators. I arrived at the belief that the only way to initiate a rebellion against replicators and find meaning in the age of Darwin is to understand ourselves and the surrounding world. Only by answering the eternal questions of who we are and how environments shape human psychology will we discover the meaning of our existence.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Games Primates Play&lt;/em&gt; by Dario Maestripieri:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mitchell was on a quest to understand himself and the world around him. As a scholar, he used scientific and logical reasoning to examine and evaluate theories and discoveries produced by biologists, psychologists, historians, philosophers, and other researchers. His inquiry led him to conclude that evolutionary biology provides the most direct answers to questions about the self and human nature. In his book, he argued that many of our emotions, feelings, and thoughts reflect biological predispositions that help us survive and reproduce. He also wrote that many patterns in human history can be understood as the outcome of nepotistic cooperation among members of one’s own family or group and competition against members of other groups, and that similar social dynamics occur in other primates as well. When discussing the controversies that followed the publication in 1975 of Edward O. Wilson’s book Sociobiology: The New Synthesis, Mitchell bluntly stated: “The problem is not that sociobiology does not make sense. The problem is that sociobiology makes too much sense.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Satisfied with the way his scientific reasoning produced the knowledge and explanations he was looking for, Mitchell tried to use the same approach to search for a justification of knowledge-seeking in itself and, ultimately, of his own existence. He wanted to be objective at all costs and eliminate all sources of bias that might cloud his analysis, especially the psychological predispositions toward self-interest, survival and reproduction, and life in general. But after searching for and eliminating all of these subjective biases, he couldn’t find any rational justification for knowledge or life. So Mitchell concluded that, taken to its extreme, striving for objectivity ultimately leads to nihilism and rational self-destruction. In his own words: “Life is a prejudice that happens to be talented at perpetuating or replicating itself. To attempt to eliminate this source of bias is to open your mind to death. I cannot fully reconcile my understanding of the world with my existence in it. There is a conflict between the value of objectivity and the facts of my life.”&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         <item>
