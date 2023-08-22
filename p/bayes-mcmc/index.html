@@ -10,7 +10,7 @@
 <meta property='og:description' content='入门到入土'>
 <meta property='og:url' content='https://Junsong798.github.io/p/bayes-mcmc/'>
 <meta property='og:site_name' content='Junsong Lu'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2023-05-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-05-12T00:00:00&#43;00:00'/><meta property='og:image' content='https://Junsong798.github.io/p/bayes-mcmc/fig1.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2023-05-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-05-13T00:00:00&#43;00:00'/><meta property='og:image' content='https://Junsong798.github.io/p/bayes-mcmc/fig1.png' />
 <meta name="twitter:title" content="贝叶斯统计：Markov Chain Monte Carlo理论篇">
 <meta name="twitter:description" content="入门到入土"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Junsong798.github.io/p/bayes-mcmc/fig1.png' />
@@ -442,7 +442,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">May 12, 2023</time>
+                <time class="article-time--published">May 13, 2023</time>
             </div>
         
 
@@ -536,7 +536,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$</p>
 <p>注意本式中没有出现proposal distribution，因为算法存在一个假定，即目标分布对称：</p>
 <p>$$J_t(\theta_a|\theta_b) \equiv J_t(\theta_b|\theta_a)$$</p>
 <p>当目标分布对称时，任意两个点a,b之间向对方位置提出proposal的概率相等。此时t时刻$\theta$的分布为：</p>
-<p>$$\theta^{t}=\begin{cases} \theta^{*} \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$</p>
+<p>$$\theta^{t}=\begin{cases} \theta^{*} \ \ \ \  min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$</p>
 <p>如果proposal被接受，则移动到下一个点，否则停留在当前位置，并算作一次采样。其中，我们定义acceptance distribution为：</p>
 <p>$$A(\theta^{*}|\theta^{t-1})= min(r,1)$$</p>
 <p>一个案例是，一个politician要根据7个岛的人口确定造访各个岛屿的频率，但是他有觉得制定计划过于麻烦，所以采取了一个启发式。启发式如下：</p>
@@ -565,7 +565,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$</p>
 <p>使得上述式子，即细致平衡成立。下面给出具体证明，说明Metropolis-Hastings是有效的。</p>
 <p>首先明确定理Ergodic Theorem: 一个不可约的（irreducible），非周期性的（aperiodic），常返的（recurrent）马尔科夫链存在唯一的平稳分布。简单总结，不可约指的是在任何一个状态作为初始点，在后续的某个时刻都能抵达其他的所有状态或参数空间。一个不满足不可约性的马尔可夫链是令X等于非零整数，$J_s$随机给X加减2，这使得如果X的初始值是奇数，永远不可能得到偶数。实际抽样当然不希望存在这种特性。周期性指的是每k个循环才能访问某个状态，非周期性则没有此限制。一个值x常返说的是在有限时间内总能再次取回这个值。一般情况下，以常规proposal distribution $J$，比如normal，比如uniform构造的马尔科夫链常常能满足上述三个性质，从而具有唯一平稳分布。</p>
 <p>当马尔科夫链存在唯一平稳分布后，只需要证明目标分布是平稳分布即可。这里涉及的概念是可逆性（reversible）。可逆性定义为，如果一个马尔科夫链存在一个满足细致平衡的分布$\pi^*$，则认为该马尔科夫链是可逆的：</p>
-<p>$$\forall i,j, \ \pi^<em>_i\ P(\theta_i \rightarrow \theta_j)=\pi^</em>_j\ P(\theta_j \rightarrow \theta_i)$$</p>
+<p>$$\forall i,j, \ \pi^{<em>}_i\ P(\theta_i \rightarrow \theta_j)=\pi^{</em>}_j\ P(\theta_j \rightarrow \theta_i)$$</p>
 <p>结合定理：如果一个分布$\pi^*$是可逆的，则该分布是一个平稳分布。</p>
 <p>接下来证明，target distribution $p$是可逆的，满足细致平衡：</p>
 <p>假设在target distribution中，$p(\theta_j|y)≥p(\theta_i|y)$，则t-1时刻位处i，t时刻位于j的概率为：</p>
