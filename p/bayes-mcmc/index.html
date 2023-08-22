@@ -10,7 +10,7 @@
 <meta property='og:description' content='入门到入土'>
 <meta property='og:url' content='https://Junsong798.github.io/p/bayes-mcmc/'>
 <meta property='og:site_name' content='Junsong Lu'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2023-05-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-05-13T00:00:00&#43;00:00'/><meta property='og:image' content='https://Junsong798.github.io/p/bayes-mcmc/fig1.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2023-05-14T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-05-14T00:00:00&#43;00:00'/><meta property='og:image' content='https://Junsong798.github.io/p/bayes-mcmc/fig1.png' />
 <meta name="twitter:title" content="贝叶斯统计：Markov Chain Monte Carlo理论篇">
 <meta name="twitter:description" content="入门到入土"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Junsong798.github.io/p/bayes-mcmc/fig1.png' />
@@ -442,7 +442,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">May 13, 2023</time>
+                <time class="article-time--published">May 14, 2023</time>
             </div>
         
 
@@ -548,7 +548,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$</p>
 <p>实际中，Metropolis对proposal distribution对称性的要求会降低采样效率。这是因为它只能在某一点领域内提出proposal，自相关强（有效样本量低），而且移动到概率密度高的区域需要大量时间步。因此可以放宽这个假定。Metropolis-Hastings algorithm是Metropolis algorithm的特殊形式，即不需要满足：</p>
 <p>$$J_t(\theta_a|\theta_b) \equiv J_t(\theta_b|\theta_a)$$</p>
 <p>但为了保证访问各个参数空间的频率是等比于target distribution的，就需要对这个不对称性进行矫正，用非标化后验除以propose到某个参数空间的概率，这样使得最后的比率仍然反应了后验概率的比例：</p>
-<p>$$r = \frac{p(\theta^{<em>}|y)/J_t(\theta^{</em>}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^*)}$$</p>
+<p>$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})}$$</p>
 <p>则：</p>
 <p>$$\theta^{t}=\begin{cases} \theta^{*} \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$</p>
 <p>下面说明为什么Metropolis-Hastings算法有效。</p>
