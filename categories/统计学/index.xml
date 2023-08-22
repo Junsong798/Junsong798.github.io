@@ -72,13 +72,13 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;下面从最简单的Metropolis algorithm来看MCMC方法的工作原理。所谓metropolis algorithm，就是通过一个点（采样器）在样本空间随机游走，并记录走过的位置的抽样方法。通过不断抽样，再对抽出的样本进行统计，近似后验分布。首先明确几个概念。第一个是proposal distribution（$J$），指的是样本移动方案的分布，其规定了向各个参数空间移动的概率分布。第二个是target distribution（$\pi$），指的是需要还原的后验分布。&lt;/p&gt;
 &lt;p&gt;Metropolis algorithm表述如下：&lt;/p&gt;
 &lt;p&gt;给定一个参数初始值，在t = 1, 2, &amp;hellip;n时间步内，基于proposal distribution抽样一个新的proposal，即下一步可能移动到的position $\theta^{*}$，然后基于下式计算一个概率比值:&lt;/p&gt;
-&lt;p&gt;$$r = \frac{p(\theta^*|y)}{p(\theta^{t-1}|y)}$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^{*}|y)}{p(\theta^{t-1}|y)}$$&lt;/p&gt;
 &lt;p&gt;注意本式中没有出现proposal distribution，因为算法存在一个假定，即目标分布对称：&lt;/p&gt;
 &lt;p&gt;$$J_t(\theta_a|\theta_b) \equiv J_t(\theta_b|\theta_a)$$&lt;/p&gt;
 &lt;p&gt;当目标分布对称时，任意两个点a,b之间向对方位置提出proposal的概率相等。此时t时刻$\theta$的分布为：&lt;/p&gt;
-&lt;p&gt;$$\theta^t=\begin{cases} \theta^* \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;$$\theta^{t}=\begin{cases} \theta^{*} \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
 &lt;p&gt;如果proposal被接受，则移动到下一个点，否则停留在当前位置，并算作一次采样。其中，我们定义acceptance distribution为：&lt;/p&gt;
-&lt;p&gt;$$A(\theta^*|\theta^{t-1})= min(r,1)$$&lt;/p&gt;
+&lt;p&gt;$$A(\theta^{*}|\theta^{t-1})= min(r,1)$$&lt;/p&gt;
 &lt;p&gt;一个案例是，一个politician要根据7个岛的人口确定造访各个岛屿的频率，但是他有觉得制定计划过于麻烦，所以采取了一个启发式。启发式如下：&lt;/p&gt;
 &lt;p&gt;当处于某个岛屿θ时，抛硬币决定去左边θ-1还是右边的岛θ+1，根据min{p(θ-1)/p(θ), 1}或min{p(θ+1)/p(θ), 1}决定去留。如果proposed position的相对人口P比当前位置的P更大，则必定移动。p这里指的是相对人口，而在启发式中也仅仅是需要两个p的比值。&lt;/p&gt;
 &lt;p&gt;也就是说当我们的target distribution是一个后验分布p(θ)时，他与p(D|θ)p(θ)成比率。可见MCMC的好处就是不需要知道p(D)，也能进行抽样。而且抽出的样本符合后验分布。&lt;/p&gt;
@@ -88,9 +88,9 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;实际中，Metropolis对proposal distribution对称性的要求会降低采样效率。这是因为它只能在某一点领域内提出proposal，自相关强（有效样本量低），而且移动到概率密度高的区域需要大量时间步。因此可以放宽这个假定。Metropolis-Hastings algorithm是Metropolis algorithm的特殊形式，即不需要满足：&lt;/p&gt;
 &lt;p&gt;$$J_t(\theta_a|\theta_b) \equiv J_t(\theta_b|\theta_a)$$&lt;/p&gt;
 &lt;p&gt;但为了保证访问各个参数空间的频率是等比于target distribution的，就需要对这个不对称性进行矫正，用非标化后验除以propose到某个参数空间的概率，这样使得最后的比率仍然反应了后验概率的比例：&lt;/p&gt;
-&lt;p&gt;$$r = \frac{p(\theta^&lt;em&gt;|y)/J_t(\theta^&lt;/em&gt;|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^*)}$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^{&lt;em&gt;}|y)/J_t(\theta^{&lt;/em&gt;}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^*)}$$&lt;/p&gt;
 &lt;p&gt;则：&lt;/p&gt;
-&lt;p&gt;$$\theta^t=\begin{cases} \theta^* \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;$$\theta^{t}=\begin{cases} \theta^{*} \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
 &lt;p&gt;下面说明为什么Metropolis-Hastings算法有效。&lt;/p&gt;
 &lt;p&gt;总体证明思路是，在MCMC中，达成细致平衡（detailed balance）的分布是平稳分布（stationary distribution），而满足某些条件的马尔可夫链有唯一平稳分布，所以只需要证明目标分布（target distribution）能达成细致平衡即可。&lt;/p&gt;
 &lt;p&gt;先看细致平衡的条件：&lt;/p&gt;
@@ -121,13 +121,13 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;总结，所谓的证明就是从设计的反面说明目标分布能达成细致平衡。&lt;/p&gt;
 &lt;h3 id=&#34;gibbs-sampling&#34;&gt;Gibbs Sampling&lt;/h3&gt;
 &lt;p&gt;另一种Metropolis-Hastings Algorithm的特例是Gibbs sampling，将proposal distribution设置为一个条件分布，从而使得acceptance probability恒为1，提高采样速度。Gibbs sampling的proposal distribution如下：&lt;/p&gt;
-&lt;p&gt;$$J(\theta^&lt;em&gt;|\theta^{t-1})=\begin{cases} p(\theta^&lt;/em&gt;&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y) \ \ \ \ min(r, 1) \ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;$$J(\theta^{&lt;em&gt;}|\theta^{t-1})=\begin{cases} p(\theta^{&lt;/em&gt;}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y) \ \ \ \ min(r, 1) \ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
 &lt;p&gt;采样开始时，给定参数空间初始值，对每一个时间步，随机或者按顺序抽取一个参数$\theta_j$，计算给定数据y和其他参数$\theta_{-j}$时的条件概率并对其采样，得到新的proposal。这说明Gibbs sampling每次只更新一个参数。计算：&lt;/p&gt;
-&lt;p&gt;$$r = \frac{p(\theta^&lt;em&gt;|y)/J_t(\theta^&lt;/em&gt;|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^&lt;em&gt;)} \= \frac{p(\theta^&lt;/em&gt;|y)/p(\theta^*&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^{&lt;em&gt;}|y)/J_t(\theta^{&lt;/em&gt;}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^&lt;em&gt;)} \= \frac{p(\theta^{&lt;/em&gt;}|y)/p(\theta^{*}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}$$&lt;/p&gt;
 &lt;p&gt;又有：&lt;/p&gt;
-&lt;p&gt;$$\theta^* = (\theta^*&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j}) \ \theta^{t-1} = (\theta^{t-1}&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j})$$&lt;/p&gt;
+&lt;p&gt;$$\theta^{&lt;em&gt;} = (\theta^{&lt;/em&gt;}&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j}) \ \theta^{t-1} = (\theta^{t-1}&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j})$$&lt;/p&gt;
 &lt;p&gt;则：&lt;/p&gt;
-&lt;p&gt;$$r = \frac{p(\theta^&lt;em&gt;&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^&lt;/em&gt;&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)} \ = 1$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^{&lt;em&gt;}&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^{&lt;/em&gt;}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)} \ = 1$$&lt;/p&gt;
 &lt;h3 id=&#34;hamiltonian-monte-carlo-hmc&#34;&gt;Hamiltonian Monte Carlo (HMC)&lt;/h3&gt;
 &lt;p&gt;尝试从设计的角度来理解HMC，先介绍高维空间的几何特性。这种特性引出了一个概念，typical set，决定了sampler在空间中需要游走的位置。为了满足这种游走规则，利用Hamiltonian来制约MCMC的轨迹。最后讨论这种物理过程背后涉及一系列参数和对抽样的影响。&lt;/p&gt;
 &lt;h4 id=&#34;typical-set&#34;&gt;Typical Set&lt;/h4&gt;
@@ -185,8 +185,8 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;以上步骤重复L次，则得到更新后的q和p在相空间的位置，q*，p*。又令总时间为：&lt;/p&gt;
 &lt;p&gt;$$T = \epsilon * L$$&lt;/p&gt;
 &lt;p&gt;便可以用类似Metropolis-Hastings的transition probability来计算接受本次迭代proposal的概率：&lt;/p&gt;
-&lt;p&gt;$$r = \frac{\pi(q^&lt;em&gt;,p^&lt;/em&gt;)}{\pi(q^{T-1},p^{T-1})} \ = \frac{exp(-H(q^&lt;em&gt;,p^&lt;/em&gt;))}{exp(-H(q^{T-1},p^{T-1}))}$$&lt;/p&gt;
-&lt;p&gt;$$q^T=\begin{cases} q^* \ \ \ \ min(r, 1) \ q^{T-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{\pi(q^{&lt;em&gt;},p^{&lt;/em&gt;})}{\pi(q^{T-1},p^{T-1})} \ = \frac{exp(-H(q^{&lt;em&gt;},p^{&lt;/em&gt;}))}{exp(-H(q^{T-1},p^{T-1}))}$$&lt;/p&gt;
+&lt;p&gt;$$q^T=\begin{cases} q^{*} \ \ \ \ min(r, 1) \ q^{T-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
 &lt;p&gt;公式也基于细致平衡推导。由于能量守恒，理论上r总是接近于1，所以proposal必然accept。但由于leapfrog是一种近似，所以r并不总是等于1，这相当于对leapfrog integrator误差的校正。&lt;/p&gt;
 &lt;h4 id=&#34;hmc-algorithm-parameters-and-no-u-turn-sampler&#34;&gt;HMC algorithm parameters and No-U-Turn Sampler&lt;/h4&gt;
 &lt;p&gt;综上可见，HMC的主要参数有step size ($\epsilon$)，L，和协方差矩阵$\bold{M}$。对这些参数的设置会影响抽样效率和收敛性。&lt;/p&gt;
@@ -203,15 +203,15 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;以上两种情况，说明L*$\epsilon$过大，以至于在相空间内出现了转弯，即U-Turn的情况，严重影响了采样效率。因此一种HMC的variant，No-U-Turn Sampler (NUTS)，应运而生。NUTS主要对L进行了适应性调整。在每一次iteration中，当p和当前step移动的距离的点乘为负值时，结束leapfrog。这说明当出现U-Turn时（点乘小于0说明夹角在90-180°）结束本次模拟。此外，NUTS还对$\epsilon$和$\bold{M}$进行了适应性调整。&lt;/p&gt;
 &lt;p&gt;对$\bold{M}$，NUTS会在warm up阶段进行适应性调整，使其接近posterior的协方差矩阵。如果$\bold{M}$选得较宽，则proposal distribution也会较宽，反之亦然。第一次读到这里会产生疑惑，既然$\bold{M}$和$\epsilon$都控制了采样器移动的step size，为什么不固定$\bold{M}$，而只调整$\epsilon$呢？回头看leapfrog的公式，第二步中$\bold{M}^{-1}$前面确实乘了一个$\epsilon$。&lt;/p&gt;
 &lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-&lt;p&gt;Betancourt, M. (2017). A conceptual introduction to Hamiltonian Monte Carlo. arXiv preprint arXiv:1701.02434.
-Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp;amp; Rubin, D. B. (2014). Bayesian Data Analysis. Bayesian Data Analysis.
-Hoff, P. D. (2009). A first course in Bayesian statistical methods (Vol. 580). New York: Springer.
-Kruschke, J. (2014). Doing Bayesian data analysis: A tutorial with R, JAGS, and Stan.
-Lambert, B. (2018). A student&amp;rsquo;s guide to Bayesian statistics. A Student&amp;rsquo;s Guide to Bayesian Statistics, 1-520.
-Matsuura, K. (2023). Bayesian Statistical Modeling with Stan, R, and Python. Springer.
-McElreath, R. (2018). Statistical rethinking: A Bayesian course with examples in R and Stan. Chapman and Hall/CRC.
-Nicenboim, B., Schad, D., &amp;amp; Vasishth, S. (2021). An introduction to Bayesian data analysis for cognitive science. Under contract with Chapman and Hall/CRC statistics in the social and behavioral sciences series.
-Vehtari, A., Gelman, A., &amp;amp; Gabry, J. (2017). Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC.         Statistics and computing, 27, 1413-1432.&lt;/p&gt;
+&lt;p&gt;Betancourt, M. (2017). A conceptual introduction to Hamiltonian Monte Carlo. arXiv preprint arXiv:1701.02434.&lt;/p&gt;
+&lt;p&gt;Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp;amp; Rubin, D. B. (2014). Bayesian Data Analysis. Bayesian Data Analysis.&lt;/p&gt;
+&lt;p&gt;Hoff, P. D. (2009). A first course in Bayesian statistical methods (Vol. 580). New York: Springer.&lt;/p&gt;
+&lt;p&gt;Kruschke, J. (2014). Doing Bayesian data analysis: A tutorial with R, JAGS, and Stan.&lt;/p&gt;
+&lt;p&gt;Lambert, B. (2018). A student&amp;rsquo;s guide to Bayesian statistics. A Student&amp;rsquo;s Guide to Bayesian Statistics, 1-520.&lt;/p&gt;
+&lt;p&gt;Matsuura, K. (2023). Bayesian Statistical Modeling with Stan, R, and Python. Springer.&lt;/p&gt;
+&lt;p&gt;McElreath, R. (2018). Statistical rethinking: A Bayesian course with examples in R and Stan. Chapman and Hall/CRC.&lt;/p&gt;
+&lt;p&gt;Nicenboim, B., Schad, D., &amp;amp; Vasishth, S. (2021). An introduction to Bayesian data analysis for cognitive science. Under contract with Chapman and Hall/CRC statistics in the social and behavioral sciences series.&lt;/p&gt;
+&lt;p&gt;Vehtari, A., Gelman, A., &amp;amp; Gabry, J. (2017). Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC.         Statistics and computing, 27, 1413-1432.&lt;/p&gt;
 </description>
         </item>
         <item>
