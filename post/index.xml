@@ -6,7 +6,215 @@
         <description>Recent content in Posts on Junsong Lu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>贝叶斯统计：Markov Chain Monte Carlo理论篇</title>
+        <link>https://Junsong798.github.io/p/bayes-mcmc/</link>
+        <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/p/bayes-mcmc/</guid>
+        <description>&lt;img src="https://Junsong798.github.io/p/bayes-mcmc/fig1.png" alt="Featured image of post 贝叶斯统计：Markov Chain Monte Carlo理论篇" /&gt;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;回顾2023年2-4月贝叶斯统计阅读路径，指明一些入门和进阶读物。接下来讨论为什么要用贝叶斯统计，并针对贝叶斯统计的难点Markov Chain Monte Carlo回顾所学。从最古老的Metropolis和Metropolis-Hastings开始，再基于高维空间的几何型态说明为什么经典算法对高维空间采样低效，再引入到更有效的Hamiltonian Monte Carlo以及其变体No-U-Turn Sampler。本文只讨论部分理论细节，不涉及应用，如empirical diagnosis，以及各种诊断识别性和加速收敛的方法。&lt;/p&gt;
+&lt;h3 id=&#34;get-started&#34;&gt;Get Started&lt;/h3&gt;
+&lt;p&gt;2022暑假阴差阳错听了几节Richard McElreath的&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Statistical-Rethinking-Bayesian-Examples-Chapman/dp/036713991X/ref=sr_1_1?crid=1XN66UYKAYUHB&amp;amp;keywords=statistical&amp;#43;rethinking&amp;amp;qid=1682993030&amp;amp;s=books&amp;amp;sprefix=statistical&amp;#43;rethin%2Cstripbooks%2C552&amp;amp;sr=1-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt;，惊为天人。第一章对许多传统观点进行了挑战，“The Golem of Prague”将社会科学中常用的统计程序隐喻为巨大的陶土机器人，使用者稍有不甚便会引火烧身。其次，区分几种研究者常常混淆的概念——hypothesis，process model，statistical model。为什么检验理论困难？因为大多数时候，我们简略地把Null Hypothesis Significance Testing (NHST)理解为波普尔可证伪性原则，但是在实践中，任何单一假设（hypothesis）可能生成多个不同的过程模型（process model）。两个不同假设生成的两个不同的过程模型，可能被同一个统计模型（statistical model）支持。这说明支持与验证这个看似最根本的科学发现流程并不能帮助我们区分竞争性假设。更重要的一步是对假设进行重表述，在一组竞争性的过程模型中选择可以被统计模型区分的选项。后来参加工作，没时间听课，只学到grid approximation，rethinking课程就此搁置。&lt;/p&gt;
+&lt;p&gt;2023年申请季所有面试结束后，开始读Kruschke的&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Doing-Bayesian-Data-Analysis-Tutorial/dp/0124058884/ref=sr_1_1?crid=2IA5P14C1TDTC&amp;amp;keywords=Doing&amp;#43;Bayesian&amp;#43;Data&amp;#43;Analysis%3A&amp;#43;A&amp;#43;Tutorial&amp;#43;with&amp;#43;R%2C&amp;#43;JAGS%2C&amp;#43;and&amp;#43;Stan&amp;#43;2nd&amp;#43;Edition&amp;amp;qid=1682993003&amp;amp;s=books&amp;amp;sprefix=bayesian&amp;#43;statistical&amp;#43;modeling&amp;#43;stan%2Cstripbooks%2C883&amp;amp;sr=1-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan 2nd Edition&lt;/a&gt;。封面卖萌，暗示了本书定位是小朋友们的读物，不涉及太复杂的数学。作者在开头不厌其烦地为读者指明路径，对忙人和大忙人要读的章节悉数规划。最后读了：Ch2基础，Ch4概率论，Ch5贝叶斯公式，Ch6 binomial distribution，Ch7 Markov Chain Monte Carlo，Ch9 hierarchical models，Ch 10 model comparison，Ch 14 Stan。初学者难点在于理解MCMC的原理，Bayesian hierarchical model, 以及model comparison。这本书总体知识点比较老旧，数学证明少，模型比较部分缺乏近年的新进展，仅适用于基础。阅读期间的辅助材料，一些&lt;a class=&#34;link&#34; href=&#34;https://gregorygundersen.com/blog/2020/02/23/gibbs-sampling/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;blog提供的数学证明&lt;/a&gt;，以及Stanford计算机科学研究生课程&lt;a class=&#34;link&#34; href=&#34;https://cs.stanford.edu/~ermon/cs323/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CS 323: Automated Reasoning&lt;/a&gt;。主要看Metropolis-Hastings和Gibbs sampler相关的证明。&lt;/p&gt;
+&lt;p&gt;在阅读MCMC的过程中，参考了Andrew Gelman的&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Bayesian-Analysis-Chapman-Statistical-Science/dp/1439840954&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bayesian Data Analysis 3rd&lt;/a&gt;。Gelman在MCMC部分讲得比较清晰，会把各种算法的步骤列出来。但是这本书很难，定位统计\计算机专业graduate level。但即便如此，Gelman也已经对复杂的MCMC，比如Hamiltonian Monte Carlo（HMC）进行了大量简化。严谨地理解HMC需要学习微分几何（differential geometry）。估计是得理论物理专业，了解广义相对论的人才有的背景。Gelman的书我还读了高斯过程模型（Gaussian Process Models），第一次学时感觉比较简略，看不明白，不如看论文和Stan manual清楚。一些Gelman的教材看不懂的地方，我又翻了&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Bayesian-Statistical-Methods-Springer-Statistics/dp/0387922997/ref=sr_1_1?crid=1EJC20EPWXRHU&amp;amp;keywords=a&amp;#43;first&amp;#43;course&amp;#43;bayesian&amp;amp;qid=1682990647&amp;amp;s=books&amp;amp;sprefix=a&amp;#43;first&amp;#43;course&amp;#43;bayesia%2Cstripbooks%2C563&amp;amp;sr=1-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A First Course in Bayesian Statistical Methods&lt;/a&gt;。证明过程比较详细。&lt;/p&gt;
+&lt;p&gt;上手部分看的其他书。首先确定使用Stan概率编程语言。Stan的特点是社区好，开源，语法简单，基于C++和HMC的一个改良版No-U-Turn Sampler，采样速度快（相对于PyMC3等），模型设定非常flexible，有R和Python的调用接口。但是有一定学习门槛，要对模型背后统计比较清楚，不能无脑（其实brms包复杂一点的模型也不太能无脑）。入门时先听了几节大家强推的张磊老师的课程，&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=nwDSyTH3haM&amp;amp;list=PLfRTb2z8k2x8ZCqDJ0WEFNs2ymXQCliLa&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bayesian Statistics and Hierarchical Bayesian Modeling for Psychological Science&lt;/a&gt;。依葫芦画瓢把多层强化学习写了一遍。接下来花了一周多仔细读了一本基于Stan的贝叶斯教材&lt;a class=&#34;link&#34; href=&#34;https://vasishth.github.io/bayescogsci/book/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;An Introduction to Bayesian Data Analysis for Cognitive Science&lt;/a&gt;。特别是先验选择，prior predictive check，hierarchical model，Stan语法基础和抽样原理，posterior predictive check等技术。本书对model comparison的部分讲得特别好。具体来说，贝叶斯有两种视角进行模型比较，一类是基于先验的Bayes factor，另一类是基于后验的cross validation。做各种组间比较，比如ANOVA，以及确定样本量时，会用前者。后者是以预测的角度来评价模型，常见的指标有LOOIC。这种情况下像machine learning那样做cross validation往往算力不足，会用到一些近似方法来估计。之后还参考了&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Students-Guide-Bayesian-Statistics/dp/1473916364/ref=sr_1_1?crid=BK9XABKVWWFA&amp;amp;keywords=a&amp;#43;student&amp;#43;guide&amp;#43;bayesian&amp;amp;qid=1682991874&amp;amp;s=books&amp;amp;sprefix=a&amp;#43;student&amp;#43;guide&amp;#43;bayesi%2Cstripbooks%2C581&amp;amp;sr=1-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A Student’s Guide to Bayesian Statistics&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Bayesian-Statistical-Modeling-Stan-Python/dp/9811947546/ref=sr_1_1?crid=37R4GCZQOSMG6&amp;amp;keywords=bayesian&amp;#43;statistical&amp;#43;modeling&amp;#43;stan&amp;amp;qid=1682991928&amp;amp;s=books&amp;amp;sprefix=bayesian&amp;#43;statistical&amp;#43;modeling&amp;#43;sta%2Cstripbooks%2C311&amp;amp;sr=1-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bayesian Statistical Modeling with Stan, R, and Python&lt;/a&gt;。这两本书都对常见分布进行了总结，需要浏览，这样才知道怎么选似然函数和先验（e.g., 什么时候选student t，什么时候选Gaussian）。后者是一本非常accessible的应用教材，特别是讲了如何提高MCMC的收敛性，比如loosen posterior distribution by reparameterization（e.g., non-centered reparameterization降低参数的相关性），比如soft identification。还专门有一章讲解离散参数的估计。&lt;/p&gt;
+&lt;p&gt;其他重要的资料，一些论文。必读&lt;a class=&#34;link&#34; href=&#34;https://link.springer.com/article/10.1007/s11222-016-9696-4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC&lt;/a&gt;。了解HMC，可以参考Michael Betancourt的&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/1701.02434&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A conceptual introduction to Hamiltonian Monte Carlo&lt;/a&gt;。Michael Betancourt的&lt;a class=&#34;link&#34; href=&#34;https://betanalpha.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;个人博客&lt;/a&gt;提供了质量很高的post，主要涉及概率理论和贝叶斯建模。了解MCMC diagnosis，看&lt;a class=&#34;link&#34; href=&#34;https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stan官方文件&lt;/a&gt;和bayesplot R包。了解为什么对后验采样困难，需要理解高维空间的几何特性（hierarchical model动辄上千个参数）。对高维空间的特征，看统计学习圣经&lt;a class=&#34;link&#34; href=&#34;https://hastie.su.domains/ElemStatLearn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Elements of Statistical Learning&lt;/a&gt;的第二章。&lt;/p&gt;
+&lt;p&gt;从实践的角度出发，完全没有必要读太多理论性的东西。因为一些MCMC的假设，如geometric ergodicity很难在复杂模型上验证。而MCMC也只有少数的empirical diagnosis指标来推断模型可能的问题。实际中自己更常见的错误是prior选择不当（e.g., 缺少prior predictive check），参数化不合理导致部分参数空间曲率大，对模型背后的心理学理论理解不当导致参数范围设置错误，进而引发不可识别和弱不可识别的问题。修改这些东西并不涉及MCMC的细节，因为目前很多抽样算法可以自适应调整参数。&lt;/p&gt;
+&lt;h3 id=&#34;bayes-or-not-bayes&#34;&gt;Bayes or not Bayes?&lt;/h3&gt;
+&lt;p&gt;为什么要用贝叶斯？贝叶斯看起来多了很多不必要的东西，需要选择先验分布，需要多学一门概率编程语言，需要更多的算力，需要做prior/posterior predictive check，需要解决MCMC采样不收敛的问题。许多心理学方法学论文会告诉你贝叶斯的两类优点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;对贝叶斯参数估计：对参数不确定性的估计（credible interval）比frequentism更符合人类认知，比最大似然估计（maximum likelihood estimation）更reliable，可以利用先验分布辅助不可识别的参数的估计（e.g., 用迪利克雷先验解决心理学常见的量表数据中部分categories零样本导致的回归不可识别问题）等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对贝叶斯假设检验：本身没有对$H_0$的bias，可以评估虚无、备择假设的证据强度，可以不依赖sampling plan获取合适的样本量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;工具塑造认知。做frequentist model非常方便，比如lme4一行代码可以估计linear mixed model，但实际上种种类似的程序让研究者被迫估计一些inflexible canned model，而这些model并不能很好地描述观测数据，这让修改模型、探索数据中新的模式成了少数人的路，阻碍了更多新的发现。此外，在假设检验中，当我们做frequentist models，我们习惯性把统计问题表述为一个统计量是否显著。相对于效应有多大，效应的不确定性有多大，这可能是一个&lt;a class=&#34;link&#34; href=&#34;https://compass.onlinelibrary.wiley.com/doi/full/10.1111/lnc3.12201?casa_token=H9p153a3WHYAAAAA%3AKaVlExrDuP0bOejO1zo3PrNw_FmPt__V3er-1PYL9nvcAj_0oL9hGc9l8gemUhwKZ4iJA5bUKa0plwGv&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;错误的问题&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;但是，以上讨论充其量是说明了贝叶斯相比频率学派有哪些优点，并不能完全说服我们使用贝叶斯。要了解为什么我们应该做贝叶斯，参考Betancourt的观点：在高维空间中，最优化无意义。&lt;/p&gt;
+&lt;p&gt;比较两种参数估计的思路，一种是非常常用的maximum a posteriori (MAP) estimate:&lt;/p&gt;
+&lt;p&gt;$$\theta^* = argmax\ \pi(\theta|y) = argmax\ \pi(y|\theta)\pi(\theta)$$&lt;/p&gt;
+&lt;p&gt;当使用non-informative prior时，等价为Maximum likelihood estimation (MLE)：&lt;/p&gt;
+&lt;p&gt;$$\theta^* = argmax\ \pi(y|\theta)$$&lt;/p&gt;
+&lt;p&gt;另一种是贝叶斯统计中常见的求解期望：&lt;/p&gt;
+&lt;p&gt;$$E(\theta^*) = \int d\theta \pi(\theta)\theta$$&lt;/p&gt;
+&lt;p&gt;这两种方法的根本不同在于，MAP在参数估计时用的是概率密度（probability density），而后者用的是概率质量（probability mass）。有意思的地方在于，概率密度并不是一个fundamental object，而是会随着不同的参数化改变的值：&lt;/p&gt;
+&lt;p&gt;$$d\pi(\theta) = d\theta\pi(\theta)$$&lt;/p&gt;
+&lt;p&gt;严格意义上的理解需要测度论的知识。但可以从不太精确，但是intuitive的方式来理解。见下文typical set部分——将二维实数集用立体投影映射到一个球体中的例子。&lt;/p&gt;
+&lt;p&gt;这里想要表达的意思是，一种参数化其实是一个特定的在不同空间之间映射的过程。如果我们的模型估计是正确的，那么我们的估计就不应该受到特定参数化的影响。从这个角度来说，MAP是错误的，因为它是利用一个‘变量’来估计参数。&lt;/p&gt;
+&lt;h3 id=&#34;bayes-rule-and-markov-chain-monte-carlo&#34;&gt;Bayes&amp;rsquo; Rule and Markov Chain Monte Carlo&lt;/h3&gt;
+&lt;p&gt;贝叶斯参数估计的主要难点在于估计贝叶斯公式的计算。回顾贝叶斯公式：&lt;/p&gt;
+&lt;p&gt;$$p(\theta|y) = \frac{p(\theta)p(y|\theta)}{p(y)}$$
+$$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
+&lt;p&gt;其中y为数据，$\theta$为参数，分母p(y)称为marginal likelihood。贝叶斯公式的直观理解是，给定了数据和当前的先验分布（没有数据时的分布），参数的分布应该是怎样的。拿我校入学疫苗政策举例，我们在测肺结核的时候，由于中国学生小时候接种过BCG卡介苗，皮试会有一定概率假阳，所以需要额外测X光。这是因为，先验分布对后验分布影响很大，如果数据只有一次（肺结核检测出阳性，判断是否有病），一乘上先验分布（人口中有肺结核的比率），即使sensitivity很高，乘积依然可能很小，基本都是没病的假阳。所以解决方法是增加数据，让likelihood的影响更大。&lt;/p&gt;
+&lt;p&gt;p(y)的计算是贝叶斯参数估计的主要障碍，因为对一组连续变量，往往需要重积分，难以计算解析解。之所以需要计算分母，是因为prior与likelihood的乘积不是概率分布，需要一个normalizer。而之所以需要转换为概率分布，是因为unnormalized posterior density无法提供参数的不确定性信息——无法计算credible interval, 甚至连均值都无法求解。唯一获得的只有mode这一个信息。因此，求解unnormalized posterior density的mode也等价于频率学派的maximum likelihood estimation。&lt;/p&gt;
+&lt;p&gt;历史上，对后验分布的估计往往采用conjugate prior，特定的likelihood function与特定的prior相乘，产生一个可以求解的积分。比如，Bernoulli likelihood function配合Beta prior，使得后验分布依然为Beta。但此方法对likelihood function有较多限制，逐渐被抛弃。另一种历史方法是数值近似方法，比如grid approximation，但是计算复杂度随着参数增加呈指数增长，只作为toy model教学使用。目前更多使用变分贝叶斯（variational Bayes）和Markov Chain Monte Carlo方法。&lt;/p&gt;
+&lt;p&gt;第一次接触变分贝叶斯是在neuromatch academy的deep learning课程，generative model的课上，主要了解variational autoencoder是如何估计后验分布的。变分推断主要是一种最优化方法（听起来就很不Bayes），寻找一个分布和目标分布的差异，比如KL divergence最小，即可估计出后验分布。另一种现代方法是基于unnormalized posterior density进行采样，通过抽样样本对后验进行近似，即Markov Chain Monte Carlo方法。&lt;/p&gt;
+&lt;p&gt;变分推断的优点在于计算快，并且其过程是决定性的。而MCMC的过程计算量大，带有随机性，可能受到初始值影响。而MCMC的优点在于其是asymptotically exact的，当采样足够长的时间步数，可以得到准确的后验分布估计，此外该方法所需假设少（仅需要能计算非标化后验），面对复杂的模型也一样有效，比如multimodal, hierarchical model.&lt;/p&gt;
+&lt;h3 id=&#34;the-metropolis-algorithm-and-the-metropolis-hastings-algorithm&#34;&gt;The Metropolis Algorithm and the Metropolis-Hastings Algorithm&lt;/h3&gt;
+&lt;p&gt;下面从最简单的Metropolis algorithm来看MCMC方法的工作原理。所谓metropolis algorithm，就是通过一个点（采样器）在样本空间随机游走，并记录走过的位置的抽样方法。通过不断抽样，再对抽出的样本进行统计，近似后验分布。首先明确几个概念。第一个是proposal distribution（$J$），指的是样本移动方案的分布，其规定了向各个参数空间移动的概率分布。第二个是target distribution（$\pi$），指的是需要还原的后验分布。&lt;/p&gt;
+&lt;p&gt;Metropolis algorithm表述如下：&lt;/p&gt;
+&lt;p&gt;给定一个参数初始值，在t = 1, 2, &amp;hellip;n时间步内，基于proposal distribution抽样一个新的proposal，即下一步可能移动到的position $\theta^{*}$，然后基于下式计算一个概率比值:&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^*|y)}{p(\theta^{t-1}|y)}$$&lt;/p&gt;
+&lt;p&gt;注意本式中没有出现proposal distribution，因为算法存在一个假定，即目标分布对称：&lt;/p&gt;
+&lt;p&gt;$$J_t(\theta_a|\theta_b) \equiv J_t(\theta_b|\theta_a)$$&lt;/p&gt;
+&lt;p&gt;当目标分布对称时，任意两个点a,b之间向对方位置提出proposal的概率相等。此时t时刻$\theta$的分布为：&lt;/p&gt;
+&lt;p&gt;$$\theta^t=\begin{cases} \theta^* \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;如果proposal被接受，则移动到下一个点，否则停留在当前位置，并算作一次采样。其中，我们定义acceptance distribution为：&lt;/p&gt;
+&lt;p&gt;$$A(\theta^*|\theta^{t-1})= min(r,1)$$&lt;/p&gt;
+&lt;p&gt;一个案例是，一个politician要根据7个岛的人口确定造访各个岛屿的频率，但是他有觉得制定计划过于麻烦，所以采取了一个启发式。启发式如下：&lt;/p&gt;
+&lt;p&gt;当处于某个岛屿θ时，抛硬币决定去左边θ-1还是右边的岛θ+1，根据min{p(θ-1)/p(θ), 1}或min{p(θ+1)/p(θ), 1}决定去留。如果proposed position的相对人口P比当前位置的P更大，则必定移动。p这里指的是相对人口，而在启发式中也仅仅是需要两个p的比值。&lt;/p&gt;
+&lt;p&gt;也就是说当我们的target distribution是一个后验分布p(θ)时，他与p(D|θ)p(θ)成比率。可见MCMC的好处就是不需要知道p(D)，也能进行抽样。而且抽出的样本符合后验分布。&lt;/p&gt;
+&lt;p&gt;要理解为什么MCMC有效，需要说明transition probabilities（P，从参数空间某一点移动到另一点）的比值等于target distribution的比值。以上述Metropolis algorithm为例：&lt;/p&gt;
+&lt;p&gt;$$\frac{P(\theta_a \rightarrow \theta_b)}{P(\theta_b \rightarrow \theta_a)}=\frac{J_t(\theta_b|\theta_a)*min(\pi(\theta_b)/\pi(\theta_a),1)}{J_t(\theta_a|\theta_b)*min(\pi(\theta_a)/\pi(\theta_b),1)} = \frac{\pi(\theta_b)}{\pi(\theta_a)}$$&lt;/p&gt;
+&lt;p&gt;注意transition probability是proposal和acceptance probability的乘积。因为transit到一个状态，首先必须propose到该状态，其次还要accept该状态。由于J是一个symmetric proposal distribution，相互抵消。而我们仅需要目标分布的比值，所以我们也可以用非标化后验概率的比值（p）来计算。总结，我们会根据后验概率密度在参数空间中采样，各个点上的采样数和后验概率密度成比例，所以我们能还原后验分布。&lt;/p&gt;
+&lt;p&gt;实际中，Metropolis对proposal distribution对称性的要求会降低采样效率。这是因为它只能在某一点领域内提出proposal，自相关强（有效样本量低），而且移动到概率密度高的区域需要大量时间步。因此可以放宽这个假定。Metropolis-Hastings algorithm是Metropolis algorithm的特殊形式，即不需要满足：&lt;/p&gt;
+&lt;p&gt;$$J_t(\theta_a|\theta_b) \equiv J_t(\theta_b|\theta_a)$$&lt;/p&gt;
+&lt;p&gt;但为了保证访问各个参数空间的频率是等比于target distribution的，就需要对这个不对称性进行矫正，用非标化后验除以propose到某个参数空间的概率，这样使得最后的比率仍然反应了后验概率的比例：&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^&lt;em&gt;|y)/J_t(\theta^&lt;/em&gt;|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^*)}$$&lt;/p&gt;
+&lt;p&gt;则：&lt;/p&gt;
+&lt;p&gt;$$\theta^t=\begin{cases} \theta^* \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;下面说明为什么Metropolis-Hastings算法有效。&lt;/p&gt;
+&lt;p&gt;总体证明思路是，在MCMC中，达成细致平衡（detailed balance）的分布是平稳分布（stationary distribution），而满足某些条件的马尔可夫链有唯一平稳分布，所以只需要证明目标分布（target distribution）能达成细致平衡即可。&lt;/p&gt;
+&lt;p&gt;先看细致平衡的条件：&lt;/p&gt;
+&lt;p&gt;$$\forall a,b, P(\theta_a \rightarrow \theta_b)\pi_a = P(\theta_b \rightarrow \theta_a)\pi_b$$&lt;/p&gt;
+&lt;p&gt;这个式子有一个直观的解释，就是当达成分布$\pi$时，任意两点之间没有净流量或者净概率密度流动，使得MCMC继续采样仍然维持当前分布，所以叫balance，stationary。以上两种算法其实全是基于细致平衡这一条件来构造。对上式变形：&lt;/p&gt;
+&lt;p&gt;$$\frac{P(\theta_a \rightarrow \theta_b)}{P(\theta_b \rightarrow \theta_a)} = \frac{\pi(\theta_b)}{\pi(\theta_a)}$$&lt;/p&gt;
+&lt;p&gt;就是我们上面说明的Metropolis的工作原理。更具体的，当proposal distribution不对称时：&lt;/p&gt;
+&lt;p&gt;$$\frac{P(\theta_a \rightarrow \theta_b)}{P(\theta_b \rightarrow \theta_a)} = \frac{J_t(\theta_b|\theta_a)A(\theta_b|\theta_a)}{J_t(\theta_a|\theta_b)A(\theta_a|\theta_b)} = \frac{\pi(\theta_b)}{\pi(\theta_a)}$$&lt;/p&gt;
+&lt;p&gt;$$\frac{A(\theta_b|\theta_a)}{A(\theta_a|\theta_b)} = \frac{\pi(\theta_b)J_t(\theta_a|\theta_b)}{\pi(\theta_a)J_t(\theta_b|\theta_a)}$$&lt;/p&gt;
+&lt;p&gt;可以通过构造A：&lt;/p&gt;
+&lt;p&gt;$$A(\theta_b|\theta_a)= min(r,1)$$&lt;/p&gt;
+&lt;p&gt;使得上述式子，即细致平衡成立。下面给出具体证明，说明Metropolis-Hastings是有效的。&lt;/p&gt;
+&lt;p&gt;首先明确定理Ergodic Theorem: 一个不可约的（irreducible），非周期性的（aperiodic），常返的（recurrent）马尔科夫链存在唯一的平稳分布。简单总结，不可约指的是在任何一个状态作为初始点，在后续的某个时刻都能抵达其他的所有状态或参数空间。一个不满足不可约性的马尔可夫链是令X等于非零整数，$J_s$随机给X加减2，这使得如果X的初始值是奇数，永远不可能得到偶数。实际抽样当然不希望存在这种特性。周期性指的是每k个循环才能访问某个状态，非周期性则没有此限制。一个值x常返说的是在有限时间内总能再次取回这个值。一般情况下，以常规proposal distribution $J$，比如normal，比如uniform构造的马尔科夫链常常能满足上述三个性质，从而具有唯一平稳分布。&lt;/p&gt;
+&lt;p&gt;当马尔科夫链存在唯一平稳分布后，只需要证明目标分布是平稳分布即可。这里涉及的概念是可逆性（reversible）。可逆性定义为，如果一个马尔科夫链存在一个满足细致平衡的分布$\pi^*$，则认为该马尔科夫链是可逆的：&lt;/p&gt;
+&lt;p&gt;$$\forall i,j, \ \pi^&lt;em&gt;_i\ P(\theta_i \rightarrow \theta_j)=\pi^&lt;/em&gt;_j\ P(\theta_j \rightarrow \theta_i)$$&lt;/p&gt;
+&lt;p&gt;结合定理：如果一个分布$\pi^*$是可逆的，则该分布是一个平稳分布。&lt;/p&gt;
+&lt;p&gt;接下来证明，target distribution $p$是可逆的，满足细致平衡：&lt;/p&gt;
+&lt;p&gt;假设在target distribution中，$p(\theta_j|y)≥p(\theta_i|y)$，则t-1时刻位处i，t时刻位于j的概率为：&lt;/p&gt;
+&lt;p&gt;$$p(\theta^{t-1}=\theta_i, \theta^{t}=\theta_j)=P(\theta_i \rightarrow \theta_j)=p(\theta_i|y)J(\theta_j|\theta_i)$$&lt;/p&gt;
+&lt;p&gt;根据我们的假设，此时$r$等于1. 其次，看t时刻位处i，t-1时刻位于j的概率：&lt;/p&gt;
+&lt;p&gt;$$p(\theta^{t}=\theta_i, \theta^{t-1}=\theta_j)=p(\theta_j|y)J(\theta_i|\theta_j)\frac{p(\theta_i|y)J_t(\theta_j|\theta_i)}{p(\theta_j|y)J_t(\theta_i|\theta_j)}$$&lt;/p&gt;
+&lt;p&gt;结合上述两式，得到：&lt;/p&gt;
+&lt;p&gt;$$p(\theta^{t-1}=\theta_i, \theta^{t}=\theta_j)=p(\theta^{t}=\theta_i, \theta^{t-1}=\theta_j)$$&lt;/p&gt;
+&lt;p&gt;发现$\theta^{t-1}, \theta^{t}$的联合分布是对称的，满足细致平衡，说明目标分布为平稳分布。而上述马尔科夫链又有唯一平稳分布，所以目标分布是该马尔科夫链的平稳分布。该马尔可夫链在模拟一定时间后收敛于目标分布。&lt;/p&gt;
+&lt;p&gt;更直观的，利用上述联合分布对称的性质，求解t时刻的边缘分布：&lt;/p&gt;
+&lt;p&gt;$$p(\theta^t=\theta)=\int p(\theta^t=\theta, \theta^{t-1}=\theta_i)d\theta_i=\int p(\theta^t=\theta_i, \theta^{t-1}=\theta)d\theta_i=p(\theta^{t-1}=\theta)$$&lt;/p&gt;
+&lt;p&gt;所以，如果t-1时刻是目标分布，t时刻仍然保持了目标分布。&lt;/p&gt;
+&lt;p&gt;总结，所谓的证明就是从设计的反面说明目标分布能达成细致平衡。&lt;/p&gt;
+&lt;h3 id=&#34;gibbs-sampling&#34;&gt;Gibbs Sampling&lt;/h3&gt;
+&lt;p&gt;另一种Metropolis-Hastings Algorithm的特例是Gibbs sampling，将proposal distribution设置为一个条件分布，从而使得acceptance probability恒为1，提高采样速度。Gibbs sampling的proposal distribution如下：&lt;/p&gt;
+&lt;p&gt;$$J(\theta^&lt;em&gt;|\theta^{t-1})=\begin{cases} p(\theta^&lt;/em&gt;&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y) \ \ \ \ min(r, 1) \ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;采样开始时，给定参数空间初始值，对每一个时间步，随机或者按顺序抽取一个参数$\theta_j$，计算给定数据y和其他参数$\theta_{-j}$时的条件概率并对其采样，得到新的proposal。这说明Gibbs sampling每次只更新一个参数。计算：&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^&lt;em&gt;|y)/J_t(\theta^&lt;/em&gt;|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^&lt;em&gt;)} \= \frac{p(\theta^&lt;/em&gt;|y)/p(\theta^*&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}$$&lt;/p&gt;
+&lt;p&gt;又有：&lt;/p&gt;
+&lt;p&gt;$$\theta^* = (\theta^*&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j}) \ \theta^{t-1} = (\theta^{t-1}&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j})$$&lt;/p&gt;
+&lt;p&gt;则：&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^&lt;em&gt;&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^&lt;/em&gt;&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)} \ = 1$$&lt;/p&gt;
+&lt;h3 id=&#34;hamiltonian-monte-carlo-hmc&#34;&gt;Hamiltonian Monte Carlo (HMC)&lt;/h3&gt;
+&lt;p&gt;尝试从设计的角度来理解HMC，先介绍高维空间的几何特性。这种特性引出了一个概念，typical set，决定了sampler在空间中需要游走的位置。为了满足这种游走规则，利用Hamiltonian来制约MCMC的轨迹。最后讨论这种物理过程背后涉及一系列参数和对抽样的影响。&lt;/p&gt;
+&lt;h4 id=&#34;typical-set&#34;&gt;Typical Set&lt;/h4&gt;
+&lt;p&gt;HMC的诞生是基于经典算法，如Metropolis-Hastings和Gibbs sampler在高维参数空间中采样过于低效，而且难以在有限时间内收敛的现状。首先要通过理解高维空间中后验分布的形状来理解为什么高维空间采样困难。给定一个D-dimensional标准正态分布，其形状类似一个很细的圆环，或者甜甜圈一样的形状。如果是一个固定不变的，或者对称的proposal distribution，很难有效探索大部分参数空间，因为后验太细，大部分proposal被拒绝。或者是一次只改变少数参数的proposal，可能会直接跳过这个狭窄区域。对贝叶斯估计来说，我们的最终目的是估计参数空间Q中样本q（理解为参数可采样的值）的期望（e.g., 可以是后验的mean或variance，本质都是期望）：&lt;/p&gt;
+&lt;p&gt;$$E[f] = \int_{Q} dq \pi(q)f(q)$$&lt;/p&gt;
+&lt;p&gt;精准估计上述公式，MCMC采样需要能还原有代表性的后验分布区域，因此这里引入一个重要概念，叫typical set。原始概念出自information theory，但在Stan的语境下，这个概念的含义有所不同。从一个宽泛的角度来说，typical set指的是后验分布mode周围的一片区域，这些区域比较宽而且有较高的probability density ($\pi(q)$)，所以对期望的贡献大。Betancourt给了另一种界定（有争议，比如Andrew Gelman就不同意这种说法）。在上述公式中，dq这个微分常量被称为“volume”。在一元积分中，dq就是一段无穷小距离。二元积分则是一个小平面$d\sigma$：&lt;/p&gt;
+&lt;p&gt;$$\int_{D} f(x,y) d\sigma$$&lt;/p&gt;
+&lt;p&gt;拓展到高维，就是一个高维空间（体积）。在我们通常认知里，比如二维情况下的黎曼积分，无论距离空间中任意一点多远，这个无穷小量都是定值。Betancourt却说，这个假设在高维空间中不成立了。假设以后验分布的mode为原点，距离mode越远的地方，这个高维体积volume就会越大，并且以指数增加，趋近无穷。另一方面，离mode越远，对应参数空间的概率密度越小，逐渐趋近于0。反观期望公式dq和$\pi(q)$的乘积决定了对应点对期望的影响大小。所以保证在该乘积最大的位置采样，规避该乘积较小的位置，可以在节省算力的情况下对期望有最准确的估计。&lt;/p&gt;
+&lt;p&gt;想要理解为什么volume不是常量是非常困难的。其实Betancourt并不是说volume不是常量，他认为在空间中任意点的邻域，这个volume都是定值。他所要强调的是，&lt;a class=&#34;link&#34; href=&#34;https://stats.stackexchange.com/questions/321260/understanding-the-typical-set-for-markov-chain-monte-carlo-sampling&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;距离任一点，增加同样的几何距离时，样本空间中的点都会更加密集&lt;/a&gt;。这导致这些区域对期望的贡献会很大。在&lt;a class=&#34;link&#34; href=&#34;https://betanalpha.github.io/assets/case_studies/probabilistic_computation.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;博客&lt;/a&gt;中，他给了两个例子:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;对一个D-dimensional sphere，在距离圆心O外一点x，和一个微小常量$\delta$，x-$\delta$和x+$\delta$这两个距离上的体积差异，会随着维度增加而增加。这意味着在参数空间中，远离mode的区域会有囊括更多的样本点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选定一个二维实数集上的一点O，对整个二维实数集进行立体投影，得到一个包含了O的球体。这个球体远离O的地方会囊括更多的实数，直到球体另一端的一个点包含了无穷多的实数。为啥，因为实数集是一个无穷的平面，如果要选定一个点O然后投射到一个有限球体中，距离O很远的无穷个点会被强行挤压进离O较远的空间中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;一句题外话，个人感觉这两个例子不如ESL第二章curse of dimensionality和&lt;a class=&#34;link&#34; href=&#34;https://yuhangzhou88.github.io/ESL_Solution/ESL-Solution/2-Overview-of-Supervised-Learning/ex2-3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Exercise 2.3的证明&lt;/a&gt;来得直观。从ESL的例子来理解就是，当维数很高的时候，在任意一点周围一个极小的volume进行采样，也需要涵盖各个维度上比较大的一个range，根本不是所谓的‘邻域’。假设数据点在高维空间均匀分布的情况下，大部分都跑到邻域外去了。在MCMC的语境下的一个implication就是，如果采样器基于简单的非标化后验，那么由于数据的稀疏，大部分proposal会被拒绝。&lt;/p&gt;
+&lt;h4 id=&#34;earths-moon&#34;&gt;Earth&amp;rsquo;s Moon&lt;/h4&gt;
+&lt;p&gt;即使远处的空间会趋近于无穷大，但是由于远离后验分布的mode，其概率密度很低。这里看出，一个好的MCMC采样方法是在两种策略之间权衡：要保证随机游走尽可能靠近后验分布mode的位置，但是又不能太靠近导致对mode周围大量高密度区域缺少探索。&lt;/p&gt;
+&lt;p&gt;前面说过，经典算法面对收窄的高维空间，很容易跳过后验密度高的区域。那么一个很自然的想法就是构建一个vector field，让采样器沿着typical set的向量场绕圈，而不是在进入typical set以后仍然随机提出proposal，又跑到其他空间采样。&lt;/p&gt;
+&lt;p&gt;上述统计过程可以用一个重力场来类比。Betancourt说，任何一个概率系统，都有一个数学上等价的物理系统。考虑一个绕地球的卫星。其受到地球重力影响，如果卫星速度为0，就会冲向地球坠毁。如果卫星速度过大，大于第二宇宙速度，会脱离地球飞向太阳系。而介于第一、第二宇宙速度之间时，可以绕地球公转。这个物理系统是能量守恒的，这保证了卫星在既定轨道上运行。在这里，绕地球公转的轨迹就是typical set（高维的甜甜圈），重力场是后验分布的梯度（gradient），而卫星的速度就是接下来HMC要引入的momentum参数。能量守恒则对应Hamiltonian的守恒，这保证采样器在typical set上采样。&lt;/p&gt;
+&lt;h4 id=&#34;hamiltons-equations&#34;&gt;Hamilton’s Equations&lt;/h4&gt;
+&lt;p&gt;对HMC一般性的理解，可以如下概括。对非标化后验取负对数，形成一个山谷的形状。将MCMC采样器理解为一个小球，随机放置于山谷的一个位置，并抽取一个初始的动量让其滚动，这个滚动中包含了一系列由自适应算法控制的离散步骤，然后一定步数后停止，获得下一个propose的位置，根据transition probability的公式计算是否accept。&lt;/p&gt;
+&lt;p&gt;首先假设模型有D个参数，那么添加D个动量参数$p_n$，将D-dimensional parameter space拓展到2D，这个空间称为相空间（phase space）：&lt;/p&gt;
+&lt;p&gt;$$q_n \rightarrow (q_n, p_n)$$&lt;/p&gt;
+&lt;p&gt;则目标分布变为：&lt;/p&gt;
+&lt;p&gt;$$\pi(q,p) = \pi(p|q) \pi(q)$$&lt;/p&gt;
+&lt;p&gt;因为我们并不关心momentum的分布，这样参数化后可以将p参数marginalize out，就得到了之前的D维后验分布。题外说一句，贝叶斯中的reparameterization并不改变后验分布的期望，所以无论怎么参数化，理论上不对最后结果产生影响。这是因为本质上用MCMC采样是在估计一个joint posterior distribution。参数化改变的是变量之间的依赖关系，从而影响局部变量之间的边缘后验分布的形状，导致了不同参数化之间抽样效率的差异。比如hierarchical model就是一种基于数据的假设确定的参数化方法，一来是便于理解模型，二是由于参数的依赖性，同样一部分数据可以同时inform多个参数。在物理上，当系统能量守恒时，重参数化相当于改变了volume的形状，空间在一个维度上受到挤压则在另一个维度上延展。&lt;/p&gt;
+&lt;p&gt;由于后验分布不变，现定义一个相应的常量，Hamiltonian function:&lt;/p&gt;
+&lt;p&gt;$$H(q,p) \equiv -log \pi(q,p)$$&lt;/p&gt;
+&lt;p&gt;$$H(q,p) \equiv -log \pi(q|p) -log\pi(q)$$&lt;/p&gt;
+&lt;p&gt;$$H(q,p) \equiv K(p,q) + U(q)$$&lt;/p&gt;
+&lt;p&gt;可以理解为系统的动能K和势能U守恒。其中势能仅仅和我们的目标分布有关，而动能需要额外定义。在实践中，一般以一个二次型来表示，使其服从多元高斯分布：&lt;/p&gt;
+&lt;p&gt;$$p \sim N_q(0, \bold{M})$$&lt;/p&gt;
+&lt;p&gt;其中M是正定矩阵。Hamiltonian function变为：&lt;/p&gt;
+&lt;p&gt;$$H(q,p) \equiv \frac{1}{2}p^TM^{-1}p -log\pi(q)$$&lt;/p&gt;
+&lt;p&gt;这个Hamiltonian表示了动能和势能的权衡，从而刻画了参数空间中的typical set。当势能大时，会转化为动能拉回mode，而当动能大时，又使得sampler逃离mode。HMC本身就是以此在相空间中进行Hamiltonian dynamics的演化。更进一步，用Hamilton&amp;rsquo; equations来刻画q和p随着时间的变化：&lt;/p&gt;
+&lt;p&gt;$$\frac{dp}{dt} = -\frac{\partial H(q,p)}{\partial q} = -\frac{\partial K(q,p)}{\partial q} - \frac{\partial U(q)}{\partial q}$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dq}{dt} = \frac{\partial H(q,p)}{\partial p} = \frac{\partial K(q,p)}{\partial p}$$&lt;/p&gt;
+&lt;p&gt;考虑到一般认为momentum（p）独立于参数q，上述式子可简化为：&lt;/p&gt;
+&lt;p&gt;$$\frac{dp}{dt} = - \frac{\partial U(q)}{\partial q} = \bigtriangledown_{q}log\pi(q)$$&lt;/p&gt;
+&lt;p&gt;$$\frac{dq}{dt} = \frac{\partial K(q,p)}{\partial p} = \bold{M}^{-1}p$$&lt;/p&gt;
+&lt;p&gt;其中$\bigtriangledown_{q}log\pi(q)$为目标函数的梯度。Hamilton&amp;rsquo; equations的解是一个刻画了q和p随时间演化的函数。这为后续确定proposed position确定了条件。&lt;/p&gt;
+&lt;h4 id=&#34;the-three-steps-of-an-hmc-iteration&#34;&gt;The Three Steps of an HMC Iteration&lt;/h4&gt;
+&lt;p&gt;迭代开始时，先基于动量矩阵进行采样，获得一个动量（step 1），然后进行Hamiltonian dynamics模拟（step 2），基于模拟结果提出下一个iteration的proposal。最后计算是否接受proposal（step 3）。&lt;/p&gt;
+&lt;p&gt;实际应用中，在相空间中模拟Hamiltonian dynamics连续过程存在困难，所以一般会用一系列离散的时间步来模拟。即一段时间内q和p的轨迹被切分成一系列离散的step（epsilon）。设这个step的数量为L，则一次HMC迭代（iteration）中间经过了step*L时长的Hamiltonian dynamics。&lt;/p&gt;
+&lt;p&gt;更具体的，p和q的更新方法叫做leapfrog method:&lt;/p&gt;
+&lt;p&gt;$$p(t+\frac{\epsilon}{2}) = p(t) + \frac{\epsilon}{2}\bigtriangledown_{q}log\pi(q(t))$$&lt;/p&gt;
+&lt;p&gt;$$q(t+\epsilon) = q(t) + \epsilon\bold{M}^{-1}p(t+\frac{\epsilon}{2})$$&lt;/p&gt;
+&lt;p&gt;$$p(t+\epsilon) = p(t+\frac{\epsilon}{2}) + \frac{\epsilon}{2}\bigtriangledown_{q}log\pi(q(t+\epsilon))$$&lt;/p&gt;
+&lt;p&gt;以上步骤重复L次，则得到更新后的q和p在相空间的位置，q*，p*。又令总时间为：&lt;/p&gt;
+&lt;p&gt;$$T = \epsilon * L$$&lt;/p&gt;
+&lt;p&gt;便可以用类似Metropolis-Hastings的transition probability来计算接受本次迭代proposal的概率：&lt;/p&gt;
+&lt;p&gt;$$r = \frac{\pi(q^&lt;em&gt;,p^&lt;/em&gt;)}{\pi(q^{T-1},p^{T-1})} \ = \frac{exp(-H(q^&lt;em&gt;,p^&lt;/em&gt;))}{exp(-H(q^{T-1},p^{T-1}))}$$&lt;/p&gt;
+&lt;p&gt;$$q^T=\begin{cases} q^* \ \ \ \ min(r, 1) \ q^{T-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;公式也基于细致平衡推导。由于能量守恒，理论上r总是接近于1，所以proposal必然accept。但由于leapfrog是一种近似，所以r并不总是等于1，这相当于对leapfrog integrator误差的校正。&lt;/p&gt;
+&lt;h4 id=&#34;hmc-algorithm-parameters-and-no-u-turn-sampler&#34;&gt;HMC algorithm parameters and No-U-Turn Sampler&lt;/h4&gt;
+&lt;p&gt;综上可见，HMC的主要参数有step size ($\epsilon$)，L，和协方差矩阵$\bold{M}$。对这些参数的设置会影响抽样效率和收敛性。&lt;/p&gt;
+&lt;p&gt;对$\epsilon$，如果过大，会使得数值积分不精确，即对Hamilton&amp;rsquo; equations的解不准，导致能量不守恒。如果能量与预设值相差过大，则并不能保证在typical set中采样。很好理解，比如用多个细长的矩形去估计一个平滑曲线下的面积（定积分），矩形分割得越细则估计越准确。如果过大，则不准。因此，当$\epsilon$小时，需要更长的时间sampler才能到达离初始位置更远的地方，也会降低采样效率。&lt;/p&gt;
+&lt;p&gt;对L参数的影响，应该结合$\epsilon$来看。$\epsilon$控制了一次迭代内对Hamilton&amp;rsquo; equations近似的精确程度。而L*$\epsilon$控制了采样器偏移初始点的距离。这个距离并不是绝对的距离，而是一整个迭代中采样器游走的距离。假设L*$\epsilon$设置得较大，会有不良影响。考虑两种情况：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;初始值离mode较近，此时较大的L*$\epsilon$，或T，可能让sampler对mode和初始值过度采样。当动能方向偏离mode时，由于T过长，q*可能又从偏离初始值的位置游走回初始值，从而使得对初始值过度采样。当动能方向朝向mode时，由于时间长，往往停留在mode，导致对mode过采样，对周围typical set采样不足。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;初始值离mode较远，动能方向远离mode时，如上述1情况对初始值过度采样。动能朝向mode时，往往会穿过mode，使得对mode和周围高密度区域采样不足。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以上两种情况，说明L*$\epsilon$过大，以至于在相空间内出现了转弯，即U-Turn的情况，严重影响了采样效率。因此一种HMC的variant，No-U-Turn Sampler (NUTS)，应运而生。NUTS主要对L进行了适应性调整。在每一次iteration中，当p和当前step移动的距离的点乘为负值时，结束leapfrog。这说明当出现U-Turn时（点乘小于0说明夹角在90-180°）结束本次模拟。此外，NUTS还对$\epsilon$和$\bold{M}$进行了适应性调整。&lt;/p&gt;
+&lt;p&gt;对$\bold{M}$，NUTS会在warm up阶段进行适应性调整，使其接近posterior的协方差矩阵。如果$\bold{M}$选得较宽，则proposal distribution也会较宽，反之亦然。第一次读到这里会产生疑惑，既然$\bold{M}$和$\epsilon$都控制了采样器移动的step size，为什么不固定$\bold{M}$，而只调整$\epsilon$呢？回头看leapfrog的公式，第二步中$\bold{M}^{-1}$前面确实乘了一个$\epsilon$。&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;p&gt;Betancourt, M. (2017). A conceptual introduction to Hamiltonian Monte Carlo. arXiv preprint arXiv:1701.02434.
+Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp;amp; Rubin, D. B. (2014). Bayesian Data Analysis. Bayesian Data Analysis.
+Hoff, P. D. (2009). A first course in Bayesian statistical methods (Vol. 580). New York: Springer.
+Kruschke, J. (2014). Doing Bayesian data analysis: A tutorial with R, JAGS, and Stan.
+Lambert, B. (2018). A student&amp;rsquo;s guide to Bayesian statistics. A Student&amp;rsquo;s Guide to Bayesian Statistics, 1-520.
+Matsuura, K. (2023). Bayesian Statistical Modeling with Stan, R, and Python. Springer.
+McElreath, R. (2018). Statistical rethinking: A Bayesian course with examples in R and Stan. Chapman and Hall/CRC.
+Nicenboim, B., Schad, D., &amp;amp; Vasishth, S. (2021). An introduction to Bayesian data analysis for cognitive science. Under contract with Chapman and Hall/CRC statistics in the social and behavioral sciences series.
+Vehtari, A., Gelman, A., &amp;amp; Gabry, J. (2017). Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC.         Statistics and computing, 27, 1413-1432.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>重复测量设计中的效应量</title>
         <link>https://Junsong798.github.io/p/effect-size-metric/</link>
         <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
