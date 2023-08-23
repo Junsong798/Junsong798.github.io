@@ -6,10 +6,10 @@
         <description>Recent content in Posts on Junsong Lu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>贝叶斯统计：Markov Chain Monte Carlo理论篇</title>
         <link>https://Junsong798.github.io/p/bayes-mcmc/</link>
-        <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
         
         <guid>https://Junsong798.github.io/p/bayes-mcmc/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/bayes-mcmc/fig1.png" alt="Featured image of post 贝叶斯统计：Markov Chain Monte Carlo理论篇" /&gt;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
@@ -90,7 +90,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;但为了保证访问各个参数空间的频率是等比于target distribution的，就需要对这个不对称性进行矫正，用非标化后验除以propose到某个参数空间的概率，这样使得最后的比率仍然反应了后验概率的比例：&lt;/p&gt;
 &lt;p&gt;$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})}$$&lt;/p&gt;
 &lt;p&gt;则：&lt;/p&gt;
-&lt;p&gt;$$\theta^{t}=\begin{cases} \theta^{\ast} \ \ \ \ min(r, 1) \ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;$$\theta^{t}=\begin{cases} \theta^{\ast} \ \ \ \ min(r, 1) \\ \theta^{t-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
 &lt;p&gt;下面说明为什么Metropolis-Hastings算法有效。&lt;/p&gt;
 &lt;p&gt;总体证明思路是，在MCMC中，达成细致平衡（detailed balance）的分布是平稳分布（stationary distribution），而满足某些条件的马尔可夫链有唯一平稳分布，所以只需要证明目标分布（target distribution）能达成细致平衡即可。&lt;/p&gt;
 &lt;p&gt;先看细致平衡的条件：&lt;/p&gt;
@@ -121,20 +121,13 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;总结，所谓的证明就是从设计的反面说明目标分布能达成细致平衡。&lt;/p&gt;
 &lt;h3 id=&#34;gibbs-sampling&#34;&gt;Gibbs Sampling&lt;/h3&gt;
 &lt;p&gt;另一种Metropolis-Hastings Algorithm的特例是Gibbs sampling，将proposal distribution设置为一个条件分布，从而使得acceptance probability恒为1，提高采样速度。Gibbs sampling的proposal distribution如下：&lt;/p&gt;
-&lt;p&gt;$$J(\theta^{\ast}|\theta^{t-1})=\begin{cases} p({\theta^{\ast}&lt;em&gt;{j}}|{\theta^{t-1}&lt;/em&gt;{-j}}, y) \ \ \ \ min(r, 1) \ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1) \end{cases}$$&lt;/p&gt;
-&lt;p&gt;$$
-J(\theta^{\ast}|\theta^{t-1}) = \begin{cases}
-p(\text{$\theta^{\ast}&lt;em&gt;{j}$}|\text{$\theta^{t-1}&lt;/em&gt;{-j}$}, y) &amp;amp; \text{ } \min(r, 1) \
-0 &amp;amp; \text{ } 1 - \min(r, 1)
-\end{cases}
-$$&lt;/p&gt;
 &lt;p&gt;$$J(\theta^{\ast}|\theta^{t-1})=\begin{cases} p({\theta^{\ast}_{j}}|{\theta^{t-1}_{-j}}, y) \ \ \ \ min(r, 1) \\ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1) \end{cases}$$&lt;/p&gt;
 &lt;p&gt;采样开始时，给定参数空间初始值，对每一个时间步，随机或者按顺序抽取一个参数$\theta_j$，计算给定数据y和其他参数$\theta_{-j}$时的条件概率并对其采样，得到新的proposal。这说明Gibbs sampling每次只更新一个参数。计算：&lt;/p&gt;
-&lt;p&gt;$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})} \= \frac{p(\theta^{\ast}|y)/p(\theta^{\ast}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})} \= \frac{p(\theta^{\ast}|y)/p(\theta^{\ast}&lt;em&gt;{j}|\theta^{t-1}_{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}&lt;/em&gt;{j}|\theta^{t-1}_{-j}, y)}$$&lt;/p&gt;
 &lt;p&gt;又有：&lt;/p&gt;
-&lt;p&gt;$$\theta^{\ast} = (\theta^{\ast}&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j}) \ \theta^{t-1} = (\theta^{t-1}&lt;em&gt;j, \theta^{t-1}&lt;/em&gt;{-j})$$&lt;/p&gt;
+&lt;p&gt;$$\theta^{\ast} = (\theta^{\ast}_j, \theta^{t-1}_{-j}) \\ \theta^{t-1} = (\theta^{t-1}_j, \theta^{t-1}_{-j})$$&lt;/p&gt;
 &lt;p&gt;则：&lt;/p&gt;
-&lt;p&gt;$$r = \frac{p(\theta^{\ast}&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^{\ast}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}&lt;em&gt;j | \theta^{t-1}&lt;/em&gt;{-j},y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)} \ = 1$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^{\ast}_j | \theta^{t-1}_{-j},y)/p(\theta^{\ast}_{j}|\theta^{t-1}_{-j}, y)}{p(\theta^{t-1}_j | \theta^{t-1}_{-j},y)/p(\theta^{t-1}_{j}|\theta^{t-1}_{-j}, y)} \\ = 1$$&lt;/p&gt;
 &lt;h3 id=&#34;hamiltonian-monte-carlo-hmc&#34;&gt;Hamiltonian Monte Carlo (HMC)&lt;/h3&gt;
 &lt;p&gt;尝试从设计的角度来理解HMC，先介绍高维空间的几何特性。这种特性引出了一个概念，typical set，决定了sampler在空间中需要游走的位置。为了满足这种游走规则，利用Hamiltonian来制约MCMC的轨迹。最后讨论这种物理过程背后涉及一系列参数和对抽样的影响。&lt;/p&gt;
 &lt;h4 id=&#34;typical-set&#34;&gt;Typical Set&lt;/h4&gt;
@@ -193,7 +186,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$T = \epsilon * L$$&lt;/p&gt;
 &lt;p&gt;便可以用类似Metropolis-Hastings的transition probability来计算接受本次迭代proposal的概率：&lt;/p&gt;
 &lt;p&gt;$$r = \frac{\pi(q^{\ast},p^{\ast})}{\pi(q^{T-1},p^{T-1})} \ = \frac{exp(-H(q^{\ast},p^{\ast}))}{exp(-H(q^{T-1},p^{T-1}))}$$&lt;/p&gt;
-&lt;p&gt;$$q^T=\begin{cases} q^{\ast} \ \ \ \ min(r, 1) \ q^{T-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
+&lt;p&gt;$$q^T=\begin{cases} q^{\ast} \ \ \ \ min(r, 1) \\ q^{T-1} \ \ \ 1-min(r,1).\end{cases}$$&lt;/p&gt;
 &lt;p&gt;公式也基于细致平衡推导。由于能量守恒，理论上r总是接近于1，所以proposal必然accept。但由于leapfrog是一种近似，所以r并不总是等于1，这相当于对leapfrog integrator误差的校正。&lt;/p&gt;
 &lt;h4 id=&#34;hmc-algorithm-parameters-and-no-u-turn-sampler&#34;&gt;HMC algorithm parameters and No-U-Turn Sampler&lt;/h4&gt;
 &lt;p&gt;综上可见，HMC的主要参数有step size ($\epsilon$)，L，和协方差矩阵$\bold{M}$。对这些参数的设置会影响抽样效率和收敛性。&lt;/p&gt;
