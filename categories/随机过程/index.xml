@@ -128,6 +128,7 @@ p(\text{$\theta^{\ast}&lt;em&gt;{j}$}|\text{$\theta^{t-1}&lt;/em&gt;{-j}$}, y) &
 0 &amp;amp; \text{ } 1 - \min(r, 1)
 \end{cases}
 $$&lt;/p&gt;
+&lt;p&gt;$$J(\theta^{\ast}|\theta^{t-1})=\begin{cases} p({\theta^{\ast}_{j}}|{\theta^{t-1}_{-j}}, y) \ \ \ \ min(r, 1) \ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1) \end{cases}$$&lt;/p&gt;
 &lt;p&gt;采样开始时，给定参数空间初始值，对每一个时间步，随机或者按顺序抽取一个参数$\theta_j$，计算给定数据y和其他参数$\theta_{-j}$时的条件概率并对其采样，得到新的proposal。这说明Gibbs sampling每次只更新一个参数。计算：&lt;/p&gt;
 &lt;p&gt;$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})} \= \frac{p(\theta^{\ast}|y)/p(\theta^{\ast}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}&lt;em&gt;{j}|\theta^{t-1}&lt;/em&gt;{-j}, y)}$$&lt;/p&gt;
 &lt;p&gt;又有：&lt;/p&gt;

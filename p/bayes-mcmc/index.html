@@ -14,6 +14,23 @@
 <meta name="twitter:title" content="贝叶斯统计：Markov Chain Monte Carlo理论篇">
 <meta name="twitter:description" content="入门到入土"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Junsong798.github.io/p/bayes-mcmc/fig1.png' />
+  <!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+  </head>
+  ...
+</html>
+
+
     </head>
     <body class="
     article-page
@@ -588,6 +605,7 @@ p(\text{$\theta^{\ast}<em>{j}$}|\text{$\theta^{t-1}</em>{-j}$}, y) &amp; \text{ 
 0 &amp; \text{ } 1 - \min(r, 1)
 \end{cases}
 $$</p>
+<p>$$J(\theta^{\ast}|\theta^{t-1})=\begin{cases} p({\theta^{\ast}_{j}}|{\theta^{t-1}_{-j}}, y) \ \ \ \ min(r, 1) \ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1) \end{cases}$$</p>
 <p>采样开始时，给定参数空间初始值，对每一个时间步，随机或者按顺序抽取一个参数$\theta_j$，计算给定数据y和其他参数$\theta_{-j}$时的条件概率并对其采样，得到新的proposal。这说明Gibbs sampling每次只更新一个参数。计算：</p>
 <p>$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})} \= \frac{p(\theta^{\ast}|y)/p(\theta^{\ast}<em>{j}|\theta^{t-1}</em>{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}<em>{j}|\theta^{t-1}</em>{-j}, y)}$$</p>
 <p>又有：</p>
@@ -700,6 +718,30 @@ $$</p>
     </footer>
 
 
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
     
 </article>
 
@@ -849,6 +891,10 @@ $$</p>
         Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
     
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
