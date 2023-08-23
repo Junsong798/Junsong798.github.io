@@ -123,7 +123,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;另一种Metropolis-Hastings Algorithm的特例是Gibbs sampling，将proposal distribution设置为一个条件分布，从而使得acceptance probability恒为1，提高采样速度。Gibbs sampling的proposal distribution如下：&lt;/p&gt;
 &lt;p&gt;$$J(\theta^{\ast}|\theta^{t-1})=\begin{cases} p({\theta^{\ast}_{j}}|{\theta^{t-1}_{-j}}, y) \ \ \ \ min(r, 1) \\ 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1-min(r,1) \end{cases}$$&lt;/p&gt;
 &lt;p&gt;采样开始时，给定参数空间初始值，对每一个时间步，随机或者按顺序抽取一个参数$\theta_j$，计算给定数据y和其他参数$\theta_{-j}$时的条件概率并对其采样，得到新的proposal。这说明Gibbs sampling每次只更新一个参数。计算：&lt;/p&gt;
-&lt;p&gt;$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})} \= \frac{p(\theta^{\ast}|y)/p(\theta^{\ast}&lt;em&gt;{j}|\theta^{t-1}_{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}&lt;/em&gt;{j}|\theta^{t-1}_{-j}, y)}$$&lt;/p&gt;
+&lt;p&gt;$$r = \frac{p(\theta^{\ast}|y)/J_t(\theta^{\ast}|\theta^{t-1})}{p(\theta^{t-1}|y)/J_t(\theta^{t-1}|\theta^{\ast})} \\= \frac{p(\theta^{\ast}|y)/p(\theta^{\ast}_{j}|\theta^{t-1}_{-j}, y)}{p(\theta^{t-1}|y)/p(\theta^{t-1}_{j}|\theta^{t-1}_{-j}, y)}$$&lt;/p&gt;
 &lt;p&gt;又有：&lt;/p&gt;
 &lt;p&gt;$$\theta^{\ast} = (\theta^{\ast}_j, \theta^{t-1}_{-j}) \\ \theta^{t-1} = (\theta^{t-1}_j, \theta^{t-1}_{-j})$$&lt;/p&gt;
 &lt;p&gt;则：&lt;/p&gt;
