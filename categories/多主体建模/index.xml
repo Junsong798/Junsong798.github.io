@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>多主体建模 on Junsong Lu</title>
+        <link>https://Junsong798.github.io/categories/%E5%A4%9A%E4%B8%BB%E4%BD%93%E5%BB%BA%E6%A8%A1/</link>
+        <description>Recent content in 多主体建模 on Junsong Lu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 16 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/categories/%E5%A4%9A%E4%B8%BB%E4%BD%93%E5%BB%BA%E6%A8%A1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>人类无智有道： 文化演化的新传播主义（Neo-Diffusionism）</title>
+        <link>https://Junsong798.github.io/p/cultural-evolution/</link>
+        <pubDate>Fri, 16 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/p/cultural-evolution/</guid>
+        <description>&lt;img src="https://Junsong798.github.io/p/cultural-evolution/fig.jpg" alt="Featured image of post 人类无智有道： 文化演化的新传播主义（Neo-Diffusionism）" /&gt;&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;引言&lt;/li&gt;
+&lt;li&gt;缘起：
+&lt;ul&gt;
+&lt;li&gt;文化演化的科学计量学分析&lt;/li&gt;
+&lt;li&gt;什么是文化演化？从传播主义（diffusionism）到新传播主义（Neo-diffusionism）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;核心：文化演化的理论与范式
+&lt;ul&gt;
+&lt;li&gt;社会学习的群体选择&lt;/li&gt;
+&lt;li&gt;累积文化演化&lt;/li&gt;
+&lt;li&gt;无智有道：认知利基与文化利基之争&lt;/li&gt;
+&lt;li&gt;文化选择与有偏转换&lt;/li&gt;
+&lt;li&gt;文化演化的实验范式&lt;/li&gt;
+&lt;li&gt;文化演化的应用：语言演化和刻板印象的起源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+&lt;p&gt;这篇文章，是上周阅读文化演化论的一个阶段性小结。尝试用一周的阅读，将文化演化近100年的发展史做一个思想源流的综述——也即老阳在信分课上所说的最小全局认识。把你扔到任何一个学科交流，没有老师和前辈指路的你能否自辟蹊径，快速厘清这个领域或者学科的知识脉络，并且知道在这个领域如果从新手到专家的路径？&lt;/p&gt;
+&lt;p&gt;本篇文章的结构参考了当时信分8期给我们答疑的助教Alex的结业项目报告《&lt;a class=&#34;link&#34; href=&#34;https://blog.chenmingyu.xyz/posts/behavioral-economics-overview/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这不科学——行为经济学的最小全局认识&lt;/a&gt;》。感谢这节课教会我的东西。&lt;/p&gt;
+&lt;h2 id=&#34;缘起&#34;&gt;缘起&lt;/h2&gt;
+&lt;h3 id=&#34;文化演化的科学计量学分析&#34;&gt;文化演化的科学计量学分析&lt;/h3&gt;
+&lt;p&gt;作为一个从来没有发表过文化演化论文的门外汉，为了解整个领域的知识脉络，还是老一套，首先从已知的论文中提取关键词，然后利用一些关键词引擎对其拓展，将重组后的关键词输入WOS高级检索，过滤不相干的文件，得到相关论文3476篇，对应参考文献156265篇，时间跨度从1976年延续到2024年。由于最近乱删系统文件导致citespace出现了问题，只得转而求助近几年火热的bibliomatrix R package来做文献计量。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/Pasted%20image%2020240726145740.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;figure1&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;从论文发表数量随年份的变化率来看，文化演化这个领域从90年代开始，研究热度逐渐上升，这两年热度有所下降。再看看three-field plot，将三个field分别设置为institute, author, and keywords。这是一个桑基图，可以大致了解一下哪些机构的哪些研究者在做什么：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/Pasted%20image%2020240726150633.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;figure2&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;对作者和引文出处的分析，我们进一步了解到这个领域高产的作者有Mesoudi A, Henrich J, White A, Smith K等等，大家最喜欢发的期刊是philosophical transaction B, proceeding B, PNAS 等等。&lt;/p&gt;
+&lt;p&gt;根据文献co-citaion network和most relevant authors，我们就可以顺着大牛和文献网络去还原这个领域的脉络了。我最喜欢的功能还是historiographic mapping，追溯历史文献的进程，以及thematic evolution，通过计算网络社区的密度和中心性判断一个主题的前沿程度，还能根据时间切片。&lt;/p&gt;
+&lt;h3 id=&#34;什么是文化演化从传播主义diffusionism到新传播主义neo-diffusionism&#34;&gt;什么是文化演化？从传播主义（Diffusionism）到新传播主义（Neo-Diffusionism）&lt;/h3&gt;
+&lt;p&gt;在文化演化（cultural evolution）中，文化被定义为社会传播的信息（socially transmitted information）。 而cultural evolution，顾名思义，就是基于自然选择理论来刻画这种文化传播过程的理论框架。或者说，采取这种视角的学者认为这种transmission遵循自然选择基本原理。&lt;/p&gt;
+&lt;p&gt;时至今日，心理学家们依然大大低估了文化的作用。很多被认为是与生俱来的知觉偏差，比如Müller-Lyer illusion，其实是文化学习的产物。谈到文化，很多研究也只是单纯地用跨文化样本比较文化差异，并没有深层次地探讨其起源和认知机制。与此相对的，文化演化是用严谨的数学和群体遗传学构建的理论，强调了文化传播在人类群体适应性方面的解释效力，比如尝试解释为什么人类通过文化演化可以取得远高于其他物种的适应性。&lt;/p&gt;
+&lt;p&gt;文化演化的观念古已有之，在1859年物种起源出版之前，历史学家和语言学研究者对语系构建trees of historical descent for languages，即对语言构建历史家族树。达尔文在著作《人类的由来》中便提及了这种物种演化和语系演化的相似性 。&lt;/p&gt;
+&lt;p&gt;尽管这种早期的进化论观点在文化研究中的存在，社会科学并没有基于自然选择发展出一套严谨的，形式化的演化理论。19世纪末，不少社会科学家反而沿袭了Herbert Spencer的社会达尔文主义，将演化视作渐进的，阶梯式的过程。而文化和社会的演化遵循一条由低级到高级文明的路线，为纳粹主义提供了理论辩护。&lt;/p&gt;
+&lt;p&gt;这个时候，文化演化的传播主义（diffusionism）作为社会达尔文主义的对立面出现了。传播主义，作为人类学在20世纪初期的主流范式，认为社会并不是单边发展的，也不是总是向着一个更高形态演进。相反，文化信息的传播才应该是文化理论的核心。文化的相似性，并不是同一种渐进驱使的产物（如两个文化处于一个线性演进上相似的阶段，则出现相似的文化特征），而是文化传播的结果。传播主义分为两大派系，其一如英国的人类学家，Elliot Smith, William Rivers等，提出了一种埃及中心论，认为人类创造力低下，大部分文化都由埃及传播出去；另一派是维也纳学派，提出文化圈理论，强调文化相似性是由文化接触导致的。&lt;/p&gt;
+&lt;p&gt;直到20世纪中叶，仍然有一批学者坚持认为基于自然选择理论的文化演化是可行的。比如1965年Donald Campbell就提出了这一点。1976年，Richard Dawkins在自私的基因最后一章提出了meme，模因的概念。尽管如此，这些思想停留在设想层面，没有激发太多相关研究。直到Cavalli-Sforza and Feldman 和Boyd and Richerson分别在1981和1985年的著作中用数学将文化演化的理论形式化，才宣告文化演化正式登上历史舞台。&lt;/p&gt;
+&lt;p&gt;文化演化的早期学者并不是将生物学理论机械照搬，而是积极探讨了生物进化和文化进化的区别。这种本体论层面观点的差异区分了不同的理论观点。其中广为人知的是模因理论，群体选择理论，和文化吸引理论（cultural attraction theory），前两者又被称为普遍达尔文主义（Universal Darwinism）。普遍达尔文主义的支持者，如Dawkins, Cavalli-Sforza, Feldman, Boyd, Richerson, Mesoudi等人，认为可以将自然选择的基本观点——变异，遗传，选择——应用到文化层面，而不需要依赖现代综合（Modern synthesis）运动以后融合了孟德尔遗传学的新达尔文主义（Neo-Darwinism）。Cavalli-Sforza和 Feldman在著作中就提到，文化可以通过直系亲属以外的关系传播，即horizontal social learning。普遍达尔文主义内部最具有争议的矛盾在于文化选择的单位。模因理论认为选择的单位是模因，即“a set of instructions”，或者是“a chunk of procedural knowledge”。Dawkins的例子是，在建造Chinese junk boat的instruction才是受到选择压力的单位，可以被视作基因型（genotype），而被建造的船是表型（phenotype）。文化传播的是基因型而非表型。与此相对的是group selectionism，主要是Boyd and Richerson一派。他们坚持认为文化选择是群体选择，并且传播的是表型——可以观测的行为，实践以及文化活动，而不是产生这些表型的基因型。&lt;/p&gt;
+&lt;p&gt;不同于普遍达尔文主义，由Sperber，即文化吸引理论的提出者认为，文化演化并不是由选择在施加作用，而是受制于人类认知过程，在传播过程中发生系统性的biased transformation，从而趋向稳态的过程。这一派观点由于其对文化和流行病的对比，也常常被称为文化的“表征流行病学”（an epidemiology of representations）。&lt;/p&gt;
+&lt;h2 id=&#34;核心文化演化的理论与范式&#34;&gt;核心：文化演化的理论与范式&lt;/h2&gt;
+&lt;p&gt;20世纪80年代后期，基于群体遗传学的文化演化登上历史舞台后，文化演化还停留在计算机仿真和数学模型的理论层面，直到90年代中期，依然没有出现太多实证性的研究成果，也没有系统性的研究方法。这个时期，有几位日后声名鹊起的研究者进入了Boyd的实验室攻读研究生，比如提出了WEIRD psychology的Joseph Henrich, 他的合作者Francisco J Gil-White，当然，还有大名鼎鼎的Richard McElreath。McElreath是马普所进化人类学研究所所长，以人类学，生物学和心理学方面的研究闻名。参加过我读书会的同学都知道，McElreath还是贝叶斯统计教材《Statistical Rethinking》的作者。我甚至推荐所有社会科学的研究生都去精读这本书，因为这本书不是在教授特定统计方法，而是在为一个科学家的认识论（epistemology ）正三观。除了McElreath，研究生Natalia Smith也在这一时期从考古系转入Boyd的实验室，后来和Henrich成为夫妻，两人还共同出版了学术著作《Why human cooperate》。&lt;/p&gt;
+&lt;p&gt;当Henrich辞去了工程师的工作进入UCLA读研时，Boyd无情地拒绝了他免修生物人类学课程的请求。Henrich自述：如果Robert没有拒绝我的话，我现在可能还是一名工程师。喜欢民族志又精通微分方程的Henrich帮助自己的导师发展了文化演化的理论，也进行了大量田野调查，如斐济群岛食物禁忌的起源，填补了当时文化演化论缺少经验证据的空白——我们不得不感叹拥有一个好学生的重要性。也正是因为这一派涌现出众多杰出的研究者，文化演化的群体选择论占据了当今文化演化研究的主流。因此该领域的核心理论更多以这一派为主。下面对其中一些代表性理论，如社会学习的演化，文化利基，以及累积文化演化，进行回顾。&lt;/p&gt;
+&lt;h3 id=&#34;社会学习的群体选择&#34;&gt;社会学习的群体选择&lt;/h3&gt;
+&lt;p&gt;生物学视角下的文化演化理论尝试说明为什么人类种群的适应性（fitness）高于其他物种。所以Boyd和Richerson在1985年著作，Culture and the evolutionary process，中的尝试证明文化和文化学习增加了人类在群体层面的适应度，从而将人类和其他物种区分开。&lt;/p&gt;
+&lt;p&gt;Boyd和Richerson在1985年的结论是，social learning is adaptive  because it avoids incurring the costs of trial-and-error。即社会学习让模仿者复制了群体中其他人的策略，而又不付出过高成本，这使得社会学习得到选择。然而，1989年，Rogers基于计算机仿真，发现这一观点是错误的。面对质疑，Boyd和Richerson将Rogers的模型进行了稳健性测试，考察了不同空间结构，以及个体的心理特定（ 比如可以识别更好的模仿对象），发现结果稳健。&lt;/p&gt;
+&lt;p&gt;两位人类学家在1995年的论文中承认了自己的错误：如果社会学习的唯一收益是减少模仿者的是错成本，那么群体的适应度和只有学习者的群体是一样的，模仿者的群体不会被选择。逻辑很简单，如果模仿者过多，那么其模仿到正确行为的概率下降（time lag或者环境变化），而学习者的适应度更高。这导致学习者增加。最后达到均衡点（equilibrium）时，模仿者的比例使得模仿者的适应度等于学习者的适应度。&lt;/p&gt;
+&lt;p&gt;所以Boyd和Richerson修正了初始模型，提出了两种更现实的学习策略，使得群体适应度增加。&lt;/p&gt;
+&lt;p&gt;第一种，模仿增加了学习者的适应度。这里本质上把每个个体设置为了混合策略（e.g., allowing selective learning），一个个体不是一昧地模仿或者纯粹地学习环境。假设个体处于一种变化的环境，而存在多种适应性行为时， 个体仅在学习成本低时学习，否则模仿。作者引入了一个threshold parameter，个体首先进行learning trials，如果两个行为的测试结果差的很大，超过阈值，就采纳，否则认为学习不可靠，采用模仿。如果变异出一种threshold很大的个体，说明学习时准确率必然很高，但由于环境分布不变时，超过阈值的可能性更低，所以导致这种突变的个体又更容易去模仿。这导致，学习者和模仿者的适应度是随着模仿者在群体中的比例递增的（在一个范围内）。&lt;/p&gt;
+&lt;p&gt;第二种，cumulative improvement，学习是一个寻找最优参数的过程，那么基于上一代人的搜索点去搜索，就更容易找到最优。这里涉及到了文化演化另一个核心概念，累积文化演化。&lt;/p&gt;
+&lt;h3 id=&#34;累积文化演化&#34;&gt;累积文化演化&lt;/h3&gt;
+&lt;p&gt;累积文化演化（cumulative cultural evolution, CCE）于20世纪90年代被Boyd &amp;amp; Richerson以及Tomasello提出，用于对比人类与其他物种的文化。Boyd和Richerson的模型说明CCE有着严苛的选择条件，仅仅当社会学习适应度很高，跨域一个fitness valley时，才能得到选择。其弟子Henrich &amp;amp; McElreath认为theory of mind和语言则是对应的心理机制。Tomasello进一步强调，只有人类才具有CCE——后来者对前人实践或者文化产品不断改进，从而积累适应性。这个解释也被称为棘轮效应（ratcheting effect）。&lt;/p&gt;
+&lt;p&gt;认为主要有三个机制：复制，教学和创新。其中复制copy包含两个方面：模仿（imitation）和 模拟（emulation）。 模仿需要模仿者和被模仿者同时存在，比如在技术演化中，观看纸飞机的制作过程；模拟则是只需要看纸飞机的成品以及飞行距离。初始研究认为这两种复制都可以促成CCE，但后续结果不一致。有研究表明只有imitation才能促成CCE。教学也被认为是重要因素，有研究认为当学生可以轻而易举获得信息时，教学不重要。最后，创新被认为是技术演化中的关键因素。&lt;/p&gt;
+&lt;p&gt;近20年，CCE这一概念也受到了不少批评。一方面，出现了动物中CCE的证据。另一方面，文化吸引理论一派的研究者表明复杂行为不一定需要CCE，也可以由基因的累积演化导致。这些证据引发了CCE是否只存在于人类社会的讨论。更进一步，CCE对人类群体适应性的是否重要。&lt;/p&gt;
+&lt;p&gt;基于这些挑战，群体选择论的支持者Mesoudi提出了一个文化演化的核心标准（core criteria），以正本清源。 核心标准认为，一个群体要产生CCE，需要满足四个方面：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A change in behavior, 需要有行为的改变，往往是由于asoical learning导致。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transfer via social learning，这种新的行为传递给了群体中的其他个体。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enhance in performance, 这种learned behavior使得某些fitness指标得到了提高&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sequential improvement. 前三条步骤循环往复，从而导致performance随时间的系统性提高。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以核心标准来审视当前对CCE的批评，Mesoudi认为大部分提出动物具有CCE的研究都不满足全部四条标准, 特别是对chimpanzee的研究。只有少数几个鸟类的研究是满足的。但是这些CCE只限于少数几个trait，其广度无法与人类CCE相比。&lt;/p&gt;
+&lt;p&gt;除了概念混淆，群体选择视角下的CCE还受到一部分认知人类学家的批评，主要观点是CCE过度强调文化选择的作用，忽视了个体认知对文化施加的影响。比如，Lombard认为棘轮效应无法解释文化演化方向的多样性——文化在特定历史环境也可能出现停滞和倒退，因此提出了登山效应（mountaineering effect）。基于登山隐喻，Haidle and Schlaudt提出了CCE的拓展框架，强调了主体会基于环境适当调整文化信息的加工。一些例证是，特定认知能力的差异（工作记忆）会影响CCE的边界条件。&lt;/p&gt;
+&lt;h3 id=&#34;无智有道认知利基与文化利基之争&#34;&gt;无智有道：认知利基与文化利基之争&lt;/h3&gt;
+&lt;p&gt;基于社会学习和累积文化演化，Boyd等人在PNAS上与以Steven Pinker为代表的进化心理学家对人类高适应性的解释进行了论战。Pinker尝试在进化论框架内反驳Wallace的目的论，借用了Tooby等进化心理学家提出的cognitive niche这一个词来解释人类智能的起源：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cognitive niche is a mode of survival characterized by manipulation the environment through causal reasoning and social cooperation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对动物来说，生存会变化为一种军备竞赛，比如植物演化出苦味和有毒的化学物质防止被食用，而动物之间又演化出不同的适应器以捕食其他动物或者防止被其他动物捕食。Pinker强调了人类的特殊性，即人类会用因果推理和合作来绕过其他物种的适应器，而非在进化的时间尺度上去改变自己的生理化学结构来形成对其他物种的对抗。具体来说，是工具和技术诀窍（technological know-how），和非亲缘的个体合作，以及语言交流。而这些活动又作为生态位的一部分反过来影响和选择人类的认知。因此，合作，语言与智能协同进化。&lt;/p&gt;
+&lt;p&gt;Boyd等人对Pinker的观点进行了抨击，认为进化心理学家们高估了人类智能对其群体适应性的影响，并提出了文化利基假说（cultural niche hypothesis）来论证。Boyd等人首先列举了两个自然实验。第一个是the lost European explorer experiment，富兰克林探险队（Franklin expedition of 1845-1846）作为当时英国装备最好的探险队，在King William island搁浅后由于不熟悉当地自然气候，最后无人生还。这说明人类并不足以凭借自己的认知水平快速适应多变和恶劣的环境。第二个是脱离了大陆的岛屿由于信息的阻隔，逐渐在技术上失去复杂性。&lt;/p&gt;
+&lt;p&gt;基于自然实验，Boyd等人认为仅仅凭借认知能力，不足以解释人类群体特有的适应性。随着人类社会的发展，即累积文化的演化，文化产品已经复杂到不可能由任何一个个体穷其一生所能独自创造。其次，在模糊和不确定的环境下，具有生态效度的信息极难被获取，所以只有少部分个体能通过自身试错得到适应性信息。所以人类大部分用于生存的信息都通过社会学习得来。&lt;/p&gt;
+&lt;p&gt;尽管认知利基理论也强调了社会学习在人类社会的重要，Boyd等人认为Pinker犯了他们模拟初期一样的错误，即认为社会学习之所以重要，是因为减少了个体获得适应性信息的成本。而他们的研究已经说明，如果模仿的唯一收益是减少模仿者的学习成本，那么存在模仿者的群体依然不会被自然选择。&lt;/p&gt;
+&lt;h3 id=&#34;文化选择与有偏转换&#34;&gt;文化选择与有偏转换&lt;/h3&gt;
+&lt;p&gt;尽管基于社会学习与累积文化演化的群体选择论成为了文化研究的主流，在比较理论时仍然无法避免其主要竞争理论——文化吸引理论的批评。这种对立，可以总结为文化传播中文化选择（cultural selection）与有偏转换（biased transformation）的对立。&lt;/p&gt;
+&lt;p&gt;文化选择是由Boyd等人社会学习演化理论的延申。文化传播首先源自随机的文化变异，然后经过个体非随机的偏向性学习（biased learning），比如模仿成功者，对具有适应性的文化进行了筛选。分别对应自然选择理论的变异，遗传和选择。而自20世纪末以来，大量实证研究为这种有偏学习提供了证据，比如倾向模仿群体中更成功的个体（payoff bias）和模仿频率最高的行为（conformist bias）。这种有偏学习，被认为是CCE的基础。&lt;/p&gt;
+&lt;p&gt;支持文化吸引理论的学者，如Sperber和其合作者，对群体选择论阐述的文化动力过程进行了抨击。他们强调文化传播的核心是有偏转换（biased transformation）。文化主要是在个体传播层面进行了变异，而这种变异又是由于人类系统性的认知架构引起，这导致了不同地区文化的相似性。一个证据是，在历史上，虽然放血疗法并不能提高适应性，但是对这种疗法的偏好依然在不同地区出现。因此”放血”是一种文化吸引子，不同国家的文化经由传播会收敛于一个相似的稳态。&lt;/p&gt;
+&lt;p&gt;群体选择论和文化吸引理论对此进行了辩论。群体选择论的支持者Mesoudi认为所谓的biased transformation是对Boyd等人提出的guided variation的重复解释。回归Boyd和Richerson的早期文献，他们提出了两种产生文化适应器的过程，即演化动力的源头。第一种是guided variation, 个体在学习时，基于个体经验，会对学到的东西做modification。而在文化一代代传递的时候，这种modification可能会产生累积，从而产生系统性的变化。第二种就是上文所说的有偏社会学习过程。&lt;/p&gt;
+&lt;p&gt;文化吸引理论的学者将Mesoudi的诠释视为一种误解，并进行回应。他们强调，偏向性转化是文化传播的基本特征，也是稳定性，而非变异的来源。基于群体遗传学的文化演化将稳定性和变异分开，类似于基因复制和选择的过程，而文化吸引理论认为二者是同一的，文化在因果上不是先被遗传再被选择，而是同时发生。从这些具体解释来看，两派的对立并不是单纯的很多综述描述的”群体选择理论没有考虑个体认知的作用“，而是二者在本体论上的观点有所不同。群体选择论更像是自然选择理论的忠实粉丝。&lt;/p&gt;
+&lt;h3 id=&#34;文化演化的实验范式&#34;&gt;文化演化的实验范式&lt;/h3&gt;
+&lt;p&gt;文化演化的实验范式主要源于对CCE的研究，大致总结为三类：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;单被试法。只有一个被试，被试不断重复同一个任务，借此观察信息在传递过程中的演化，起源自Bartlett 1932创建的两个记忆范式：repeated reproduction (一个人反复回忆) and serial reproduction （人传人）。&lt;/li&gt;
+&lt;li&gt;微观文化法（microcultures）。其中的经典是diffusion chain paradigm, 模拟的是文化的代际演化。用一组被试模拟一代人，然后将其实验输出传递给另一组被试, 以此类推，形成对代际传播的模拟。&lt;/li&gt;
+&lt;li&gt;模拟实验。主要是多主体建模（agent-based modeling, ABM）。通过设置主体（agent）的属性，环境的属性以及主体与环境交互的方式，模拟文化的传播（cf Jackson et al., 2017, Table 1）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Research Aspect&lt;/th&gt;
+&lt;th&gt;Field Studies&lt;/th&gt;
+&lt;th&gt;Lab Experiment&lt;/th&gt;
+&lt;th&gt;Archival Studies&lt;/th&gt;
+&lt;th&gt;ABMs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Control and realism&lt;/td&gt;
+&lt;td&gt;Low control; high realism&lt;/td&gt;
+&lt;td&gt;Medium control; medium realism&lt;/td&gt;
+&lt;td&gt;Low control; medium realism&lt;/td&gt;
+&lt;td&gt;High control; low realism&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Scale&lt;/td&gt;
+&lt;td&gt;Medium to high scale&lt;/td&gt;
+&lt;td&gt;Low to medium scale&lt;/td&gt;
+&lt;td&gt;High scale&lt;/td&gt;
+&lt;td&gt;High scale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Nonlinear dynamics&lt;/td&gt;
+&lt;td&gt;Medium visibility&lt;/td&gt;
+&lt;td&gt;Low visibility&lt;/td&gt;
+&lt;td&gt;Medium visibility&lt;/td&gt;
+&lt;td&gt;High visibility&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mechanism&lt;/td&gt;
+&lt;td&gt;Medium clarity&lt;/td&gt;
+&lt;td&gt;High clarity&lt;/td&gt;
+&lt;td&gt;Low clarity&lt;/td&gt;
+&lt;td&gt;High clarity&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;文化演化的应用语言演化和刻板印象的起源&#34;&gt;文化演化的应用：语言演化和刻板印象的起源&lt;/h3&gt;
+&lt;p&gt;在21世纪初，文化演化的实证证据主要还是来自田野实验。第一篇在运用实验检验文化演化论的研究追溯到2008年Kirby等人对语言演化的研究。作者对模拟实验进行了批判，认为其无法捕捉更复杂的真实现象，文化演化研究应该转向以diffusion chains为范式的实验室研究。当然作者指出，该实验范式并非无源之水，借鉴了动物研究中的文化传播方法，以及对人类沟通系统的研究。在实验中，被试需要在学习阶段看一组刺激学习一门外星语言。刺激由一个字符串和对应的视觉刺激（shape, color, motion随机搭配）组成。学习阶段结束后进入测试阶段，被试需要观察视觉刺激然后写出外星语言中描述该刺激的词汇。需要指出，在测试阶段，被试将对学习阶段见过的和未见过的刺激作答。被试的作答将作为下一组被试（generation 2）的学习材料，其中一半作答被hold out用作测试。重复10代。&lt;/p&gt;
+&lt;p&gt;研究结果发现随着代数增加，被试的正确率越来越高，说明初始随机的字符串被演化为更好学习的结构。在传播链的末尾，比如第九代或者第十代被试，作者发现他们的错误率为0. 这个结果非常反直觉，因为字符串在初始是随机的，想要做到完全正确，需要靠死记硬背全部的刺激-字符对。但即使如此，一部分刺激被保留到测试阶段，说明被试根本不可能死记硬背所有的刺激。对数据的进一步考察发现，随机的语言演化出了underspecification of meaning，即最开始完全不模糊的语言被引入了一种模糊性，初始的一一对应被映射为了single string可以被用来表示多个不同的意义（如某种颜色）。这说明人们有限的认知使得随机的语言被映射到一个低维的，规则简洁的空间。作者在实验二将每一代被试输出中有underspecification的词语去除，发现语言最后展现出另一种结构，compositionality，被试会把不同的mophoemes进行组合来表示不同的视觉刺激。或者，这可以理解为，compositionality就是在morpheme的层面上出现了underspecification。总而言之，文化传播会增加语言的传播性和结构性。&lt;/p&gt;
+&lt;p&gt;同样是利用diffusion chain，Martin et al. 对不同的形状，颜色和运动轨迹进行组合，构造了27种不同的外星生物。每个生物随机用6个词语描述特质，并随机划分到学习组和测试组中。被试被要求记忆外星人以及他们的特质，而被试的作答（对外星人的描述）将作为下一代被试的训练材料。随着代数的增加，被试在测试中的错误率越来越低，而初始随机的外星人-词语组合慢慢涌现出了可学习的，类别性的结构。这说明刻板印象可能是一种由于有限认知资源，以及人们对类别结构（categorical structure）的偏好导致的文化现象。&lt;/p&gt;
+&lt;p&gt;通过diffusion chain，可以在实验室观测到许多非常反直觉的文化传播现象。然而，将这些实验室结论联系到本文开始提及的理论和学派观点，会发现对这些结果的解释存在模糊和争议。对上述语言和刻板印象演化的结果，似乎可以将他们看作biased transformation或者guided variation的例证。但Mesoudi认为当前的实验有明显的弊端，无法区分背后的过程到底是基于cultural selection还是biased transformation。目前基于diffusion chain的实验虽然都声称发现了biased transformation，比如某种信息传递到最后出现了某种特点，但其本质上只体现了某种文化或行为的directional change。比如文化信息传递到chain的末尾时，发现emotionally salient information在diffusion chain被保留了，但可能是被试”transform the information to make it more salient“（biased transformation），或者是他们preferentially attend to, or acquire each emotionally salient information（cultural selection）。这说明同样的认知机制可以同时影响文化选择以及偏向转变。而大多数研究并没有认识到这一点，哪怕是发表在Science上的文章也误将directional change等价地解释为cultural selection。在未来，也许需要对实验范式进行修改，区分两种选择过程，才能对竞争性的文化演化理论进行比较和检验。&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;Boyd, R. (n.d.). Why Culture is Common, but Cultural Evolution is Rare. 17.
+Boyd, R. (1995). Why does culture increase human adaptibility. Ethology and Sociobiology.
+Boyd, R., Richerson, P. J., &amp;amp; Henrich, J. (2011). The cultural niche: Why social learning is essential for human adaptation. Proceedings of the National Academy of Sciences, 108(Supplement_2), 10918–10925. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1073/pnas.1100290108&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1073/pnas.1100290108&lt;/a&gt;
+Buskell, A. (2017). What are cultural attractors? Biology &amp;amp; Philosophy, 32(3), 377–394. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/s10539-017-9570-6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1007/s10539-017-9570-6&lt;/a&gt;
+Chudek, M., &amp;amp; Henrich, J. (2011). Culture–gene coevolution, norm-psychology and the emergence of human prosociality. Trends in Cognitive Sciences, 15(5), 218–226. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.tics.2011.03.003&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.tics.2011.03.003&lt;/a&gt;
+Claidière, N., Scott-Phillips, T. C., &amp;amp; Sperber, D. (2014). How Darwinian is cultural evolution? Philosophical Transactions of the Royal Society B: Biological Sciences, 369(1642), 20130368. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rstb.2013.0368&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rstb.2013.0368&lt;/a&gt;
+Clark, A. (2006). Language, embodiment, and the cognitive niche. Trends in Cognitive Sciences, 10(8), 370–374. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.tics.2006.06.012&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.tics.2006.06.012&lt;/a&gt;
+Enquist, M., Ghirlanda, S., &amp;amp; Eriksson, K. (2011). Modelling the evolution and diversity of cumulative culture. Philosophical Transactions of the Royal Society B: Biological Sciences, 366(1563), 412–423. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rstb.2010.0132&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rstb.2010.0132&lt;/a&gt;
+Eriksson, K., &amp;amp; Coultas, J. C. (2014). Corpses, Maggots, Poodles and Rats: Emotional Selection Operating in Three Phases of Cultural Transmission of Urban Legends. Journal of Cognition and Culture, 14(1–2), 1–26. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1163/15685373-12342107&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1163/15685373-12342107&lt;/a&gt;
+Experimental evidence for internal mechanisms of cumulative cultural evolution. (2023). Advances in Psychological Science, 31(5), 866. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3724/SP.J.1042.2023.00866&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.3724/SP.J.1042.2023.00866&lt;/a&gt;
+Fay, N., De Kleine, N., Walker, B., &amp;amp; Caldwell, C. A. (2019). Increasing population size can inhibit cumulative cultural evolution. Proceedings of the National Academy of Sciences, 116(14), 6726–6731. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1073/pnas.1811413116&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1073/pnas.1811413116&lt;/a&gt;
+Haidle, M. N., Conard, N. J., &amp;amp; Bolus, M. (Eds.). (2016). The Nature of Culture: Based on an Interdisciplinary Symposium ‘The Nature of Culture’, Tübingen, Germany. Springer Netherlands. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/978-94-017-7426-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1007/978-94-017-7426-0&lt;/a&gt;
+Henrich, J., &amp;amp; Boyd, R. (2002). On Modeling Cognition and Culture: Why cultural evolution does not require replication of representations. Journal of Cognition and Culture, 2(2), 87–112. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1163/156853702320281836&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1163/156853702320281836&lt;/a&gt;
+Henrich, J., Boyd, R., Derex, M., Kline, M. A., Mesoudi, A., Muthukrishna, M., Powell, A. T., Shennan, S. J., &amp;amp; Thomas, M. G. (2016). Understanding cumulative cultural evolution. Proceedings of the National Academy of Sciences, 113(44), E6724–E6725. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1073/pnas.1610005113&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1073/pnas.1610005113&lt;/a&gt;
+Henrich, J., Boyd, R., &amp;amp; Richerson, P. J. (2008). Five Misunderstandings About Cultural Evolution. Human Nature, 19(2), 119–137. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/s12110-008-9037-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1007/s12110-008-9037-1&lt;/a&gt;
+Henrich, J., &amp;amp; Broesch, J. (2011). On the nature of cultural transmission networks: Evidence from Fijian villages for adaptive learning biases. Philosophical Transactions of the Royal Society B: Biological Sciences, 366(1567), 1139–1148. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rstb.2010.0323&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rstb.2010.0323&lt;/a&gt;
+Henrich, J., &amp;amp; McElreath, R. (2003). The evolution of cultural evolution. Evolutionary Anthropology: Issues, News, and Reviews, 12(3), 123–135. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1002/evan.10110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1002/evan.10110&lt;/a&gt;
+Henrich, J. P. (2016). The secret of our success: How culture is driving human evolution, domesticating our species, and making us smarter. Princeton University Press.
+Jackson, J. C., Rand, D., Lewis, K., Norton, M. I., &amp;amp; Gray, K. (2017). Agent-Based Modeling: A Guide for Social Psychologists. Social Psychological and Personality Science, 8(4), 387–395. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10/gbnhmh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10/gbnhmh&lt;/a&gt;
+Kameda, T. (2003). Does social/cultural learning increase human adaptability? Rogers’s question revisited. Evolution and Human Behavior, 24(4), 242–260. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/S1090-5138%2803%2900015-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/S1090-5138(03)00015-1&lt;/a&gt;
+Kirby, S., Cornish, H., &amp;amp; Smith, K. (2008). Cumulative cultural evolution in the laboratory: An experimental approach to the origins of structure in human language. Proceedings of the National Academy of Sciences, 105(31), 10681–10686. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1073/pnas.0707835105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1073/pnas.0707835105&lt;/a&gt;
+Martin, D., Hutchison, J., Slessor, G., Urquhart, J., Cunningham, S. J., &amp;amp; Smith, K. (2014). The Spontaneous Formation of Stereotypes via Cumulative Cultural Evolution. Psychological Science, 25(9), 1777–1786. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1177/0956797614541129&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1177/0956797614541129&lt;/a&gt;
+McElreath, R., Lubell, M., Richerson, P. J., Waring, T. M., Baum, W., Edsten, E., Efferson, C., &amp;amp; Paciotti, B. (2005). Applying evolutionary models to the laboratory study of social learning. Evolution and Human Behavior, 26(6), 483–508. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.evolhumbehav.2005.04.003&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.evolhumbehav.2005.04.003&lt;/a&gt;
+Mesoudi, A. (2016a). Cultural Evolution: A Review of Theory, Findings and Controversies. Evolutionary Biology, 43(4), 481–497. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/s11692-015-9320-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1007/s11692-015-9320-0&lt;/a&gt;
+Mesoudi, A. (2016b). Cultural Evolution: A Review of Theory, Findings and Controversies. Evolutionary Biology, 43(4), 481–497. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/s11692-015-9320-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1007/s11692-015-9320-0&lt;/a&gt;
+Mesoudi, A. (2021). Cultural selection and biased transformation: Two dynamics of cultural evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 376(1828), rstb.2020.0053, 20200053. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rstb.2020.0053&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rstb.2020.0053&lt;/a&gt;
+Mesoudi, A., Chang, L., Murray, K., &amp;amp; Lu, H. J. (2015). Higher frequency of social learning in China than in the West shows cultural variation in the dynamics of cultural evolution. Proceedings of the Royal Society B: Biological Sciences, 282(1798), 20142209. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rspb.2014.2209&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rspb.2014.2209&lt;/a&gt;
+Mesoudi, A., &amp;amp; Thornton, A. (2018). What is cumulative cultural evolution? Proceedings of the Royal Society B: Biological Sciences, 285(1880), 20180712. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rspb.2018.0712&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rspb.2018.0712&lt;/a&gt;
+Mesoudi, A., &amp;amp; Whiten, A. (2008a). The multiple roles of cultural transmission experiments in understanding human cultural evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 363(1509), 3489–3501. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rstb.2008.0129&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rstb.2008.0129&lt;/a&gt;
+Mesoudi, A., &amp;amp; Whiten, A. (2008b). The multiple roles of cultural transmission experiments in understanding human cultural evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 363(1509), 3489–3501. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rstb.2008.0129&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rstb.2008.0129&lt;/a&gt;
+Mesoudi, A., Whiten, A., &amp;amp; Laland, K. N. (2006). Towards a unified science of cultural evolution. Behavioral and Brain Sciences, 29(4), 329–347. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1017/S0140525X06009083&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1017/S0140525X06009083&lt;/a&gt;
+Miton, H., Claidière, N., &amp;amp; Mercier, H. (2015). Universal cognitive mechanisms explain the cultural success of bloodletting. Evolution and Human Behavior, 36(4), 303–312. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.evolhumbehav.2015.01.003&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.evolhumbehav.2015.01.003&lt;/a&gt;
+Nia, H. T., Jain, A. D., Liu, Y., Alam, M.-R., Barnas, R., &amp;amp; Makris, N. C. (2015). The evolution of air resonance power efficiency in the violin and its ancestors. Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences, 471(2175), 20140905. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rspa.2014.0905&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rspa.2014.0905&lt;/a&gt;
+Perry, S., Carter, A., Smolla, M., Akçay, E., Nöbel, S., Foster, J. G., &amp;amp; Healy, S. D. (2021). Not by transmission alone: The role of invention in cultural evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 376(1828), 20200049. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1098/rstb.2020.0049&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1098/rstb.2020.0049&lt;/a&gt;
+Pinker, S. (2013). Language, Cognition, and Human Nature. Proceedings of the National Academy of Sciences. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1093/acprof:oso/9780199328741.001.0001&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1093/acprof:oso/9780199328741.001.0001&lt;/a&gt;
+Rand, D. G., Greene, J. D., &amp;amp; Nowak, M. A. (2012). Spontaneous giving and calculated greed. Nature, 489(7416), 427–430. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1038/nature11467&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1038/nature11467&lt;/a&gt;
+Richerson, P. J., &amp;amp; Boyd, R. (1992). Cultural Inheritance and Evolutionary Ecology. In Evolutionary Ecology and Human Behavior (1st ed., pp. 61–92). Routledge. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.4324/9780203792704-3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.4324/9780203792704-3&lt;/a&gt;
+Scott-Phillips, T., Blancke, S., &amp;amp; Heintz, C. (2018). Four misunderstandings about cultural attraction. Evolutionary Anthropology: Issues, News, and Reviews, 27(4), 162–173. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1002/evan.21716&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1002/evan.21716&lt;/a&gt;
+Vaesen, K., Collard, M., Cosgrove, R., &amp;amp; Roebroeks, W. (2016). Population size does not explain past changes in cultural complexity. Proceedings of the National Academy of Sciences, 113(16), E2241–E2247. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1073/pnas.1520288113&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1073/pnas.1520288113&lt;/a&gt;
+Yang L., Chen W., Zhu Q., &amp;amp; Zhong N. (2024). Cumulative cultural evolution theory from a psychological perspective: Theoretical development and integration of schools. Advances in Psychological Science, 32(6), 965. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3724/SP.J.1042.2024.00965&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.3724/SP.J.1042.2024.00965&lt;/a&gt;
+奥尔特 &amp;amp; 闾佳. (2014). 粉红牢房效应: 绑架思维, 感觉和行为的9大潜在力量 = Drunk tank pink and other unexpected forces that shape how we think, feel, and behave. 浙江人民出版社.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

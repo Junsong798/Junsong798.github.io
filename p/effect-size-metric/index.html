@@ -486,9 +486,11 @@
 <p>因此，对paired t得出的$d$，应该解释为：相对于0点，平均改变了$d$个标准差，即：</p>
 <p>$d=\frac{\bar{X_1}-\bar{X_2}}{s} *\sqrt{\frac{1}{2(1-r)}}=\frac{\bar{X_1}-\bar{X_2}}{S_{D}}$</p>
 <p>如果上述式子不明显，参考以下步骤，即可得知差值的标准差和raw score的标准差的关系：</p>
-<p>$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2<em>r</em>s_1*s_2}{n}}}$</p>
+<p>$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2 * r * s_1 * s_2}{n}}}$</p>
+<p>$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2 \times r \times s_1 \times s_2}{n}}}$</p>
 <p>如果HOV满足，则：</p>
 <p>$t_{RM}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2<em>r</em>s_1*s_2}{n}}}=\frac{\bar{D}}{\sqrt{\frac{2s^2(1-r)}{n}}}$</p>
+<p>$t_{RM}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2r \times s_1 \times s_2}{n}}}=\frac{\bar{D}}{\sqrt{\frac{2s^2(1-r)}{n}}}$</p>
 <p>从而得到两种标准差的转换公式：</p>
 <p>$S_{D}=S\sqrt{2(1-r)}$</p>
 <p>同理，得到效应量两种量纲的转换公式：</p>
@@ -513,7 +515,7 @@
 <p>推导过程见<a class="link" href="https://stats.stackexchange.com/questions/144084/variance-of-cohens-d-statistic"  target="_blank" rel="noopener"
     >cross validated</a>.</p>
 <p>而对配对样本，除了样本量，抽样误差还取决于匹配情况，如相关系数的大小。采用raw score作为效应量scaling时，可以用Morris和Deshon提出的通用转化公式：</p>
-<p>$\sigma_{e_i}^2=\frac{A^2}{\tilde{n}}\frac{df}{df-2}(1+\frac{\tilde{n}}{A^2}\sigma_{<em>}^2)-\frac{\delta_{</em>}^2}{c^2}$</p>
+<p>$\sigma_{e_i}^2=\frac{A^2}{\tilde{n}}\frac{df}{df-2}(1+\frac{\tilde{n}}{A^2}\sigma_{\ast}^2)-\frac{\delta_{\ast}^2}{c^2}$</p>
 <p>其中df为对应设计的自由度，A代表两种效应量之间的转换公式，如果用raw score scaling，则A为：</p>
 <p>$A=\sqrt{2(1-p)}$</p>
 <p>而$\tilde{n}$为一个与样本量有关的系数，类似有效样本量。如果是被试间设计，则：</p>
@@ -526,7 +528,6 @@
 <p>$\sigma_{e_i}^2=\frac{2(1-r)}{n}\frac{n-1}{n-3}(1+\frac{n}{2(1-r)}d_{IG}^2)-\frac{d_{IG}^2}{c^2}$</p>
 <h2 id="效应量标度的选择">效应量标度的选择</h2>
 <p>效应量的scaling取决于研究者希望回答的问题。如果一个元分析希望知道一种实验处理的组间差异——处理效应的差异是否存在，用raw score metric更好。如果研究者关心的是在一系列successive trials间被试自身的变化，那么change score metric更好。</p>
-<p>@MorrisImpulsivitymediatingfactor2020</p>
 
 </section>
 
