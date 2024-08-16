@@ -38,10 +38,8 @@
 &lt;p&gt;因此，对paired t得出的$d$，应该解释为：相对于0点，平均改变了$d$个标准差，即：&lt;/p&gt;
 &lt;p&gt;$d=\frac{\bar{X_1}-\bar{X_2}}{s} *\sqrt{\frac{1}{2(1-r)}}=\frac{\bar{X_1}-\bar{X_2}}{S_{D}}$&lt;/p&gt;
 &lt;p&gt;如果上述式子不明显，参考以下步骤，即可得知差值的标准差和raw score的标准差的关系：&lt;/p&gt;
-&lt;p&gt;$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2 * r * s_1 * s_2}{n}}}$&lt;/p&gt;
 &lt;p&gt;$t_{RM}=\frac{\bar{D}}{\frac{S_{D}}{\sqrt{n}}}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2 \times r \times s_1 \times s_2}{n}}}$&lt;/p&gt;
 &lt;p&gt;如果HOV满足，则：&lt;/p&gt;
-&lt;p&gt;$t_{RM}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2&lt;em&gt;r&lt;/em&gt;s_1*s_2}{n}}}=\frac{\bar{D}}{\sqrt{\frac{2s^2(1-r)}{n}}}$&lt;/p&gt;
 &lt;p&gt;$t_{RM}=\frac{\bar{D}}{\sqrt{\frac{s_1^2+s_2^2}{n}-\frac{2r \times s_1 \times s_2}{n}}}=\frac{\bar{D}}{\sqrt{\frac{2s^2(1-r)}{n}}}$&lt;/p&gt;
 &lt;p&gt;从而得到两种标准差的转换公式：&lt;/p&gt;
 &lt;p&gt;$S_{D}=S\sqrt{2(1-r)}$&lt;/p&gt;
