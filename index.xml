@@ -6,7 +6,124 @@
         <description>Recent content on Junsong Lu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://Junsong798.github.io/about/</link>
+        <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Junsong798.github.io/about/</guid>
+        <description>&lt;figure&gt;&lt;img src=&#34;./bg.jpg&#34; width=&#34;100%&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;research-statement&#34;&gt;Research Statement&lt;/h3&gt;
+&lt;p&gt;During my undergraduate studies, I developed a strong interest in psychology through the exploration of cognitive science literature. This intellectual journey led me to engage deeply with the works of prominent scholars such as Keith Stanovich, Daniel Kahneman, and particularly Gerd Gigerenzer and Herbert A. Simon, whose research on bounded rationality and heuristics left a lasting impression. Subsequently, I became increasingly drawn to mid-level evolutionary theories, including parental investment theory, life history theory, and the antagonistic pleiotropy hypothesis.&lt;/p&gt;
+&lt;p&gt;At the beginning of my Ph.D. training, I immersed myself in Bayesian statistics. I was intrigued by the realization that Bayesianism is not merely a statistical style but emerges as a logical necessity under specific assumptions, such as those articulated in De Finetti&amp;rsquo;s representation theorem. I pursued self-directed learning in this area and became particularly fascinated by hierarchical Bayesian models (HBMs), nonparametric models such as Dirichlet process mixture models, and their combinations. The elegant properties of HBMs prompted me to explore their potential for deriving normative models of human cognition and behavior. This led me to engage extensively with the work of John Anderson, Tom Griffiths, Josh Tenenbaum, and their collaborators, and to shift my research focus toward the development of normative models.&lt;/p&gt;
+&lt;p&gt;My primary research interests lie at the intersection of judgment and decision-making, social cognition, and computational modeling. In the domain of normative modeling, I draw on insights from behavioral economics and evolutionary psychology to investigate how organisms optimize utility functions across different environmental contexts. My first normative model of intertemporal decision-making was published in the Proceedings of the Annual Meeting of the Cognitive Science Society (Oral presentation, 13.8%). In my work on social cognition, I rely heavily on Bayesian inference to build computational models. I am currently developing a theoretical framework for understanding impression formation and maintenance from a computational perspective.&lt;/p&gt;
+&lt;p&gt;A second strand of my research is grounded in evolutionary biology, with a particular focus on behavioral genetics and genoeconomics. I am interested in how genetic and environmental factors jointly shape the development of complex human behaviors and how these influences manifest in economic outcomes.&lt;/p&gt;
+&lt;p&gt;The third line of inquiry concerns cultural evolution, geographical context, and agent-based modeling. I investigate the dynamic interplay between cultural transmission and ecological variables in shaping social learning, employing agent-based simulations as a key methodological tool. In my current project, I integrate geometrical and census data to develop an agent-based model populated with Bayesian reasoners, aiming to explain regional variations in stereotype formation.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;University of California San Diego, U.S. (2023.9 - )&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ph.D. in Experimental Psychology&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=jOyTedwAAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=ao&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chujun Lin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Chinese University of Hong Kong, Shenzhen, China (2018.9 - 2020.7)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;M.S. in Applied Psychology, GPA: 3.864 (rank: 1/27)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?hl=zh-CN&amp;amp;user=oO3kAtQAAAAJ&amp;amp;view_op=list_works&amp;amp;sortby=pubdate&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Xiaotian Wang&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Highlights&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Outstanding Graduate 2020&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Academic Excellence Award 2020&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Academic Scholarship Gold Award 2019&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Northeastern University, China (2014.10 - 2018.6)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;B.S. in Metallurgy, GPA: 3.511 (rank: 36/255)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. Xiangning Meng, Prof. Zhuokun Cao&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Highlights&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Postgraduate Recommendation&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Published two mathematical modeling patents; one was sold at a price of 150,000RMB&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Academic Scholarship Award (Class C) 2015, 2016, 2017&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;work-experience-2019-2023&#34;&gt;Work Experience (2019-2023)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Project Associate: Department of Applied Social Sciences, The Hong Kong Polytechnic University (2022.8-)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=SLEM6QMAAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=sra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Yin Wu&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generate an experimental program that could provide feedback to participants and repeat trials with no responses. Blended chemical reagents to prepare the olfactory stimuli consisted of androstadienone and propylene glycol. Administered hormones to participants and fitted Bayesian drift-diffusion models using choice and response time data&lt;/li&gt;
+&lt;li&gt;Modeled the generative process of self-esteem using reinforcement-learning model, kernel regression, and Gaussian process model under the hierarchical Bayesian framework&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Visiting Student: Affiliated Mental Health Center, Zhejiang University School of Medicine (2021.7-2021.9)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. Tao Li&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Predicted suicidal behavior in adolescents using interpretable machine learning (e.g., XGBoost)&lt;/li&gt;
+&lt;li&gt;Calculated Shapley values of suicide-associated factors and revealed the impact of risk factors on individual predictions&lt;/li&gt;
+&lt;li&gt;Estimated a mixed graphical model to examine the developmental trajectory of suicidal behavior&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Research Assistant: The Chinese University of Hong Kong, Shenzhen (2020.7 - 2021.8)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Prof. Xiaotian Wang&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build a team workflow using a set of tools like zotero, slack, trello, and git/Github&lt;/li&gt;
+&lt;li&gt;Prepare manuscripts, analyze data, and conduct behavioral experiments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Visiting Graduate of &lt;a class=&#34;link&#34; href=&#34;http://www.sribd.cn/index.php/en/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Shenzhen Research Institute of Big Data (SRIBD)&lt;/a&gt;, (2019.3 - 2020.5, 2020.7)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Advisor: Dr. Jianjun Zhou, Prof. Xiaotian Wang, Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=RGoypN4AAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=sra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Kun Zhang (CMU)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed and conducted computer-based experiments&lt;/li&gt;
+&lt;li&gt;Analyzed scores on the Internet Gaming Disorder Scale through Item Response Theory to obtain the typical disorder symptoms of CUHK(SZ) students&lt;/li&gt;
+&lt;li&gt;Using machine learning and causal inference algorithms (e.g., PC, FCI, and LiNGAM) to recover the antecedents and ramifications of gaming disorder and self-control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;research-projects&#34;&gt;Research Projects&lt;/h3&gt;
+&lt;h4 id=&#34;publications&#34;&gt;Publications&lt;/h4&gt;
+&lt;p&gt;§ Co-first authorship. * Corresponding author.&lt;/p&gt;
+&lt;p&gt;Long, J.§, Lu, J.§, Hu, Y., Tobler, P. N., &amp;amp; Wu, Y. (2025). Testosterone administration increases the computational impact of social evaluation on the updating of state self-esteem. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging. (in press)&lt;/p&gt;
+&lt;p&gt;Lu, J., Ye, Y., Wu, Y.* (2024) &lt;a class=&#34;link&#34; href=&#34;https://royalsocietypublishing.org/doi/full/10.1098/rsos.240004&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Little Evidence that Androstadienone Affect Social Distance-Dependent Prosocial Behavior: A Pre-Registered Study&lt;/a&gt; &lt;em&gt;Royal Society Open Science, 11&lt;/em&gt;, 240004.&lt;/p&gt;
+&lt;p&gt;Lu, J.§, Jin, Y.§, Liang, S., &amp;amp; Li, T.* (2024) &lt;a class=&#34;link&#34; href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11112863/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Screening and Explaining Suicide-Associated Factors in Adolescents Using Interpretable Machine Learning and Network Analysis: a Cross-Sectional Study&lt;/a&gt; &lt;em&gt;BMC public health, 24&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Samore, T., Fessler, D. M., Sparks, A. M., Holbrook, C., Aaroe, L., Baeza, C. G., &amp;hellip; &amp;amp; Wang, X. T. (2024). Accordance and conflict between religious and scientific precautions against COVID-19 in 27 societies. &lt;em&gt;Religion, Brain &amp;amp; Behavior&lt;/em&gt;, 1-20.&lt;/p&gt;
+&lt;p&gt;Lu, J., Yao, J., Zhou, Z., &amp;amp; Wang, X.T.* (2023) &lt;a class=&#34;link&#34; href=&#34;https://psycnet.apa.org/record/2024-05957-003&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Age Effects on Delay Discounting across the Lifespan: A Meta-Analytical Approach to Theory Comparison and Model Development.&lt;/a&gt; &lt;em&gt;Psychological Bulletin, 149&lt;/em&gt;(7-8), 447–486.&lt;/p&gt;
+&lt;p&gt;Wang, X.T.*, Wang, P.*, Lu, J., Zhou, J., Li, G., &amp;amp; Garelik, S. (2022) &lt;a class=&#34;link&#34; href=&#34;https://iaap-journals.onlinelibrary.wiley.com/doi/full/10.1111/aphw.12350?casa_token=AmkO-1cBxv4AAAAA%3AFJHHEGgnEIuTNnL_lp7QmqACmcjHY9w-sToH8XB06-EgTAX_87kpwcF0R24AGwtcI-6GxI3kYuNpLz75&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Episodic Future Thinking and Anticipatory Emotions: Effects on Delay Discounting and Preventive Behaviors During COVID-19.&lt;/a&gt; &lt;em&gt;Applied Psychology: Health and Well-Being, 14&lt;/em&gt;(3), 842-861.&lt;/p&gt;
+&lt;p&gt;Lu, J.*, Lu, Q.*, &amp;amp; Lu, L. (2022) &lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-328X/12/3/63&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Differential Effects of Fundamental and Longitudinal Life-History Trade-Offs on Delay Discounting: An Evolutionary Framework.&lt;/a&gt; &lt;em&gt;Behavioral Sciences, 12&lt;/em&gt;(3), 63.&lt;/p&gt;
+&lt;p&gt;Samore, T. *, Fessler, D. M., Sparks, A. M., Holbrook, C., Aaroe, L., Baeza, C. G., &amp;hellip; &amp;amp; Wang, X. T. (2022) &lt;a class=&#34;link&#34; href=&#34;https://www.nature.com/articles/s41598-023-29655-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Greater Traditionalism Predicts COVID-19 Precautionary Behaviors Across 27 Societies&lt;/a&gt; &lt;em&gt;Scientific Reports, 13&lt;/em&gt;(1), 4969.&lt;/p&gt;
+&lt;h4 id=&#34;manuscript-under-preparation&#34;&gt;Manuscript Under Preparation&lt;/h4&gt;
+&lt;p&gt;Lu, J.* &amp;amp; Wang, X.T. (2025). A Normative Model of Delay Discounting Across the Lifespan: Tradeoffs Between Mortality, Fertility, and Parenting. (under revision)&lt;/p&gt;
+&lt;p&gt;Lu, J., &amp;amp; Lin, C. (2024). From latent constructs to networks: modeling high-dimensional social inferences in naturalistic settings. (under revision)&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;skills--hobbies&#34;&gt;Skills &amp;amp; Hobbies&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Software Operation&lt;/strong&gt; : R (base &amp;amp; tidyverse), Stan, Python, NetLogo, PsychoPy, Mplus, Citespace, HTML, CSS, Javascript&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Language&lt;/strong&gt;: Chinese, English&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hobbies&lt;/strong&gt;: Reading &amp;amp; Writing, Chinese Martial Art (under the supervision of the 4th inheritor of Xingyiquan 形意拳), Painting (National Second Prize), Table Tennis&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&#34;my-story&#34;&gt;My Story&lt;/h3&gt;
+&lt;p&gt;As an engineering undergraduate, I stumbled upon the talent show &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/The_Brain_%28game_show%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;The Brain&lt;/em&gt;&lt;/a&gt;, which allowed people to display their exceptional brain power, including the ability to memorize a shuffled pack of 52 cards in 20 seconds. Dr. Kunlin Wei, a psychology professor at Peking University, served as a scientific judge on the show and introduced fundamental concepts underlying these prodigious feats, such as working memory and mental representation. This experience made a lasting impression on me about what psychology is and how interesting it can be.&lt;/p&gt;
+&lt;p&gt;Although I gleaned lessons from &lt;em&gt;The Brain&lt;/em&gt;, my curiosity about these mental skills did not lead to a passion for delving deeper into psychology. As a pragmatic engineering student striving for academic excellence, I was more captivated by the practical insights psychology offers into improving reading and memory performance. Hoping to utilize psychology to guide my daily work, I regarded myself as sitting at the top of the chain of command over my behavior. However, I was later surprised to find that humans are not entirely in control of their behavior. The metaphor proposed by Richard Dawkins haunted me—humans are vehicles of their genes, and human behavior reflects psychological predispositions that benefit their replication. This raised a crisis of autonomy for me because I could not find any rational justification for life if we were puppets of replicators. I arrived at the belief that the only way to initiate a rebellion against replicators and find meaning in the age of Darwin is to understand ourselves and the surrounding world. Only by answering the eternal questions of who we are and how environments shape human psychology will we discover the meaning of our existence.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Games Primates Play&lt;/em&gt; by Dario Maestripieri:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mitchell was on a quest to understand himself and the world around him. As a scholar, he used scientific and logical reasoning to examine and evaluate theories and discoveries produced by biologists, psychologists, historians, philosophers, and other researchers. His inquiry led him to conclude that evolutionary biology provides the most direct answers to questions about the self and human nature. In his book, he argued that many of our emotions, feelings, and thoughts reflect biological predispositions that help us survive and reproduce. He also wrote that many patterns in human history can be understood as the outcome of nepotistic cooperation among members of one’s own family or group and competition against members of other groups, and that similar social dynamics occur in other primates as well. When discussing the controversies that followed the publication in 1975 of Edward O. Wilson’s book Sociobiology: The New Synthesis, Mitchell bluntly stated: “The problem is not that sociobiology does not make sense. The problem is that sociobiology makes too much sense.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Satisfied with the way his scientific reasoning produced the knowledge and explanations he was looking for, Mitchell tried to use the same approach to search for a justification of knowledge-seeking in itself and, ultimately, of his own existence. He wanted to be objective at all costs and eliminate all sources of bias that might cloud his analysis, especially the psychological predispositions toward self-interest, survival and reproduction, and life in general. But after searching for and eliminating all of these subjective biases, he couldn’t find any rational justification for knowledge or life. So Mitchell concluded that, taken to its extreme, striving for objectivity ultimately leads to nihilism and rational self-destruction. In his own words: “Life is a prejudice that happens to be talented at perpetuating or replicating itself. To attempt to eliminate this source of bias is to open your mind to death. I cannot fully reconcile my understanding of the world with my existence in it. There is a conflict between the value of objectivity and the facts of my life.”&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>心理学作为计算机科学的子领域</title>
         <link>https://Junsong798.github.io/p/bayes-cognition/</link>
         <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
@@ -351,130 +468,6 @@ Vaesen, K., Collard, M., Cosgrove, R., &amp;amp; Roebroeks, W. (2016). Populatio
 Yang L., Chen W., Zhu Q., &amp;amp; Zhong N. (2024). Cumulative cultural evolution theory from a psychological perspective: Theoretical development and integration of schools. Advances in Psychological Science, 32(6), 965. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3724/SP.J.1042.2024.00965&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://doi.org/10.3724/SP.J.1042.2024.00965&lt;/a&gt;
 奥尔特 &amp;amp; 闾佳. (2014). 粉红牢房效应: 绑架思维, 感觉和行为的9大潜在力量 = Drunk tank pink and other unexpected forces that shape how we think, feel, and behave. 浙江人民出版社.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>https://Junsong798.github.io/about/</link>
-        <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://Junsong798.github.io/about/</guid>
-        <description>&lt;figure&gt;&lt;img src=&#34;./bg.jpg&#34; width=&#34;100%&#34;/&gt;
-&lt;/figure&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;research-statement&#34;&gt;Research Statement&lt;/h3&gt;
-&lt;p&gt;During my undergraduate studies, I cultivated a passion for psychology through the exploration of cognitive science literature. This intellectual journey led me to engage with the work of prominent cognitive scientists such as Keith Stanovich, Daniel Kahneman, and notably Gerd Gigerenzer and Herbert A. Simon, whose research resonated deeply with me. Subsequently, I became fascinated by middle-level evolutionary biology theories, including parental investment theory, life history theory, and the antagonistic pleiotropy hypothesis.&lt;/p&gt;
-&lt;p&gt;My primary research interest lies at the intersection of judgment and decision-making, social cognition, and computational modeling. I aim to investigate the cognitive processes that underlie a broad range of decision-making and develop descriptive models to better understand the underlying mechanisms.&lt;/p&gt;
-&lt;p&gt;The second strand of my interests is rooted in evolutionary biology, with a focus on behavioral genetics and genoeconomics. I am particularly intrigued by the ways in which genetic and environmental factors contribute to the development of complex human behaviors and their economic implications.&lt;/p&gt;
-&lt;p&gt;The third line of inquiry encompasses cultural evolution, geographical ambiance, and agent-based modeling. I seek to examine the dynamic interplay between cultural transmission and ecological factors in shaping social learning using agent-based modeling.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;University of California San Diego, U.S. (2023.9 - )&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Ph.D. in Experimental Psychology&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=jOyTedwAAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=ao&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Chujun Lin&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The Chinese University of Hong Kong, Shenzhen, China (2018.9 - 2020.7)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;M.S. in Applied Psychology, GPA: 3.864 (rank: 1/27)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?hl=zh-CN&amp;amp;user=oO3kAtQAAAAJ&amp;amp;view_op=list_works&amp;amp;sortby=pubdate&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Xiaotian Wang&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Highlights&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Outstanding Graduate 2020&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Academic Excellence Award 2020&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Academic Scholarship Gold Award 2019&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Northeastern University, China (2014.10 - 2018.6)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;B.S. in Metallurgy, GPA: 3.511 (rank: 36/255)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Advisor: Prof. Xiangning Meng, Prof. Zhuokun Cao&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Highlights&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Postgraduate Recommendation&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Published two mathematical modeling patents; one was sold at a price of 150,000RMB&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Academic Scholarship Award (Class C) 2015, 2016, 2017&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;work-experience-2019-2023&#34;&gt;Work Experience (2019-2023)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Project Associate: Department of Applied Social Sciences, The Hong Kong Polytechnic University (2022.8-)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Advisor: Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=SLEM6QMAAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=sra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Yin Wu&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Generate an experimental program that could provide feedback to participants and repeat trials with no responses. Blended chemical reagents to prepare the olfactory stimuli consisted of androstadienone and propylene glycol. Administered hormones to participants and fitted Bayesian drift-diffusion models using choice and response time data&lt;/li&gt;
-&lt;li&gt;Modeled the generative process of self-esteem using reinforcement-learning model, kernel regression, and Gaussian process model under the hierarchical Bayesian framework&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Visiting Student: Affiliated Mental Health Center, Zhejiang University School of Medicine (2021.7-2021.9)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Advisor: Prof. Tao Li&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Predicted suicidal behavior in adolescents using interpretable machine learning (e.g., XGBoost)&lt;/li&gt;
-&lt;li&gt;Calculated Shapley values of suicide-associated factors and revealed the impact of risk factors on individual predictions&lt;/li&gt;
-&lt;li&gt;Estimated a mixed graphical model to examine the developmental trajectory of suicidal behavior&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Research Assistant: The Chinese University of Hong Kong, Shenzhen (2020.7 - 2021.8)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Advisor: Prof. Xiaotian Wang&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Build a team workflow using a set of tools like zotero, slack, trello, and git/Github&lt;/li&gt;
-&lt;li&gt;Prepare manuscripts, analyze data, and conduct behavioral experiments&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Visiting Graduate of &lt;a class=&#34;link&#34; href=&#34;http://www.sribd.cn/index.php/en/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Shenzhen Research Institute of Big Data (SRIBD)&lt;/a&gt;, (2019.3 - 2020.5, 2020.7)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Advisor: Dr. Jianjun Zhou, Prof. Xiaotian Wang, Prof. &lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com.hk/citations?user=RGoypN4AAAAJ&amp;amp;hl=zh-CN&amp;amp;oi=sra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Kun Zhang (CMU)&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Designed and conducted computer-based experiments&lt;/li&gt;
-&lt;li&gt;Analyzed scores on the Internet Gaming Disorder Scale through Item Response Theory to obtain the typical disorder symptoms of CUHK(SZ) students&lt;/li&gt;
-&lt;li&gt;Using machine learning and causal inference algorithms (e.g., PC, FCI, and LiNGAM) to recover the antecedents and ramifications of gaming disorder and self-control&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;research-projects&#34;&gt;Research Projects&lt;/h3&gt;
-&lt;h4 id=&#34;publications&#34;&gt;Publications&lt;/h4&gt;
-&lt;p&gt;Lu, J., Ye, Y., Wu, Y.* (2024) &lt;a class=&#34;link&#34; href=&#34;https://royalsocietypublishing.org/doi/full/10.1098/rsos.240004&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Little Evidence that Androstadienone Affect Social Distance-Dependent Prosocial Behavior: A Pre-Registered Study&lt;/a&gt; &lt;em&gt;Royal Society Open Science, 11&lt;/em&gt;, 240004.&lt;/p&gt;
-&lt;p&gt;Lu, J., Jin, Y., Liang, S., &amp;amp; Li, T.* (2024) &lt;a class=&#34;link&#34; href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11112863/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Screening and Explaining Suicide-Associated Factors in Adolescents Using Interpretable Machine Learning and Network Analysis: a Cross-Sectional Study&lt;/a&gt; &lt;em&gt;BMC public health, 24&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Samore, T., Fessler, D. M., Sparks, A. M., Holbrook, C., Aaroe, L., Baeza, C. G., &amp;hellip; &amp;amp; Wang, X. T. (2024). Accordance and conflict between religious and scientific precautions against COVID-19 in 27 societies. &lt;em&gt;Religion, Brain &amp;amp; Behavior&lt;/em&gt; (in press)&lt;/p&gt;
-&lt;p&gt;Lu, J., Yao, J., Zhou, Z., &amp;amp; Wang, X.T.* (2023) &lt;a class=&#34;link&#34; href=&#34;https://psycnet.apa.org/record/2024-05957-003&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Age Effects on Delay Discounting across the Lifespan: A Meta-Analytical Approach to Theory Comparison and Model Development.&lt;/a&gt; &lt;em&gt;Psychological Bulletin, 149&lt;/em&gt;(7-8), 447–486.&lt;/p&gt;
-&lt;p&gt;Wang, X.T.*, Wang, P.*, Lu, J., Zhou, J., Li, G., &amp;amp; Garelik, S. (2022) &lt;a class=&#34;link&#34; href=&#34;https://iaap-journals.onlinelibrary.wiley.com/doi/full/10.1111/aphw.12350?casa_token=AmkO-1cBxv4AAAAA%3AFJHHEGgnEIuTNnL_lp7QmqACmcjHY9w-sToH8XB06-EgTAX_87kpwcF0R24AGwtcI-6GxI3kYuNpLz75&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Episodic Future Thinking and Anticipatory Emotions: Effects on Delay Discounting and Preventive Behaviors During COVID-19.&lt;/a&gt; &lt;em&gt;Applied Psychology: Health and Well-Being, 14&lt;/em&gt;(3), 842-861.&lt;/p&gt;
-&lt;p&gt;Lu, J.*, Lu, Q.*, &amp;amp; Lu, L. (2022) &lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-328X/12/3/63&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Differential Effects of Fundamental and Longitudinal Life-History Trade-Offs on Delay Discounting: An Evolutionary Framework.&lt;/a&gt; &lt;em&gt;Behavioral Sciences, 12&lt;/em&gt;(3), 63.&lt;/p&gt;
-&lt;p&gt;Samore, T. *, Fessler, D. M., Sparks, A. M., Holbrook, C., Aaroe, L., Baeza, C. G., &amp;hellip; &amp;amp; Wang, X. T. (2022) &lt;a class=&#34;link&#34; href=&#34;https://www.nature.com/articles/s41598-023-29655-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Greater Traditionalism Predicts COVID-19 Precautionary Behaviors Across 27 Societies&lt;/a&gt; &lt;em&gt;Scientific Reports, 13&lt;/em&gt;(1), 4969.&lt;/p&gt;
-&lt;h4 id=&#34;manuscript-under-preparation&#34;&gt;Manuscript Under Preparation&lt;/h4&gt;
-&lt;p&gt;Testosterone administration increases sensitivity to social evaluation during dynamic updating of self-esteem in healthy males: A computational modeling approach&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;High self-esteem promotes well-being and buffers against anxiety. However, at least state self-esteem (SSE) is not stable but dynamically updated by the evaluations we receive from others. Particularly in men, lowered SSE levels are related to increased aberrant behaviors and clinical symptoms. One possible critical physiological mechanism for these associations could involve a sexual hormone, testosterone. However, the causal relationship between testosterone and the process of men’s updating SSE remains unknown. Here, by combining a social evaluation task with computational modeling, we explored the causal effect of exogenous testosterone on men’s sensitivity to social feedback during the dynamic updating of SSE. We administered a single dose (150 mg) of testosterone or placebo gel to healthy young men (n = 120) in a double-blind, placebo-controlled, between-participant design. Participants completed a social evaluation task, in which they adjusted their prediction of potential evaluation and dynamically reported their SSE based on the actual social feedback received. Computational modeling showed that individuals who received testosterone (versus placebo) assigned a higher weight to expected social feedback and social prediction error during updating state self-esteem. These findings suggest that testosterone administration increases sensitivity to social feedback during the dynamic updating of individuals’ state self-esteem, and further extends the social status hypothesis, according to which testosterone promotes adaptive behaviors in association with achieving and maintaining social status through modulating the dynamic change of state self-esteem.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Lu, J.* The Signaling Effects of Blood Glucose and Appetitive Stimuli on Delay Discounting: A Meta-Analysis&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Studies have shown that people are sensitive to resource cues which signal body-energy budgets or resource availability. These signals shift their preferences adaptively when making intertemporal choices between a smaller but immediate reward and a larger but delayed alternative. Although the results of recent studies are heterogeneous, there has been no article to date summarizing the effect of different types of resource cues on preference in intertemporal choice. Through a meta-analytic approach, we examined the putative signaling effects of two types of resource cues, blood glucose and appetitive stimuli, on delay discounting which gauges the preference for intertemporal decision-making. Forty-four effect sizes extracted from 26 articles indicated that high levels of blood glucose (e.g., feeling satiated or less hungry) decrease delay discounting (&lt;em&gt;d&lt;/em&gt; = 0.26, 95% CI [0.06, 0.46]) while exposure to appetitive stimuli increases delay discounting (&lt;em&gt;d&lt;/em&gt; = -0.28, 95% CI [-0.51, -0.05]). In addition, the effect of blood glucose was moderated by the type of reward, showing that the signaling effect on delay discounting was stronger for food in contrast to nonfood rewards like money. Overall, the results suggest that both internal signals and external cues about resource situations serve as forecasting signals for regulating resource budgets. Furthermore, the signaling effect is domain-specific, with its magnitude dependent on the relevance of rewards to individuals’ goals of resource acquisition and conservation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Wang, X.T.*, Lu, J., &amp;amp; Garelik, S. Implicit and Explicit Leadership Perception Through the Lens of the 2016 Presidential Election&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Previous studies suggest that intuitive perception from a glance of candidates’ faces can accurately predict mock electoral outcomes. Would these findings hold in real world decision-making? Before and after the 2016 American presidential election, we examined implicit and explicit perceptions about candidates in an experiment and the actual election. The 2016 election marked the first time in American history that a woman ran for President of the United States as a major political party candidate. Thus, Gender stereotyping and sexism became inevitable issues that directly confronted all voters. We compared the facial image-based ratings of leadership and likability in the explicit and implicit conditions pre-election (Study 1) and post-election (Study 2). In the explicit condition, participants correctly identified the target candidate in a morphed composite but failed to identify the candidate in the implicit rating condition. The results showed that explicit instead of implicit leadership ratings accurately predicted the electoral choice of participants, indicating significant biases from mere face-based preferences due to additional effects of top-down expectations. The implicit-to-explicit rating reduction was more evident for the Clinton composites than the Trump composites among participants holding a neutral political stance. In contrast, there were no overall differences in leadership and likability ratings between male and female composites of ordinary people. Together, these results suggest a possible gender stereotyping against female politicians among American voters.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;skills--hobbies&#34;&gt;Skills &amp;amp; Hobbies&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Software Operation&lt;/strong&gt; : R (base &amp;amp; tidyverse), Stan (Bayesian modeling), Python, NetLogo (agent-based modeling), PsychoPy, Mplus, Citespace (scientometrics)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Language&lt;/strong&gt;: Chinese, English&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hobbies&lt;/strong&gt;: Reading &amp;amp; Writing, Chinese Martial Art (under the supervision of the 4th inheritor of Xingyiquan 形意拳), Painting (National Second Prize), Table Tennis&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&#34;my-story&#34;&gt;My Story&lt;/h3&gt;
-&lt;p&gt;As an engineering undergraduate, I stumbled upon the talent show &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/The_Brain_%28game_show%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;em&gt;The Brain&lt;/em&gt;&lt;/a&gt;, which allowed people to display their exceptional brain power, including the ability to memorize a shuffled pack of 52 cards in 20 seconds. Dr. Kunlin Wei, a psychology professor at Peking University, served as a scientific judge on the show and introduced fundamental concepts underlying these prodigious feats, such as working memory and mental representation. This experience made a lasting impression on me about what psychology is and how interesting it can be.&lt;/p&gt;
-&lt;p&gt;Although I gleaned lessons from &lt;em&gt;The Brain&lt;/em&gt;, my curiosity about these mental skills did not lead to a passion for delving deeper into psychology. As a pragmatic engineering student striving for academic excellence, I was more captivated by the practical insights psychology offers into improving reading and memory performance. Hoping to utilize psychology to guide my daily work, I regarded myself as sitting at the top of the chain of command over my behavior. However, I was later surprised to find that humans are not entirely in control of their behavior. The metaphor proposed by Richard Dawkins haunted me—humans are vehicles of their genes, and human behavior reflects psychological predispositions that benefit their replication. This raised a crisis of autonomy for me because I could not find any rational justification for life if we were puppets of replicators. I arrived at the belief that the only way to initiate a rebellion against replicators and find meaning in the age of Darwin is to understand ourselves and the surrounding world. Only by answering the eternal questions of who we are and how environments shape human psychology will we discover the meaning of our existence.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Games Primates Play&lt;/em&gt; by Dario Maestripieri:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Mitchell was on a quest to understand himself and the world around him. As a scholar, he used scientific and logical reasoning to examine and evaluate theories and discoveries produced by biologists, psychologists, historians, philosophers, and other researchers. His inquiry led him to conclude that evolutionary biology provides the most direct answers to questions about the self and human nature. In his book, he argued that many of our emotions, feelings, and thoughts reflect biological predispositions that help us survive and reproduce. He also wrote that many patterns in human history can be understood as the outcome of nepotistic cooperation among members of one’s own family or group and competition against members of other groups, and that similar social dynamics occur in other primates as well. When discussing the controversies that followed the publication in 1975 of Edward O. Wilson’s book Sociobiology: The New Synthesis, Mitchell bluntly stated: “The problem is not that sociobiology does not make sense. The problem is that sociobiology makes too much sense.”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Satisfied with the way his scientific reasoning produced the knowledge and explanations he was looking for, Mitchell tried to use the same approach to search for a justification of knowledge-seeking in itself and, ultimately, of his own existence. He wanted to be objective at all costs and eliminate all sources of bias that might cloud his analysis, especially the psychological predispositions toward self-interest, survival and reproduction, and life in general. But after searching for and eliminating all of these subjective biases, he couldn’t find any rational justification for knowledge or life. So Mitchell concluded that, taken to its extreme, striving for objectivity ultimately leads to nihilism and rational self-destruction. In his own words: “Life is a prejudice that happens to be talented at perpetuating or replicating itself. To attempt to eliminate this source of bias is to open your mind to death. I cannot fully reconcile my understanding of the world with my existence in it. There is a conflict between the value of objectivity and the facts of my life.”&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
         </item>
         <item>

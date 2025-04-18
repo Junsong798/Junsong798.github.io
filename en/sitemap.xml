@@ -20,6 +20,32 @@
                 href="https://Junsong798.github.io/"
                 />
   </url><url>
+    <loc>https://Junsong798.github.io/about/</loc>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Junsong798.github.io/zh-cn/%E5%85%B3%E4%BA%8E/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Junsong798.github.io/about/"
+                />
+  </url><url>
+    <loc>https://Junsong798.github.io/page/</loc>
+    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Junsong798.github.io/zh-cn/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Junsong798.github.io/page/"
+                />
+  </url><url>
     <loc>https://Junsong798.github.io/categories/</loc>
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -80,32 +106,6 @@
   </url><url>
     <loc>https://Junsong798.github.io/categories/%E7%A4%BE%E4%BC%9A%E5%8A%A8%E5%8A%9B%E5%AD%A6/</loc>
     <lastmod>2024-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Junsong798.github.io/about/</loc>
-    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Junsong798.github.io/zh-cn/%E5%85%B3%E4%BA%8E/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Junsong798.github.io/about/"
-                />
-  </url><url>
-    <loc>https://Junsong798.github.io/page/</loc>
-    <lastmod>2022-08-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Junsong798.github.io/zh-cn/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Junsong798.github.io/page/"
-                />
   </url><url>
     <loc>https://Junsong798.github.io/p/bayes-mcmc/</loc>
     <lastmod>2023-05-11T00:00:00+00:00</lastmod>
