@@ -10,7 +10,6 @@
         <title>贝叶斯统计：Markov Chain Monte Carlo理论篇</title>
         <link>https://Junsong798.github.io/p/bayes-mcmc/</link>
         <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/bayes-mcmc/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/bayes-mcmc/fig1.png" alt="Featured image of post 贝叶斯统计：Markov Chain Monte Carlo理论篇" /&gt;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;回顾2023年2-4月贝叶斯统计阅读路径，指明一些入门和进阶读物。接下来讨论为什么要用贝叶斯统计，并针对贝叶斯统计的难点Markov Chain Monte Carlo回顾所学。从最古老的Metropolis和Metropolis-Hastings开始，再基于高维空间的几何型态说明为什么经典算法对高维空间采样低效，再引入到更有效的Hamiltonian Monte Carlo以及其变体No-U-Turn Sampler。本文只讨论部分理论细节，不涉及应用，如empirical diagnosis，以及各种诊断识别性和加速收敛的方法。&lt;/p&gt;

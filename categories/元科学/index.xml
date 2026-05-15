@@ -10,7 +10,6 @@
         <title>重复测量设计中的效应量</title>
         <link>https://Junsong798.github.io/p/effect-size-metric/</link>
         <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/effect-size-metric/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/effect-size-metric/fig1.jpeg" alt="Featured image of post 重复测量设计中的效应量" /&gt;&lt;h2 id=&#34;两种效应量量纲&#34;&gt;两种效应量量纲&lt;/h2&gt;
 &lt;p&gt;在新的元分析中，发现不少实验是within-subject design，时隔一年多，不少计算细节已经记得不清楚，比如如何统一不同scaling下效应量的量纲，如何选择量纲，以及不同量纲之间sampling variance如何计算。回忆2021年4月15号的小组会议。&lt;/p&gt;

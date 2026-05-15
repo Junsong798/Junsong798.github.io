@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>zettelkasten on Junsong Lu</title>
+        <title>Zettelkasten on Junsong Lu</title>
         <link>https://Junsong798.github.io/categories/zettelkasten/</link>
-        <description>Recent content in zettelkasten on Junsong Lu</description>
+        <description>Recent content in Zettelkasten on Junsong Lu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sun, 26 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Junsong798.github.io/categories/zettelkasten/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Zettelkasten工作流</title>
         <link>https://Junsong798.github.io/p/zettelkasten/</link>
         <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/zettelkasten/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/zettelkasten/zettel2.jpg" alt="Featured image of post Zettelkasten工作流" /&gt;&lt;h2 id=&#34;导航&#34;&gt;导航&lt;/h2&gt;
 &lt;p&gt;作为《卡片笔记写作法》的读书笔记，本文简单介绍zettelkasten体系。Zettelkasten工作流是建立在四种工具[[20211224110802]]，四种笔记[[20211225093458]]，两种交叉引用模式[[20211225162924]]之上的循环式读写工作流，可以认为是一种学术上的复利投资过程，也可以理解为本身就是“做研究”。首先说明心理学在理解“系统”中起到的作用，以及什么是好的系统。接着讨论过渡到更具体的教育（学术）领域，介绍目前两种学术教育以及其对应的工作流：GTD与Zettelkasten。通过批判GTD，转而引出zettelkasten系统。并从其涉及工具、卡片类型及写作方法、工作原理进行逐一论述。最后综述，描绘其整体路径。文章的末尾，结合本人理解做了一些虚拟问答，以期从反面了解zettelkasten的原理。结语，莫听穿林打叶声，希望未来的自己能沉得住气，正确合理地在未来生活中运用zettlekasten。&lt;/p&gt;
@@ -100,7 +99,7 @@
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/zettelkasten/zettel1.png&#34;
 	width=&#34;259&#34;
 	height=&#34;194&#34;
-	srcset=&#34;https://Junsong798.github.io/p/zettelkasten/zettel1_hu488b75404d9aa9df1c0d9774ee38e4dc_10739_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/zettelkasten/zettel1_hu488b75404d9aa9df1c0d9774ee38e4dc_10739_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/zettelkasten/zettel1_hu_723069af889fad82.png 480w, https://Junsong798.github.io/p/zettelkasten/zettel1_hu_5002908c6406ebca.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;卡片盒笔记关系网&#34;

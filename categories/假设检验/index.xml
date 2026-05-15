@@ -10,7 +10,6 @@
         <title>囫囵吞枣之现代稳健估计方法</title>
         <link>https://Junsong798.github.io/p/robust-statistics/</link>
         <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/robust-statistics/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/robust-statistics/fig_caption.jpg" alt="Featured image of post 囫囵吞枣之现代稳健估计方法" /&gt;&lt;p&gt;历经60多个小时，我设计的非线性元分析方法模拟终于结束，在这半个月中，快速扫读了不少现代统计的教材和论文，收获颇丰，简单谈谈感想。&lt;/p&gt;
 &lt;p&gt;在心理学人中间，流传着这样一句话：F检验，或者ANOVA，是稳健的。比如，我向无数学弟学妹强推的纽大心理学教授写的《Explaining psychological statistics》中就强调了这一点。稳健，或者鲁棒性，数学定义繁多，心理学人常常理解为对正态假定的偏离不影响假设检验，姑且这么理解。&lt;/p&gt;
@@ -34,7 +33,7 @@
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/robust-statistics/robust2.png&#34;
 	width=&#34;950&#34;
 	height=&#34;546&#34;
-	srcset=&#34;https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/robust-statistics/robust2_hu_a1b8946a01dba100.png 480w, https://Junsong798.github.io/p/robust-statistics/robust2_hu_9864dda872c0ee21.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;HC3标准误模拟结果&#34;

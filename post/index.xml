@@ -10,7 +10,6 @@
         <title>心理学作为计算机科学的子领域</title>
         <link>https://Junsong798.github.io/p/bayes-cognition/</link>
         <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/bayes-cognition/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/bayes-cognition/jupiter.jpg" alt="Featured image of post 心理学作为计算机科学的子领域" /&gt;&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
 &lt;ul&gt;
@@ -104,7 +103,6 @@
         <title>人类无智有道： 文化演化的新传播主义（Neo-Diffusionism）</title>
         <link>https://Junsong798.github.io/p/cultural-evolution/</link>
         <pubDate>Fri, 16 Aug 2024 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/cultural-evolution/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/cultural-evolution/fig.jpg" alt="Featured image of post 人类无智有道： 文化演化的新传播主义（Neo-Diffusionism）" /&gt;&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
 &lt;ul&gt;
@@ -136,7 +134,7 @@
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/cultural-evolution/time_fig.png&#34;
 	width=&#34;1563&#34;
 	height=&#34;678&#34;
-	srcset=&#34;https://Junsong798.github.io/p/cultural-evolution/time_fig_hucc6e3510cb0d33f594e2b97076dd77b9_35132_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/cultural-evolution/time_fig_hucc6e3510cb0d33f594e2b97076dd77b9_35132_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/cultural-evolution/time_fig_hu_4d4041145f168d41.png 480w, https://Junsong798.github.io/p/cultural-evolution/time_fig_hu_918b7f7ceae843e5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;figure1&#34;
@@ -151,7 +149,7 @@
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/cultural-evolution/sanky_fig.png&#34;
 	width=&#34;1438&#34;
 	height=&#34;741&#34;
-	srcset=&#34;https://Junsong798.github.io/p/cultural-evolution/sanky_fig_hub44159a6275a7516d71d47c93e60a189_938143_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/cultural-evolution/sanky_fig_hub44159a6275a7516d71d47c93e60a189_938143_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/cultural-evolution/sanky_fig_hu_73dc07411657a0e6.png 480w, https://Junsong798.github.io/p/cultural-evolution/sanky_fig_hu_793957dad5f5db71.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;figure2&#34;
@@ -227,45 +225,45 @@
 &lt;li&gt;模拟实验。主要是多主体建模（agent-based modeling, ABM）。通过设置主体（agent）的属性，环境的属性以及主体与环境交互的方式，模拟文化的传播（cf Jackson et al., 2017, Table 1）。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Research Aspect&lt;/th&gt;
-&lt;th&gt;Field Studies&lt;/th&gt;
-&lt;th&gt;Lab Experiment&lt;/th&gt;
-&lt;th&gt;Archival Studies&lt;/th&gt;
-&lt;th&gt;ABMs&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Control and realism&lt;/td&gt;
-&lt;td&gt;Low control; high realism&lt;/td&gt;
-&lt;td&gt;Medium control; medium realism&lt;/td&gt;
-&lt;td&gt;Low control; medium realism&lt;/td&gt;
-&lt;td&gt;High control; low realism&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Scale&lt;/td&gt;
-&lt;td&gt;Medium to high scale&lt;/td&gt;
-&lt;td&gt;Low to medium scale&lt;/td&gt;
-&lt;td&gt;High scale&lt;/td&gt;
-&lt;td&gt;High scale&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Nonlinear dynamics&lt;/td&gt;
-&lt;td&gt;Medium visibility&lt;/td&gt;
-&lt;td&gt;Low visibility&lt;/td&gt;
-&lt;td&gt;Medium visibility&lt;/td&gt;
-&lt;td&gt;High visibility&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Mechanism&lt;/td&gt;
-&lt;td&gt;Medium clarity&lt;/td&gt;
-&lt;td&gt;High clarity&lt;/td&gt;
-&lt;td&gt;Low clarity&lt;/td&gt;
-&lt;td&gt;High clarity&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Research Aspect&lt;/th&gt;
+          &lt;th&gt;Field Studies&lt;/th&gt;
+          &lt;th&gt;Lab Experiment&lt;/th&gt;
+          &lt;th&gt;Archival Studies&lt;/th&gt;
+          &lt;th&gt;ABMs&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Control and realism&lt;/td&gt;
+          &lt;td&gt;Low control; high realism&lt;/td&gt;
+          &lt;td&gt;Medium control; medium realism&lt;/td&gt;
+          &lt;td&gt;Low control; medium realism&lt;/td&gt;
+          &lt;td&gt;High control; low realism&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Scale&lt;/td&gt;
+          &lt;td&gt;Medium to high scale&lt;/td&gt;
+          &lt;td&gt;Low to medium scale&lt;/td&gt;
+          &lt;td&gt;High scale&lt;/td&gt;
+          &lt;td&gt;High scale&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Nonlinear dynamics&lt;/td&gt;
+          &lt;td&gt;Medium visibility&lt;/td&gt;
+          &lt;td&gt;Low visibility&lt;/td&gt;
+          &lt;td&gt;Medium visibility&lt;/td&gt;
+          &lt;td&gt;High visibility&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mechanism&lt;/td&gt;
+          &lt;td&gt;Medium clarity&lt;/td&gt;
+          &lt;td&gt;High clarity&lt;/td&gt;
+          &lt;td&gt;Low clarity&lt;/td&gt;
+          &lt;td&gt;High clarity&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;文化演化的应用语言演化和刻板印象的起源&#34;&gt;文化演化的应用：语言演化和刻板印象的起源&lt;/h3&gt;
 &lt;p&gt;在21世纪初，文化演化的实证证据主要还是来自田野实验。第一篇在运用实验检验文化演化论的研究追溯到2008年Kirby等人对语言演化的研究。作者对模拟实验进行了批判，认为其无法捕捉更复杂的真实现象，文化演化研究应该转向以diffusion chains为范式的实验室研究。当然作者指出，该实验范式并非无源之水，借鉴了动物研究中的文化传播方法，以及对人类沟通系统的研究。在实验中，被试需要在学习阶段看一组刺激学习一门外星语言。刺激由一个字符串和对应的视觉刺激（shape, color, motion随机搭配）组成。学习阶段结束后进入测试阶段，被试需要观察视觉刺激然后写出外星语言中描述该刺激的词汇。需要指出，在测试阶段，被试将对学习阶段见过的和未见过的刺激作答。被试的作答将作为下一组被试（generation 2）的学习材料，其中一半作答被hold out用作测试。重复10代。&lt;/p&gt;
@@ -357,7 +355,6 @@ Yang L., Chen W., Zhu Q., &amp;amp; Zhong N. (2024). Cumulative cultural evoluti
         <title>贝叶斯统计：Markov Chain Monte Carlo理论篇</title>
         <link>https://Junsong798.github.io/p/bayes-mcmc/</link>
         <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/bayes-mcmc/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/bayes-mcmc/fig1.png" alt="Featured image of post 贝叶斯统计：Markov Chain Monte Carlo理论篇" /&gt;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;回顾2023年2-4月贝叶斯统计阅读路径，指明一些入门和进阶读物。接下来讨论为什么要用贝叶斯统计，并针对贝叶斯统计的难点Markov Chain Monte Carlo回顾所学。从最古老的Metropolis和Metropolis-Hastings开始，再基于高维空间的几何型态说明为什么经典算法对高维空间采样低效，再引入到更有效的Hamiltonian Monte Carlo以及其变体No-U-Turn Sampler。本文只讨论部分理论细节，不涉及应用，如empirical diagnosis，以及各种诊断识别性和加速收敛的方法。&lt;/p&gt;
@@ -565,7 +562,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>重复测量设计中的效应量</title>
         <link>https://Junsong798.github.io/p/effect-size-metric/</link>
         <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/effect-size-metric/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/effect-size-metric/fig1.jpeg" alt="Featured image of post 重复测量设计中的效应量" /&gt;&lt;h2 id=&#34;两种效应量量纲&#34;&gt;两种效应量量纲&lt;/h2&gt;
 &lt;p&gt;在新的元分析中，发现不少实验是within-subject design，时隔一年多，不少计算细节已经记得不清楚，比如如何统一不同scaling下效应量的量纲，如何选择量纲，以及不同量纲之间sampling variance如何计算。回忆2021年4月15号的小组会议。&lt;/p&gt;
@@ -639,7 +635,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>俗人昭昭，我独昏昏；俗人察察，我独闷闷</title>
         <link>https://Junsong798.github.io/p/taoism/</link>
         <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/taoism/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/taoism/fig1.png" alt="Featured image of post 俗人昭昭，我独昏昏；俗人察察，我独闷闷" /&gt;&lt;p&gt;林语堂曾发问，儒家的人文主义精神是否能让中国人满足？答案是否定的，否则，就不复有余地让释、道加以传播了。那些积极的，入世之人肯定儒家，而那些披发行吟之人奔走而归于道教。但即便如此，儒道也并非二元对立，水火不容的。这种出世的消极和入世的积极就像两股交错、缠绕而汇聚的浪潮，在每一个中国人心中翻腾，对抗，此消彼长又彼此相生。&lt;/p&gt;
 &lt;p&gt;这大概是因为，人生的失落和得意也是此起彼伏的。对天性追求浪漫，在现世求有不得之人，道家的逃遁，对不堪重负的人生无疑是一方良药。&lt;/p&gt;
@@ -664,7 +659,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>神正问题</title>
         <link>https://Junsong798.github.io/p/theodicy/</link>
         <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/theodicy/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/theodicy/fig1.jpg" alt="Featured image of post 神正问题" /&gt;&lt;p&gt;自由与必然性是一个永恒的命题。其更一般表述为神的正义与世间罪恶之间的关系问题。唯理论代表人物，笛卡尔和斯宾诺莎的继承者莱布尼茨将其视为两大哲学迷宫之一。千百年来哲学家多有论述，经由希腊化时期的伊比鸠鲁提出，教父哲学时期集大成者奥古斯丁初步回答，再到后来欧陆哲学派的莱布尼茨和后来的康德对其观点逐步完善和推进。对此问题，莱布尼茨晚年提出了最好世界理论，并在《神义论》上篇进行论证。但《神义论》一经发表，便被启蒙派思想家认为是为现实社会涂脂抹粉，粉饰太平。这种思想对立，一如2020年哈佛心理学家平克在出版《人性中的善良天使》后引来的非议：550位科学家联名上书，要求美国语言学会将其踢出杰出学者名单。其中一条重要理由是，平克轻视漠视社会的不公与人性的丑恶，夸大了这个世界美好的一面，是为邪恶辩护。这和莱布尼茨的经历如出一辙，比如伏尔泰以小说对其进行了尖刻嘲讽。面对那些无辜的受难者，那些因为不幸而对薄公堂之人，要如何冷漠才能相信这个世界是绝对公正的。理解这种批判需要回到神正问题本身。且看莱布尼茨的观点，他直言不讳地说，我们的世界是所有“可能世界”中最好的世界。为了证明这个观点，他将世间的恶分为三种，形而上的恶，道德的恶，形体的恶。神的创造物不能与其本身同等完美，因此所有可能的世界中，形而上的恶都存在。而原罪（道德恶）与惩罚原罪的恶（形体恶）相互依存，二者共同依赖于自由意志。这里便带有明显的奥古斯丁的观点，自由本身是善，但是自由也是恶的原因。理解最好世界的关键在于理解莱布尼茨整体与局部的辩证关系。如果简单认为最好的世界是一个没有恶的世界，就曲解了局部与整体的关系。最好的整体中每一部分并不都如整体那般完美。而神为了构造一个整体上最好的世界，即自由的世界，选择了局部道德恶与形体恶的存在。善与恶一起，构成了这个最好的世界。我们不难看出莱布尼茨受到不少中世纪经院哲学的影响，在其理论构建的基石中，仍然像笛卡尔乃至安瑟伦、阿奎那等人一样求助一个先验的神，即全知全能全善的神。这也注定了唯理论和经验论一下终将走向不可知论的死胡同，为康德的出场做下铺垫。莱布尼茨的进步在于，他体现了一种去人类中心主义的宇宙论视角，并且给那些身处苦难的人带来一种信仰和慰藉。比如卢梭就认为，伏尔泰对《神义论》的借题发挥无非是因为其从小养尊处优，从来就不知道身在水深火热之中的人需要什么。&lt;/p&gt;
 </description>
@@ -673,7 +667,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>Zettelkasten工作流</title>
         <link>https://Junsong798.github.io/p/zettelkasten/</link>
         <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/zettelkasten/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/zettelkasten/zettel2.jpg" alt="Featured image of post Zettelkasten工作流" /&gt;&lt;h2 id=&#34;导航&#34;&gt;导航&lt;/h2&gt;
 &lt;p&gt;作为《卡片笔记写作法》的读书笔记，本文简单介绍zettelkasten体系。Zettelkasten工作流是建立在四种工具[[20211224110802]]，四种笔记[[20211225093458]]，两种交叉引用模式[[20211225162924]]之上的循环式读写工作流，可以认为是一种学术上的复利投资过程，也可以理解为本身就是“做研究”。首先说明心理学在理解“系统”中起到的作用，以及什么是好的系统。接着讨论过渡到更具体的教育（学术）领域，介绍目前两种学术教育以及其对应的工作流：GTD与Zettelkasten。通过批判GTD，转而引出zettelkasten系统。并从其涉及工具、卡片类型及写作方法、工作原理进行逐一论述。最后综述，描绘其整体路径。文章的末尾，结合本人理解做了一些虚拟问答，以期从反面了解zettelkasten的原理。结语，莫听穿林打叶声，希望未来的自己能沉得住气，正确合理地在未来生活中运用zettlekasten。&lt;/p&gt;
@@ -763,7 +756,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/zettelkasten/zettel1.png&#34;
 	width=&#34;259&#34;
 	height=&#34;194&#34;
-	srcset=&#34;https://Junsong798.github.io/p/zettelkasten/zettel1_hu488b75404d9aa9df1c0d9774ee38e4dc_10739_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/zettelkasten/zettel1_hu488b75404d9aa9df1c0d9774ee38e4dc_10739_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/zettelkasten/zettel1_hu_723069af889fad82.png 480w, https://Junsong798.github.io/p/zettelkasten/zettel1_hu_5002908c6406ebca.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;卡片盒笔记关系网&#34;
@@ -780,7 +773,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>囫囵吞枣之现代稳健估计方法</title>
         <link>https://Junsong798.github.io/p/robust-statistics/</link>
         <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/robust-statistics/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/robust-statistics/fig_caption.jpg" alt="Featured image of post 囫囵吞枣之现代稳健估计方法" /&gt;&lt;p&gt;历经60多个小时，我设计的非线性元分析方法模拟终于结束，在这半个月中，快速扫读了不少现代统计的教材和论文，收获颇丰，简单谈谈感想。&lt;/p&gt;
 &lt;p&gt;在心理学人中间，流传着这样一句话：F检验，或者ANOVA，是稳健的。比如，我向无数学弟学妹强推的纽大心理学教授写的《Explaining psychological statistics》中就强调了这一点。稳健，或者鲁棒性，数学定义繁多，心理学人常常理解为对正态假定的偏离不影响假设检验，姑且这么理解。&lt;/p&gt;
@@ -804,7 +796,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/robust-statistics/robust2.png&#34;
 	width=&#34;950&#34;
 	height=&#34;546&#34;
-	srcset=&#34;https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/robust-statistics/robust2_hu_a1b8946a01dba100.png 480w, https://Junsong798.github.io/p/robust-statistics/robust2_hu_9864dda872c0ee21.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;HC3标准误模拟结果&#34;
@@ -821,7 +813,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>真实世界的心理模型</title>
         <link>https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/</link>
         <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/causal1.png" alt="Featured image of post 真实世界的心理模型" /&gt;&lt;p&gt;2020年12月21日，《自然》撤稿了一篇一作为女性科学家的论文——The association between early career informal mentorship in academic collaborations and junior author performance，原因是违反科学实验协议以及错误地解读数据。该论文声称学界逐渐增长的女性导师会破坏女性科学家职业生涯初期的影响力。论文一经发布便引来口诛笔伐，替代计量引用迅速飙升。抛开文章结论，我们不禁要问：是什么阻碍了研究者从数据中得到真相？以及何种情况下，数据才能为假设提供证据？&lt;/p&gt;
 &lt;p&gt;时间来到1973年，加州大学副院长Hammel发现，申请伯克利研究生的男生中，有44%被录取了，而女生录取率只有35%。然而，当Hammel对每个院系进一步分析时，却发现所有院系的录取都是女生更高。为了明辨事实，避免遭受性别歧视的控诉，Hammel找来了Bickel分析数据，后者在1984年拿到麦克阿瑟天才奖，但彼时不过是一名初出茅庐的统计研究者。Bickel一眼就认出了数据中的辛普森悖论——在总体和亚组层面，数据呈现出截然相反的结论。&lt;/p&gt;
@@ -840,7 +831,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>我们时代的教育</title>
         <link>https://Junsong798.github.io/p/test-chinese/</link>
         <pubDate>Wed, 03 Feb 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/test-chinese/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/test-chinese/edu1.png" alt="Featured image of post 我们时代的教育" /&gt;&lt;h2 id=&#34;我们时代的教育从认知主义到合法的边缘参与&#34;&gt;我们时代的教育：从认知主义到合法的边缘参与&lt;/h2&gt;
 &lt;p&gt;少年21岁时，立志报考金融黄埔。他（不切实际地）给自己定下了数学满分的目标，并从认知科学中寻找武装自己的方法，启蒙者是诺奖得主卡尼曼，斯坦诺维奇和刻意练习的提出者艾利克森。&lt;/p&gt;
@@ -864,7 +854,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>聚光灯:记龙大2020研究生毕业典礼</title>
         <link>https://Junsong798.github.io/p/spotlight/</link>
         <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/spotlight/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/spotlight/fig8.jpg" alt="Featured image of post 聚光灯:记龙大2020研究生毕业典礼" /&gt;&lt;p&gt;时间偏离了航线，在另一个未来着陆了。&lt;/p&gt;
 &lt;p&gt;2017年8月24日凌晨2点，郑州火车站人头攒动，候车站坐满了黑压压的一片工科学生，他们正等着火车，赶回沈阳。我和一起备考的朋友，以行李箱为桌，复习着金融学和线代第三章十几条定理，直到列车来临。&lt;/p&gt;
@@ -877,45 +866,45 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;这些年来，奋不顾身，马不停蹄地去追求人为创造的标签和过度神话的头衔。靠着摇摇欲坠的正反馈透支着体力和精神。从未贪恋须臾的欢愉，我嘲讽一切拿时间娱乐而非自我提升之人，却不知深深入戏的我，早已扭曲地将自己脆弱的自信建立在他人的相对失败之上——个体不再具有认知科学家Varela提出的自创生性——自给自足，自我循环。因而不得不依赖于头衔、世俗的目标与动机。&lt;/p&gt;
 &lt;p&gt;最终，我告别许许多多的人，告别沈阳冬日的大雪与模糊的街灯，告别姨妈和姐，告别师父和师兄弟，以及许许多多的人。直到告别过去的自己，在录取文件上签名确认——去做一名心理学学生。&lt;/p&gt;
 &lt;p&gt;“可能有一天，预见期待与真实体验的落差仍会唤起我的动力，在冲突、溃败后幸存的生活会让我感到疲倦，我会去北京，看看那个刻了金色大字的小红楼，然后发誓像当年的自己一样，用今天的努力给那时的自己来一场迟来的正名，但我知道不是现在（2018.04.07.10.43）”。&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;./fig1.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;社恐在台上领奖，虽然彩排了几轮，还是晕人群&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/spotlight/fig1.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;社恐在台上领奖，虽然彩排了几轮，还是晕人群&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt; 
-&lt;figure&gt;&lt;img src=&#34;./fig2.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;前排施法中&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/spotlight/fig2.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;前排施法中&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt; 
-&lt;figure&gt;&lt;img src=&#34;./fig7.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;cjp, 不要用一副看酸碱中和滴定管的眼神合影。太紧张了，假装玩一玩帽子&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/spotlight/fig7.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;cjp, 不要用一副看酸碱中和滴定管的眼神合影。太紧张了，假装玩一玩帽子&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt; 
-&lt;figure&gt;&lt;img src=&#34;./fig3.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;让我康康上面写了什么&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/spotlight/fig3.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;让我康康上面写了什么&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt; 
-&lt;figure&gt;&lt;img src=&#34;./fig4.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;这是什么奖，为什么我从来没听说过，不对劲&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/spotlight/fig4.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;这是什么奖，为什么我从来没听说过，不对劲&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt; 
-&lt;figure&gt;&lt;img src=&#34;./fig5.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;王教授发言&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/spotlight/fig5.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;王教授发言&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt; 
-&lt;figure&gt;&lt;img src=&#34;./fig6.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;好紧张，假装面无表情，快放我下去&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/spotlight/fig6.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;好紧张，假装面无表情，快放我下去&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 </description>
@@ -924,7 +913,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>自控力与成瘾</title>
         <link>https://Junsong798.github.io/p/self-control/</link>
         <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/self-control/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/self-control/fig1.png" alt="Featured image of post 自控力与成瘾" /&gt;&lt;p&gt;我们往往对别人嗤之以鼻，却从未看清别人为什么这样。&lt;/p&gt;
 &lt;p&gt;在台湾口碑剧《我们与恶的距离》中，公众对李晓明事件的态度是一种压倒性的愤怒，李晓明的律师——王赦的辩护使得乌合之众的暴怒雪上加霜——对一个事件结果的过度批评乃至关注，本身就是对真相的掩盖。这部剧在某种程度上揭示了这样的命题：人无自性，一人犯错，众生皆有罪。&lt;/p&gt;
@@ -961,7 +949,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>与达尔文主义和解:复制子，心智和自我</title>
         <link>https://Junsong798.github.io/p/stanovich/</link>
         <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/stanovich/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/stanovich/fig1.jpg" alt="Featured image of post 与达尔文主义和解:复制子，心智和自我" /&gt;&lt;p&gt;天地不仁，以万物为刍狗。人类偏安于宇宙的一隅，却妄图赋予万物以意义。&lt;/p&gt;
 &lt;p&gt;斯坦诺维奇说，他脑海中一个反乌托邦式的科学唯物主义场景挥之不去。在那个世界里，知识精英独自享用了科学的成果，却心照不宣，认为大众没有心理准备与能力去接受他们。人们所熟知的，则是科学史之前的故事——经济上的无产者被消灭殆尽，取而代之的是知识层面的无产者。&lt;/p&gt;
@@ -1002,7 +989,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>谈一谈“禁片”《背靠背，脸对脸》</title>
         <link>https://Junsong798.github.io/p/movie/</link>
         <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/movie/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/movie/fig1.jpg" alt="Featured image of post 谈一谈“禁片”《背靠背，脸对脸》" /&gt;&lt;p&gt;本来想发一条说说就去看书了，结果一不小心写了2000多字，只能发日志了。⊙﹏⊙&lt;/p&gt;
 &lt;p&gt;这应该是看过的最高分的华语片了，中间没看懂的地方，反复倒放，还看了很多解析评价，终于捣鼓清楚。在这部电影里，中国人的人情世故，面子和里子，官场的尊卑有别，利益与社会现实，至矣尽矣，在当今电影界再无以复加矣。而实际上，冠以此片“禁片”的也大有人在。&lt;/p&gt;
@@ -1020,7 +1006,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/movie/fig2.png&#34;
 	width=&#34;940&#34;
 	height=&#34;527&#34;
-	srcset=&#34;https://Junsong798.github.io/p/movie/fig2_hu25f087966d78fff90e19b270a5203c57_409562_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/movie/fig2_hu25f087966d78fff90e19b270a5203c57_409562_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/movie/fig2_hu_490af85ea0af60f1.png 480w, https://Junsong798.github.io/p/movie/fig2_hu_91d13d1b53ae1373.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;电影截图1&#34;
@@ -1034,7 +1020,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/movie/fig2.png&#34;
 	width=&#34;940&#34;
 	height=&#34;527&#34;
-	srcset=&#34;https://Junsong798.github.io/p/movie/fig2_hu25f087966d78fff90e19b270a5203c57_409562_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/movie/fig2_hu25f087966d78fff90e19b270a5203c57_409562_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/movie/fig2_hu_490af85ea0af60f1.png 480w, https://Junsong798.github.io/p/movie/fig2_hu_91d13d1b53ae1373.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;电影截图2&#34;
@@ -1052,7 +1038,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>读武志红中国式家庭与恋爱关系</title>
         <link>https://Junsong798.github.io/p/psychoanalysis/</link>
         <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/psychoanalysis/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/psychoanalysis/fig1.jpg" alt="Featured image of post 读武志红中国式家庭与恋爱关系" /&gt;&lt;h2 id=&#34;为何写这篇文章&#34;&gt;为何写这篇文章&lt;/h2&gt;
 &lt;p&gt;前短时间张靓颖母亲起诉冯轲的事情吵得沸沸扬扬，当当应景地发了一篇推送，大意是中国式家庭引发的社会现象背后的深层原因。读完后颇为惊诧，鉴于以前对弗洛伊德有一些零星的了解，便入手了武志红的两本剖析中国式家庭和爱情关系的书。&lt;/p&gt;
@@ -1106,7 +1091,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>仙剑奇侠传6和上学期观影的絮絮念</title>
         <link>https://Junsong798.github.io/p/pal6/</link>
         <pubDate>Wed, 24 Aug 2016 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/pal6/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/pal6/fig1.png" alt="Featured image of post 仙剑奇侠传6和上学期观影的絮絮念" /&gt;&lt;p&gt;&lt;em&gt;注意：本文涉及美国队长3和仙剑奇侠传6关键情节剧透，慎入&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前日所想&#34;&gt;前日所想&lt;/h2&gt;
@@ -1161,7 +1145,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/pal6/fig2.png&#34;
 	width=&#34;599&#34;
 	height=&#34;333&#34;
-	srcset=&#34;https://Junsong798.github.io/p/pal6/fig2_huae68627c15b79925e356c124532b113b_232093_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/pal6/fig2_huae68627c15b79925e356c124532b113b_232093_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/pal6/fig2_hu_d581fc1f7c5904b0.png 480w, https://Junsong798.github.io/p/pal6/fig2_hu_1cfed9ac7850aa02.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;过场动画图1&#34;
@@ -1176,7 +1160,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/pal6/fig3.png&#34;
 	width=&#34;583&#34;
 	height=&#34;345&#34;
-	srcset=&#34;https://Junsong798.github.io/p/pal6/fig3_hu25afdcc1e5c63e2383f87615a69e395f_247664_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/pal6/fig3_hu25afdcc1e5c63e2383f87615a69e395f_247664_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/pal6/fig3_hu_ccf8258a2864b42b.png 480w, https://Junsong798.github.io/p/pal6/fig3_hu_b17c84e9e34ba1bb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;过场动画图2&#34;
@@ -1192,7 +1176,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/pal6/fig4.png&#34;
 	width=&#34;587&#34;
 	height=&#34;349&#34;
-	srcset=&#34;https://Junsong798.github.io/p/pal6/fig4_hu5c012c18c7121f0248dcf0bd7f91b643_278766_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/pal6/fig4_hu5c012c18c7121f0248dcf0bd7f91b643_278766_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/pal6/fig4_hu_fcc7ed192cd2fcfe.png 480w, https://Junsong798.github.io/p/pal6/fig4_hu_e312ecd35b5a1420.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;过场动画图3&#34;
@@ -1207,7 +1191,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/pal6/fig5.png&#34;
 	width=&#34;568&#34;
 	height=&#34;340&#34;
-	srcset=&#34;https://Junsong798.github.io/p/pal6/fig5_hu56fa4e2ee1c49cc63a808a1ad076fb27_211938_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/pal6/fig5_hu56fa4e2ee1c49cc63a808a1ad076fb27_211938_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/pal6/fig5_hu_3c86b05522a5c15e.png 480w, https://Junsong798.github.io/p/pal6/fig5_hu_cdec1895e8cbc5b9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;过场动画图4&#34;
@@ -1225,7 +1209,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>《海上灵光》：徜徉哲海 灵光初上</title>
         <link>https://Junsong798.github.io/p/aegean/</link>
         <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/aegean/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/aegean/fig1.jpeg" alt="Featured image of post 《海上灵光》：徜徉哲海 灵光初上" /&gt;&lt;p&gt;&lt;em&gt;此为《海上灵光-The Aegean The Aura》书评，已迟到2年半&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;七年之痒-一如既往我所知道的许嵩&#34;&gt;七年之痒 一如既往——我所知道的许嵩&lt;/h2&gt;
@@ -1287,22 +1270,21 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>八角寨游记</title>
         <link>https://Junsong798.github.io/p/travel/</link>
         <pubDate>Fri, 11 Sep 2015 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/travel/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/travel/fig1.jpg" alt="Featured image of post 八角寨游记" /&gt;&lt;p&gt;&lt;em&gt;本文写于本科一年级，修改版获得香港中文大学深圳祥波书院百文呈祥第二季优秀奖&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;乙未八月之秋，百事告竣，念日日玩偈于键鼠之孽途，慵堕懒恶，愧于我弱冠青年之意气肝胆，遂从家慈之意，抱元亮怀良辰以孤往独爱丘山之性，释古之道徒披发而行吟之情愫，访迹寻幽于酷野山林，驾游于资源之八角奇寨，休憩事也。&lt;/p&gt;
 &lt;p&gt;是日也，熙天耀日，彩彻区明，惠风煦育。欣逢山川林岫之秀美，诗兴盎然，始信陈毅之言：“江似青罗带，山如碧玉簪”。行道迟迟，峰回路转，亦不乏湖光山色。载笑载言，得不尽兴乎！咏叹我八桂大地之天工造物，有感而记之。&lt;/p&gt;
 &lt;p&gt;予观夫丹霞之魂，赤峰壁立，午后垂光，景星庆云。北通新宁，南临资源，蓄异草，衔怪石，千峰竞秀，登一枝而穷大千。&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;./fig4.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;登山道&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/travel/fig4.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;登山道&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;自寨南拾级而上，草虫喓喓，古树森立，不见晷景。俄而见日，已出崖上，临渊而眺，犹然天半。夫唯丹霞之峰，卓尔不群，圆融无锋。无千仞之坚壁，无雕琢之绝顶，草莽不生崖半，玲珑不见山冈。日月经天，历万载沧桑，涂水行地，沟壁崩坼，地势得以舒缓褶曲。诚此鬼神之功，尚存曲曲流形之美，浑然天成，大美不工。&lt;/p&gt;
 &lt;p&gt;傍山而下，缦缦栈道，萦回吞吐。抬望眼，苍鹰回环，造得超迈天章。既而出西峰，见龙脊，碑曰：黄山之奇，華山之险。俯瞰茫茫，心悸尤甚，又度其陡，须臾不敢下。&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;./fig3.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;龙脊&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/travel/fig3.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;龙脊&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;余尝游徽南之黄山，西岳之華山，皆以为绝。前者繁溪瀑，盛松石，又有垂天之云，若掠天之鹏。云蒸霞蔚，山岚突起，刹有罡风，树影婆娑，实有挥手万壑松之波澜纵横，恍若世外仙山。后者肃壁千仞，危崖如渊，杀气愕然，如临天险，仰之弥高。世有“黄山归来不看岳，五岳归来不看山”之颂，迁客骚人多会于此，载欣载奔，挥文洒墨，推崇备至。万姓黎民，莫不咸听，而趋之若鹜，誉之弥繁。由此盛名赫赫，骎骎乎凌于百岫之巅。&lt;/p&gt;
@@ -1312,9 +1294,9 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;人尝语我：“中医，诡诈诓人之术，空耗时日。功夫，蜷于擂台之下，夸夸其表，蛊惑愚民。”&lt;/p&gt;
 &lt;p&gt;对曰：“中医者，静水流深，筑基立楯，耗时日久，然固本培元，绝非泛漾之术。武术者，易人筋骨，先民古战场生存之法，青天大道，杀人如剪草，而非点数游戏之类。而侠以武犯禁，今人谬之，多不复存。莫能彰者，其因固非一端，又何诽之？”&lt;/p&gt;
 &lt;p&gt;“南华经曰，肩吾尝问连叔，其闻言藐姑射之山，有神人居焉，肌肤若冰雪，淖约若处子，不食五谷，吸风饮露，乘云气而御飞龙，游乎四海之外，以是狂而不信。连叔以之为然，瞽者无以与乎文章之观，聋者不辨钟鼓之声，此之谓也。岂唯形骸有聋盲哉？夫其知亦有之。”&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;./fig2.jpg&#34; width=&#34;50%&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;崖上&lt;/p&gt;
-        &lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://Junsong798.github.io/p/travel/fig2.jpg&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;p&gt;崖上&lt;/p&gt;
+    &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;“使佛陀转世，比丘共之，徙于野苑，今人知之乎？使孔丘轮回，兴以礼义，落破于市井，簸行于列国，今人知之乎？使庄周再生，蔾口苋肠，终老于山林，今人知之乎？而西学东渐，数典忘祖，生乎华夏而讥之，曰：封建逆学。是井蛙不可以语于海者，朝菌不知晦朔者，蟪蛄不知春秋者也。”&lt;/p&gt;

@@ -10,7 +10,6 @@
         <title>心理学作为计算机科学的子领域</title>
         <link>https://Junsong798.github.io/p/bayes-cognition/</link>
         <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/bayes-cognition/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/bayes-cognition/jupiter.jpg" alt="Featured image of post 心理学作为计算机科学的子领域" /&gt;&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
 &lt;ul&gt;
@@ -104,7 +103,6 @@
         <title>贝叶斯统计：Markov Chain Monte Carlo理论篇</title>
         <link>https://Junsong798.github.io/p/bayes-mcmc/</link>
         <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/bayes-mcmc/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/bayes-mcmc/fig1.png" alt="Featured image of post 贝叶斯统计：Markov Chain Monte Carlo理论篇" /&gt;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;回顾2023年2-4月贝叶斯统计阅读路径，指明一些入门和进阶读物。接下来讨论为什么要用贝叶斯统计，并针对贝叶斯统计的难点Markov Chain Monte Carlo回顾所学。从最古老的Metropolis和Metropolis-Hastings开始，再基于高维空间的几何型态说明为什么经典算法对高维空间采样低效，再引入到更有效的Hamiltonian Monte Carlo以及其变体No-U-Turn Sampler。本文只讨论部分理论细节，不涉及应用，如empirical diagnosis，以及各种诊断识别性和加速收敛的方法。&lt;/p&gt;
@@ -312,7 +310,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>重复测量设计中的效应量</title>
         <link>https://Junsong798.github.io/p/effect-size-metric/</link>
         <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/effect-size-metric/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/effect-size-metric/fig1.jpeg" alt="Featured image of post 重复测量设计中的效应量" /&gt;&lt;h2 id=&#34;两种效应量量纲&#34;&gt;两种效应量量纲&lt;/h2&gt;
 &lt;p&gt;在新的元分析中，发现不少实验是within-subject design，时隔一年多，不少计算细节已经记得不清楚，比如如何统一不同scaling下效应量的量纲，如何选择量纲，以及不同量纲之间sampling variance如何计算。回忆2021年4月15号的小组会议。&lt;/p&gt;
@@ -386,7 +383,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>囫囵吞枣之现代稳健估计方法</title>
         <link>https://Junsong798.github.io/p/robust-statistics/</link>
         <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/robust-statistics/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/robust-statistics/fig_caption.jpg" alt="Featured image of post 囫囵吞枣之现代稳健估计方法" /&gt;&lt;p&gt;历经60多个小时，我设计的非线性元分析方法模拟终于结束，在这半个月中，快速扫读了不少现代统计的教材和论文，收获颇丰，简单谈谈感想。&lt;/p&gt;
 &lt;p&gt;在心理学人中间，流传着这样一句话：F检验，或者ANOVA，是稳健的。比如，我向无数学弟学妹强推的纽大心理学教授写的《Explaining psychological statistics》中就强调了这一点。稳健，或者鲁棒性，数学定义繁多，心理学人常常理解为对正态假定的偏离不影响假设检验，姑且这么理解。&lt;/p&gt;
@@ -410,7 +406,7 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Junsong798.github.io/p/robust-statistics/robust2.png&#34;
 	width=&#34;950&#34;
 	height=&#34;546&#34;
-	srcset=&#34;https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_480x0_resize_box_3.png 480w, https://Junsong798.github.io/p/robust-statistics/robust2_hu3f287108adcf3e9070e1f6caf0c2dcdb_13176_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://Junsong798.github.io/p/robust-statistics/robust2_hu_a1b8946a01dba100.png 480w, https://Junsong798.github.io/p/robust-statistics/robust2_hu_9864dda872c0ee21.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;HC3标准误模拟结果&#34;
@@ -427,7 +423,6 @@ $$p(y) = \int_{\Theta}p(\theta)p(y|\theta)d\theta$$&lt;/p&gt;
         <title>真实世界的心理模型</title>
         <link>https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/</link>
         <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-        
         <guid>https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/</guid>
         <description>&lt;img src="https://Junsong798.github.io/p/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%9E%8B/causal1.png" alt="Featured image of post 真实世界的心理模型" /&gt;&lt;p&gt;2020年12月21日，《自然》撤稿了一篇一作为女性科学家的论文——The association between early career informal mentorship in academic collaborations and junior author performance，原因是违反科学实验协议以及错误地解读数据。该论文声称学界逐渐增长的女性导师会破坏女性科学家职业生涯初期的影响力。论文一经发布便引来口诛笔伐，替代计量引用迅速飙升。抛开文章结论，我们不禁要问：是什么阻碍了研究者从数据中得到真相？以及何种情况下，数据才能为假设提供证据？&lt;/p&gt;
 &lt;p&gt;时间来到1973年，加州大学副院长Hammel发现，申请伯克利研究生的男生中，有44%被录取了，而女生录取率只有35%。然而，当Hammel对每个院系进一步分析时，却发现所有院系的录取都是女生更高。为了明辨事实，避免遭受性别歧视的控诉，Hammel找来了Bickel分析数据，后者在1984年拿到麦克阿瑟天才奖，但彼时不过是一名初出茅庐的统计研究者。Bickel一眼就认出了数据中的辛普森悖论——在总体和亚组层面，数据呈现出截然相反的结论。&lt;/p&gt;
