@@ -15,7 +15,7 @@
 &lt;/figure&gt;
 
 &lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;./Junsong_Lu___CV.pdf&#34; &gt;Curriculum Vitae (CV)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;./Junsong_Lu_CV.pdf&#34; &gt;Curriculum Vitae (CV)&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;research-statement&#34;&gt;Research Statement&lt;/h3&gt;
 &lt;p&gt;During my undergraduate studies, I developed a strong interest in psychology through the exploration of cognitive science literature. This intellectual journey led me to engage deeply with the works of prominent scholars such as Keith Stanovich, Daniel Kahneman, and particularly Gerd Gigerenzer and Herbert A. Simon, whose research on bounded rationality and heuristics left a lasting impression. Subsequently, I became increasingly drawn to mid-level evolutionary theories, including parental investment theory, life history theory, and the antagonistic pleiotropy hypothesis.&lt;/p&gt;
 &lt;p&gt;At the beginning of my Ph.D. training, I immersed myself in Bayesian statistics. I was intrigued by the realization that Bayesianism is not merely a statistical style but emerges as a logical necessity under specific assumptions, such as those articulated in De Finetti&amp;rsquo;s representation theorem. I pursued self-directed learning in this area and became particularly fascinated by hierarchical Bayesian models (HBMs), nonparametric models such as Dirichlet process mixture models, and their combinations. The elegant properties of HBMs prompted me to explore their potential for deriving normative models of human cognition and behavior. This led me to engage extensively with the work of John Anderson, Tom Griffiths, Josh Tenenbaum, and their collaborators, and to shift my research focus toward the development of normative models.&lt;/p&gt;
@@ -103,8 +103,8 @@
 &lt;p&gt;Lu, J.*, Lu, Q.*, &amp;amp; Lu, L. (2022) &lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-328X/12/3/63&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Differential Effects of Fundamental and Longitudinal Life-History Trade-Offs on Delay Discounting: An Evolutionary Framework.&lt;/a&gt; &lt;em&gt;Behavioral Sciences, 12&lt;/em&gt;(3), 63.&lt;/p&gt;
 &lt;h4 id=&#34;manuscript-under-preparation&#34;&gt;Manuscript Under Preparation&lt;/h4&gt;
-&lt;p&gt;Lu, J., &amp;amp; Lin, C. Small-World Networks Induce Seemingly Low-Dimensional Psychology Under Constrained Stimuli: Theory, Mathematical Proof, and Simulations.&lt;/p&gt;
-&lt;p&gt;Lu, J., &amp;amp; Lin, C. A Hierarchical Bayesian Account of Stereotype Formation and Maintenance Under Varying Environments.&lt;/p&gt;
+&lt;p&gt;Lu, J., &amp;amp; Lin, C. &lt;a class=&#34;link&#34; href=&#34;./manuscript_network.pdf&#34; &gt;A Small-World Network Model of Social Inferences: Rethinking Social Cognition Through Resource-Rational Representations&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lu, J., &amp;amp; Lin, C. &lt;a class=&#34;link&#34; href=&#34;./manuscript_stereotype.pdf&#34; &gt;Stereotypes as Byproducts of Hierarchical Bayesian Inference&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h3 id=&#34;skills--hobbies&#34;&gt;Skills &amp;amp; Hobbies&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Software Operation&lt;/strong&gt; : R (base &amp;amp; tidyverse), Stan, Python, NetLogo, PsychoPy, Mplus, Citespace, HTML, CSS, Javascript (jsPsych)&lt;/p&gt;
